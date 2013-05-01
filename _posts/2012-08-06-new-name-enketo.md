@@ -11,7 +11,7 @@ tags:
 ---
 Finally, I have come up with a better name for the offline-capable-and-open-source-form-format-using [survey application][1] with less scope for confusion. Rapaide has now been renamed to: **enketo**
 
- [1]: /enketos-new-architecture/ "Enketo’s New Architecture"
+ [1]: /enkets-new-architecture/ "Enketo’s New Architecture"
 
 “enketo” is Esperanto for survey and matches well with the wide user potential the application has (beyond aid workers).
 

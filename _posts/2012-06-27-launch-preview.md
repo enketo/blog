@@ -14,7 +14,7 @@ tags:
 ---
 I would like to share some screenshots of [enketo’s launch area][1]. This is the component that survey administrators (not the average user) will use to test and launch survey forms (after uploading the XForm file or providing the [formhub][2] or [ODK Aggregate][3] URL). At the moment I’m using enketo’s launch area to find bugs in the transformation from XML to HTML5 and in the XForm functionality. I’m using its built-in reporting function to find major errors and monitor the instantly-updated data (in XML) whenever input fields change. I should mention that I have not yet started working on fancy form widgets. The appearance and usability of the forms will improve significantly once I reach that stage.
 
- [1]: /enketos-new-architecture/ "Enketo’s New Architecture"
+ [1]: /enkets-new-architecture/ "Enketo’s New Architecture"
  [2]: http://formhub.org "formhub web site"
  [3]: http://opendatakit.org/use/aggregate/ "ODK Aggregate Info"
 
