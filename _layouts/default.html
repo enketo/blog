@@ -4,6 +4,8 @@
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>{{ page.title }}</title>
    <meta name="author" content="Martijn van de Rijdt" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="apple-mobile-web-app-capable" content="yes" />
    <link rel="alternate" type="application/rss+xml" title="Enketo Blog" href="{{ site.url }}feed/" />
 
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
@@ -20,31 +22,33 @@
 
 </head>
 <body>
+<header>
 
-<div class="site">
-  <div class="title">
-    <a href="/">Enketo Blog</a>
-    <a class="extra" href="http://enketo.org">Enketo Home</a>
-  </div>
+</header>
+<div class="main">
+   <div class="title">
+      <a href="/">Enketo Blog</a>
+      <a class="extra" href="http://enketo.org">Enketo Home</a>
+   </div>
   
   {{ content }}
   
-  <div class="footer">
-    <div class="contact">
-      <p>Enketo &amp; other web tools for Aid Workers</p>
-    </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/martijnr/">github.com/martijnr</a><br />
-        <a href="http://twitter.com/enketo/">twitter.com/enketo</a><br />
-      </p>
-    </div>
-    <div class="rss">
-      <a href="{{ site.url }}/feed/">
-        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
-      </a>
-    </div>
-  </div>
+   <footer>
+      <div class="contact">
+         <p>Enketo &amp; other web tools for Aid Workers</p>
+      </div>
+      <div class="contact">
+         <p>
+            <a href="http://github.com/martijnr/">github.com/martijnr</a><br />
+            <a href="http://twitter.com/enketo/">twitter.com/enketo</a><br />
+         </p>
+      </div>
+      <div class="rss">
+         <a href="{{ site.url }}/feed/">
+            <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
+         </a>
+      </div>
+   </footer>
 </div>
 
 <!-- Google Analytics -->
