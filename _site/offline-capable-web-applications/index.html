@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Offline-Capable Web Applications</title>
+   <meta name="author" content="Martijn van de Rijdt" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <link rel="alternate" type="application/rss+xml" title="Enketo Blog" href="http://blog.enketo.orgfeed/" />
+
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+   <link rel="shortcut icon" href="/images/enketo.ico">
+   <!-- For third-generation iPad with high-resolution Retina display: -->
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/icon_144x144.png">
+   <!-- For iPhone with high-resolution Retina display: -->
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/icon_114x114.png">
+   <!-- For first- and second-generation iPad: -->
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icon_72x72.png">
+   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+   <link rel="apple-touch-icon-precomposed" href="/images/icon_57x57.png">
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<body> 
+   <header class="navbar navbar-fixed-top">
+      <section class="content navbar-innner">
+         <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="/" title="Blog about Enketo and other tools for Aid Workers">Enketo Blog</a>
+            <nav class="nav-collapse collapse">
+               <ul class="nav nav-pills">
+                  <li class="active"><a href="/">Blog</a></li>
+                  <li><a href="http://enketo.org">Home</a></li>
+                  <li class="nav-icon"><a href="http://github.com/martijnr/" title="Go to GitHub"><i class="icon-github"></i></a></li>
+                  <li class="nav-icon"><a href="http://twitter.com/enketo/" title="Follow on Twitter"><i class="icon-twitter"></i></a></li>
+                  <li class="nav-icon"><a href="http://www.linkedin.com/in/martijnvanderijdt/" title="Follow on LinkedIn"><i class="icon-linkedin"></i></a></li>
+                  <li class="nav-icon"><a href="http://blog.enketo.org/feed/" title="Subscribe to RSS Feed"><i class="icon-feed"></i></a></li>
+               </ul>
+            </nav>
+         </div>
+      </section>
+   </header>
+   <div class="container main">
+      <article class="content">
+
+        <article id="post">
+	<h2>Offline-Capable Web Applications</h2>
+	<p><img src="../files/2011/04/HTML5_badge.png" title="HTML5 badge" alt="HTML5 badge" /></p>
+
+<p>Traditional web applications are loaded from the server each time a users visits its web address in a web browser. Any user-submitted data has to be transmitted to the server in order to be stored. Without an Internet connection the application will not be able to launch and if an application was launched online but the internet connection is interrupted, it is no longer capable of storing or retrieving data.</p>
+
+<h2>What is meant with offline-capable?</h2>
+
+<p>A web application can be called offline-capable if it can be launched without an Internet connection and maintains its (core) functionality whilst offline. Generally, two different modern technologies are used to create offline-capable applications.</p>
+
+<p><img src="../files/2011/04/Screen-Shot-2011-12-10-at-1.57.33-PM.png" title="HTML5 Offline Storage icon" alt="HTML5 Offline Storage icon" /></p>
+
+<p>One is called the application cache and all it does is store a copy of the application inside the browser. Whenever a user browses to the application this local copy is loaded without any interaction with the server. This is therefore superfast! After the application has launched, the browser will check at regular intervals if a newer version of the application is available and if so will download it automatically. The next time you load the application (or refresh your browser) the new version will be loaded. If there is no Internet connection there is no problem.</p>
+
+<p>The second technology allows the storage of data in the browser itself. This data is ‘persistent’ which means. it will still be there after you close the window, browser or shut down your computer.</p>
+
+<h2>What do I need to install to use these technologies?</h2>
+
+<p>The great thing about these technologies is that they are Web Standards (related to HTML5) and should therefore work in any browser out-of-the-box without the need for plugins. All popular browsers support both technologies now except Internet Explorer (no application cache). However, the application needs to be designed to be offline-capable. It is not something that can be added-on to an existing application by a user. So all you need to do when you find an offline-capable web application is use a <a href="/humanitarian-aid-browsing/" title="Humanitarian Aid Browsing">modern browser.</a></p>
+
+<h2>What does this have to do with Humanitarian Aid?</h2>
+
+<p>These offline web technologies were specifically meant to be used on mobile phones, because Internet connections are generally less reliable on phones. However, I see a fantastic opportunity for humanitarian aid contexts where Internet connections often exist but are expensive or unreliable. No alternative could match the advantages of offline-capable web applications in collaborative data collection in an emergency. More about that in a future post!</p>
+
+	
+	<section class="comments">
+		<div id="disqus_thread"></div>
+	    <script type="text/javascript">
+	        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	        var disqus_shortname = 'webtoolsforaidworkers'; // required: replace example with your forum shortname
+
+	        /* * * DON'T EDIT BELOW THIS LINE * * */
+	        (function() {
+	            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	        })();
+	    </script>
+	    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</section>
+	
+</article>
+
+<section id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+      <li><span>17 May 2013</span> &raquo; <a href="/nomad-presention-2013/">Presentation on Enketo for Humanitarian Nomad 2013</a></li>
+    
+      <li><span>16 May 2013</span> &raquo; <a href="/enketo-branding/">Smart Paper</a></li>
+    
+      <li><span>05 Mar 2013</span> &raquo; <a href="/enketo-performance/">Enketo starts to fly</a></li>
+    
+  </ul>
+</section>
+
+      </article>
+   </div>
+     
+   <footer>
+      <section class="content">
+         <a class="enketo-icon" href="http://enketo.org" title="Go to Enketo.org"><img src="images/icon_144x144.png" alt="enketo icon"/></a>
+         <div class="copyright">&copy; 2013, Enketo LLC</div>
+         <div class="info">
+            <a href="http://github.com/martijnr/" title="Go to GitHub"><i class="icon-github"></i></a>
+            <a href="http://twitter.com/enketo/" title="Follow on Twitter"><i class="icon-twitter"></i></a>
+            <a href="http://www.linkedin.com/in/martijnvanderijdt/" title="Follow on LinkedIn"><i class="icon-linkedin"></i></a>
+            <a href="http://blog.enketo.org/feed/" title="Subscribe to RSS Feed"><i class="icon-feed"></i></a>
+         </div>
+      </section>
+   </footer>
+
+   <!-- Google Analytics -->
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-6765789-12', 'enketo.org');
+     ga('send', 'pageview');
+
+   </script>
+   <!-- Google Analytics end -->
+
+   </body>
+</html>
