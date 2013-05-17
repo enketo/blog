@@ -18,11 +18,8 @@ As somebody who has always been very interested in graphic design and web design
 
 ###Why Smart Paper?
 
-Enketo forms are as familiar and easy to use as paper, but they're magical and smart. Sections magically appear when you progress through a form based on previous answers. Data quality can be enforced by smart validation logic designed into a form. Moreover, one of the core features of enketo is to automatically generate a print-friendly version of each form for old-fashioned collection by paper and pen. So there is no need to maintain different versions of the same form!
+Enketo forms are as familiar and easy to use as paper, but they're smart. Sections magically appear when you progress through a form based on previous answers. Data quality can be enforced by smart validation logic designed into a form. Moreover, one of the core features of enketo is to automatically generate a print-friendly version of each form for old-fashioned collection by paper and pen. So there is no need to maintain different versions of the same form!
 
 ###Enketo.org
 
 The branding and design work is one of the final phases of the forthcoming launch of enketo.org. There is still work to be done and decisions to be made, but we're getting close. I'll write a post about this in the next few weeks. 
-
-
-
