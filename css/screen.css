@@ -1731,7 +1731,7 @@ table td[class*="span"], table th[class*="span"], .row-fluid table td[class*="sp
 /* White icons with optional class, or on hover/focus/active states of certain elements */
 /* line 48, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_sprites.scss */
 .icon-white, .nav-pills > .active > a > [class^="icon-"], .nav-pills > .active > a > [class*=" icon-"], .nav-list > .active > a > [class^="icon-"], .nav-list > .active > a > [class*=" icon-"], .navbar-inverse .nav > .active > a > [class^="icon-"], .navbar-inverse .nav > .active > a > [class*=" icon-"], .dropdown-menu > li > a:hover > [class^="icon-"], .dropdown-menu > li > a:focus > [class^="icon-"], .dropdown-menu > li > a:hover > [class*=" icon-"], .dropdown-menu > li > a:focus > [class*=" icon-"], .dropdown-menu > .active > a > [class^="icon-"], .dropdown-menu > .active > a > [class*=" icon-"], .dropdown-submenu:hover > a > [class^="icon-"], .dropdown-submenu:focus > a > [class^="icon-"], .dropdown-submenu:hover > a > [class*=" icon-"], .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url(/images/glyphicons-halflings-white.png); }
+  background-image: url(/images/glyphicons-halflings-white.png?1362108362); }
 
 /* line 52, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_sprites.scss */
 .icon-glass {
@@ -6468,25 +6468,29 @@ ul.posts span {
 /* line 82, ../scss/screen.scss */
 header {
   background: #e6e6e6; }
-/* line 87, ../scss/screen.scss */
+/* line 84, ../scss/screen.scss */
 header .content {
   margin-top: 0;
   margin-bottom: 0; }
-/* line 90, ../scss/screen.scss */
+/* line 87, ../scss/screen.scss */
 header img {
   height: 50px; }
-/* line 92, ../scss/screen.scss */
+/* line 89, ../scss/screen.scss */
 header .title {
   font-size: 25px; }
+/* line 94, ../scss/screen.scss */
+header nav .nav-icon a {
+  font-size: 20px;
+  margin-top: -3px; }
 
-/* line 97, ../scss/screen.scss */
+/* line 98, ../scss/screen.scss */
 .main {
   font-size: 110%;
-  text-align: justify;
+  text-align: left;
   padding: 0 15px;
   line-height: 1.5em; }
 
-/* line 103, ../scss/screen.scss */
+/* line 104, ../scss/screen.scss */
 .content {
   *zoom: 1;
   width: 100%;
@@ -6501,51 +6505,52 @@ header .title {
 .content:after {
   clear: both; }
 
-/* line 109, ../scss/screen.scss */
+/* line 110, ../scss/screen.scss */
 footer {
   background: black;
   color: #ffffff;
   border-top: 4px solid #eeeeee;
   margin-top: 2em;
   overflow: hidden; }
-/* line 115, ../scss/screen.scss */
+/* line 116, ../scss/screen.scss */
 footer .content {
   position: relative;
   margin-top: 25px;
   margin-bottom: 25px; }
-/* line 119, ../scss/screen.scss */
+/* line 120, ../scss/screen.scss */
 footer .copyright {
   position: absolute;
   text-align: right;
   padding-right: 20px;
+  font-size: 20px;
   left: 120px;
-  bottom: 0px; }
-/* line 125, ../scss/screen.scss */
+  bottom: 47px; }
+/* line 127, ../scss/screen.scss */
 footer .info {
   position: absolute;
-  padding-right: 15px;
-  bottom: 0;
+  padding-right: 25px;
+  bottom: 42px;
   right: 0; }
 @media screen and (max-width: 580px) {
-  /* line 131, ../scss/screen.scss */
+  /* line 133, ../scss/screen.scss */
   footer .copyright {
-    bottom: 0;
+    bottom: 20px;
     right: 0; }
-  /* line 134, ../scss/screen.scss */
+  /* line 136, ../scss/screen.scss */
   footer .info {
-    top: 0;
+    top: 20px;
     right: 0; } }
-/* line 137, ../scss/screen.scss */
+/* line 139, ../scss/screen.scss */
 footer .enketo-icon {
   margin: -8px 0 -16px -22px;
   float: left; }
-/* line 140, ../scss/screen.scss */
+/* line 142, ../scss/screen.scss */
 footer a {
   text-decoration: none;
   color: white;
   margin: 15px;
   font-size: 30px; }
-/* line 145, ../scss/screen.scss */
+/* line 147, ../scss/screen.scss */
 footer a:hover {
   opacity: 0.7; }
 
@@ -6554,61 +6559,61 @@ footer a:hover {
 /* Posts
 /*
 /*****************************************************************************/
-/* line 154, ../scss/screen.scss */
+/* line 156, ../scss/screen.scss */
 #post {
   margin-bottom: 30px; }
 
 /* standard */
-/* line 160, ../scss/screen.scss */
+/* line 162, ../scss/screen.scss */
 #post img {
   display: block;
   margin: 10px auto;
   max-width: 100%; }
 
-/* line 166, ../scss/screen.scss */
+/* line 168, ../scss/screen.scss */
 #post img.left {
   float: left; }
 
-/* line 170, ../scss/screen.scss */
+/* line 172, ../scss/screen.scss */
 #post img.right {
   float: right; }
 
-/* line 174, ../scss/screen.scss */
+/* line 176, ../scss/screen.scss */
 #post pre {
   border: 1px solid #dddddd;
   background-color: #eef;
   padding: 0 0.4em; }
 
-/* line 181, ../scss/screen.scss */
+/* line 183, ../scss/screen.scss */
 #post ul, #post ol {
   margin-left: 1.35em; }
 
-/* line 185, ../scss/screen.scss */
+/* line 187, ../scss/screen.scss */
 #post code {
   border: 1px solid #dddddd;
   background-color: #eef;
   font-size: 85%;
   padding: 0 0.2em; }
 
-/* line 192, ../scss/screen.scss */
+/* line 194, ../scss/screen.scss */
 #post pre code {
   border: none; }
 
 /* terminal */
-/* line 198, ../scss/screen.scss */
+/* line 200, ../scss/screen.scss */
 #post pre.terminal {
   border: 1px solid black;
   background-color: #333;
   color: white; }
 
-/* line 204, ../scss/screen.scss */
+/* line 206, ../scss/screen.scss */
 #post pre.terminal code {
   background-color: #333; }
 
-/* line 208, ../scss/screen.scss */
+/* line 210, ../scss/screen.scss */
 #related {
   margin-top: 2em; }
 
-/* line 212, ../scss/screen.scss */
+/* line 214, ../scss/screen.scss */
 #related h2 {
   margin-bottom: 1em; }
