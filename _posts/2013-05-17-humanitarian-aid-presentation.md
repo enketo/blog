@@ -15,6 +15,3 @@ I had the great opportunity to present Enketo during the [Humanitarian Nomad](ht
 
 <br/><br/>
 I hope to be able to present in person next time! I would like to thank [iMMAP](http://www.immap.org/) and [CartONG](http://cartong.org/) for leading this initiative and helping organisations find the right tool for their job with their [online selection tool](http://humanitarian-nomad.org/online-selection-tool/).
-
-
-
