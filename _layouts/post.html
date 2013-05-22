@@ -3,6 +3,7 @@ layout: default
 ---
 <article id="post">
 	<h2>{{ page.title }}</h2>
+	<div class="date">{{ page.date | date_to_string}}</div>
 	{{ content }}
 	{% if site.comments %}
 	<section class="comments">

@@ -8,7 +8,7 @@ categories:
 tags:
  - enketo
 ---
-If you have visited enketo.org recently you will have noticed the gorgeous new logo and front page, and the new branding as Enketo Smart Paper. I love the new look but can take no credit for it. It was the result of an in-depth analysis of enketo by my colleagues, [Modilab](http://modi.mech.columbia.edu/)'s senior designer Roger Wong and ICT Director Matt Berg. 
+If you have visited [enketo.org](http://enketo.org) recently you will have noticed the gorgeous new logo and front page, and the new branding as Enketo Smart Paper. I love the new look but can take no credit for it. It was the result of an in-depth analysis of enketo by my colleagues, [Modilab](http://modi.mech.columbia.edu/)'s senior designer Roger Wong and ICT Director Matt Berg. 
 
 ![enketo logo][1]
 
