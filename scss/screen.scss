@@ -101,6 +101,14 @@ header{
   padding: 0 15px;
   line-height: 1.5em;}
 
+.date {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
 .content{
 	@include clearfix;
   width: 100%;
