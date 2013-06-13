@@ -1,4 +1,5 @@
 url: http://blog.enketo.org
+port: 4000
 name: Web Tools for Aid Workers
 description: by Aid Web Solutions
 permalink: /:title

@@ -1,3 +1,5 @@
-./_site/*
-./.sass-cache/*
+_site/*
+.sass-cache/*
 ./*.sublime-workspace
+blog.sublime-project
+blog.sublime-workspace
