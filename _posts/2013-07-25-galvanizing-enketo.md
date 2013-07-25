@@ -20,7 +20,7 @@ Enketo LLC's strategy consists of:
 * maintaining and improving capacity to conduct paid development work on enketo for __multiple clients__ (in addition to the amazing [Modi Labs](http://modi.mech.columbia.edu/)). 
 * encourage significant contributions by others to the enketo source code
 
-I think that if 2 out of these 3 are succesful, the prospects for sustainability look good. 
+I think that if 2 out of 3 of these are successful, the prospects for sustainability look good. 
 
 ###Milestones
 
@@ -35,7 +35,7 @@ The next milestones in the implementation of this strategy are:
 
 <img class="left" style="width: 700px;" src="../files/2013/07/enketo_at_galvanize.jpg" alt="Enketo at Galvanize"/>
 
-<p class="clearfix">To create the right environment for these exciting plans, Enketo LLC is since last month operating from <a href="http://galvanize.it">Galvanize</a>, a very cool co-working space in Denver. It is now surrounded by other Internet Businesses (some are even hipper than Enketo). The vibe and networking opportunities here are awesome and will be a great positive influence on the work!</p>
+<p class="clearfix">With its recent move to <a href="http://galvanize.it">Galvanize</a>, a very cool co-working space in Denver, Enketo LLC has found the perfect working environment to implement these exciting plans. It is now surrounded by other Internet Businesses (some are even hipper than Enketo). The vibe and networking opportunities here are awesome and will be a great positive influence on the work!</p>
 
 
 ###Becoming social
