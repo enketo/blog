@@ -175,10 +175,14 @@ footer {
 
   #post img.left{
     float: left;
+    margin-right: 20px;
+    max-width: 500px;
   }
 
   #post img.right{
     float: right;
+    margin-left: 20px;
+    max-width: 500px;
   }
 
   #post pre {
