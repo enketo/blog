@@ -26,7 +26,7 @@ I think that if 2 out of these 3 are succesful, the prospects for sustainability
 
 The next milestones in the implementation of this strategy are:
 
-1. launch [enketo.org](https://enketo.org) (end of next month)
+1. launch [enketo.org](https://enketo.org) (end of August)
 2. sign web development contracts with new customers for new features or improvements (discussions are pending)
 3. form a partnership with another developer and/or a designer to increase capacity and share responsibility (so far only consultants are attached)
 4. get major pull requests from third party developers
@@ -35,7 +35,7 @@ The next milestones in the implementation of this strategy are:
 
 <img class="left" style="width: 700px;" src="../files/2013/07/enketo_at_galvanize.jpg" alt="Enketo at Galvanize"/>
 
-<p class="clearfix">To create the right environment for these exciting plans, Enketo LLC is since last month based in a very cool co-working space in Denver, called [Galvanize](http://galvanize.it). It is now surrounded by other Internet Businesses (some are even hipper than Enketo). The vibe and networking opportunities here are awesome and will be a great positive influence on the work!</p>
+<p class="clearfix">To create the right environment for these exciting plans, Enketo LLC is since last month operating from <a href="http://galvanize.it">Galvanize</a>, a very cool co-working space in Denver. It is now surrounded by other Internet Businesses (some are even hipper than Enketo). The vibe and networking opportunities here are awesome and will be a great positive influence on the work!</p>
 
 
 ###Becoming social
