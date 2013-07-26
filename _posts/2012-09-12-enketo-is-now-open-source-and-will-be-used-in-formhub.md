@@ -2,7 +2,7 @@
 title: Enketo is now open source and will be used in formhub!
 author: Martijn van de Rijdt
 layout: post
-permalink: /enketo-is-now-open-source-and-will-be-used-in-formhub/
+permalink: /enketo-is-now-open-source-and-will-be-used-in-formhub
 categories:
   - apps
 tags:

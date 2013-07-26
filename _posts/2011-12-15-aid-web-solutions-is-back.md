@@ -2,7 +2,7 @@
 title: Aid Web Solutions is back
 author: Martijn van de Rijdt
 layout: post
-permalink: /aid-web-solutions-is-back/
+permalink: /aid-web-solutions-is-back
 categories:
   - Aid Web Solutions
 tags:

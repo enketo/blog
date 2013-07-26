@@ -2,7 +2,7 @@
 title: Google Apps in Emergencies
 author: Martijn van de Rijdt
 layout: post
-permalink: /google-apps-in-emergencies/
+permalink: /google-apps-in-emergencies
 categories:
   - apps
   - tips

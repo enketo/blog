@@ -2,7 +2,7 @@
 title: Offline-Capable Web Applications
 author: Martijn van de Rijdt
 layout: post
-permalink: /offline-capable-web-applications/
+permalink: /offline-capable-web-applications
 categories:
   - browsers
   - technology

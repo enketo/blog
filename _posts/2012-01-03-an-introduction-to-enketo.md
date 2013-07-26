@@ -2,7 +2,7 @@
 title: An Introduction to enketo
 author: Martijn van de Rijdt
 layout: post
-permalink: /an-introduction-to-enketo/
+permalink: /an-introduction-to-enketo
 categories:
   - Aid Web Solutions
   - apps

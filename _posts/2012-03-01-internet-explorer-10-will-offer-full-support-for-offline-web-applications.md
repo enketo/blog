@@ -2,7 +2,7 @@
 title: 'Internet Explorer 10 &#038; Offline Web Apps'
 author: Martijn van de Rijdt
 layout: post
-permalink: /internet-explorer-10-will-offer-full-support-for-offline-web-applications/
+permalink: /internet-explorer-10-will-offer-full-support-for-offline-web-applications
 categories:
   - browsers
   - technology

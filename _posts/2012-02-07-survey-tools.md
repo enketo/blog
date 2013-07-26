@@ -2,7 +2,7 @@
 title: Survey Tools
 author: Martijn van de Rijdt
 layout: post
-permalink: /survey-tools/
+permalink: /survey-tools
 categories:
   - apps
 tags:

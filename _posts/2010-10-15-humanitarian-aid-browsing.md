@@ -2,7 +2,7 @@
 title: Humanitarian Aid Browsing
 author: Martijn van de Rijdt
 layout: post
-permalink: /humanitarian-aid-browsing/
+permalink: /humanitarian-aid-browsing
 categories:
   - browsers
   - tips

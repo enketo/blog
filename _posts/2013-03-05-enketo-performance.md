@@ -2,7 +2,7 @@
 title: Enketo starts to fly
 author: Martijn van de Rijdt
 layout: post
-permalink: /enketo-performance/
+permalink: /enketo-performance
 categories:
   - Uncategorized
 tags:

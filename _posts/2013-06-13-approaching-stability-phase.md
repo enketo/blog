@@ -2,7 +2,7 @@
 title: Approaching the stability phase
 author: Martijn van de Rijdt
 layout: post
-permalink: /approaching-stability-phase/
+permalink: /approaching-stability-phase
 categories:
   - Uncategorized
 tags:

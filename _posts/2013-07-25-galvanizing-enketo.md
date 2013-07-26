@@ -2,7 +2,7 @@
 title: Galvanizing Enketo
 author: Martijn van de Rijdt
 layout: post
-permalink: /galvanizing-enketo/
+permalink: /galvanizing-enketo
 categories:
   - Uncategorized
 tags:
