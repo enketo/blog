@@ -33,7 +33,7 @@ The next milestones in the implementation of this strategy are:
 
 ###Environment
 
-<img class="left" style="width: 700px;" src="../files/2013/07/enketo_at_galvanize.jpg" alt="Enketo at Galvanize"/>
+<a href="../files/2013/07/enketo_at_galvanize.jpg"><img class="left" style="width: 700px;" src="../files/2013/07/enketo_at_galvanize_small.jpg" alt="Enketo at Galvanize"/></a>
 
 <p class="clearfix">With its recent move to <a href="http://galvanize.it">Galvanize</a>, a very cool co-working space in Denver, Enketo LLC has found the perfect working environment to implement these exciting plans. It is now surrounded by other Internet Businesses (some are even hipper than Enketo). The vibe and networking opportunities here are awesome and will be a great positive influence on the work!</p>
 
