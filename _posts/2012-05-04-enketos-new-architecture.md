@@ -2,7 +2,7 @@
 title: 'Enketo&#8217;s New Architecture'
 author: Martijn van de Rijdt
 layout: post
-permalink: /enkets-new-architecture/
+permalink: /enkets-new-architecture
 categories:
   - apps
 tags:
