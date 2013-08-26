@@ -1,5 +1,5 @@
-@import "bootstrap";
-@import "bootstrap-responsive";
+//@import "bootstrap";
+//@import "bootstrap-responsive";
 
 /*** icon font **/
 @font-face {
@@ -50,7 +50,6 @@ body{
   margin: 0;
 }
 
-
 /*****************************************************************************/
 /*
 /* Home
@@ -79,7 +78,25 @@ ul.posts {
 /*
 /*****************************************************************************/
 
-header{
+.navbar{
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.125);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.125);
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: #003d5f;
+  position: relative;
+  display: inline-block;
+  width: 160px;
+
+}
+.navbar .navbar-brand .navbar-logo {
+  top: 10px;
+  left: 30px;
+  height: 30px;
+  position: absolute;
+}
+/*header{
   background: #e6e6e6;
   .content{
     margin-top: 0;
@@ -93,7 +110,7 @@ header{
     
     .nav-icon a{
       font-size: 20px;
-      margin-top:-3px; } } }
+      margin-top:-3px; } } }*/
 
 .main {
   font-size: 110%;
@@ -110,7 +127,6 @@ header{
 }
 
 .content{
-	@include clearfix;
   width: 100%;
   max-width: 900px;
   margin: 60px auto 30px auto;}

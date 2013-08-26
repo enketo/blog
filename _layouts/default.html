@@ -8,7 +8,7 @@
    <meta name="apple-mobile-web-app-capable" content="yes" />
    <meta name="google-site-verification" content="XVwsM5aINXf-Qw6PFwQqCOqSvppakXfa24kti-vlACg" />
    <link rel="alternate" type="application/rss+xml" title="Enketo Blog" href="{{ site.url }}feed/" />
-
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 
@@ -21,34 +21,40 @@
    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icon_72x72.png">
    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
    <link rel="apple-touch-icon-precomposed" href="/images/icon_57x57.png">
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <body> 
-   <header class="navbar navbar-fixed-top">
-      <section class="content navbar-innner">
-         <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+         <div class="navbar-header">
+            <a class="navbar-brand" href="https://enketo.org">
+               <img class="navbar-logo" src="images/logo-black.png" alt="Enketo Logo" />
             </a>
-            <a class="brand" href="/" title="Blog about Enketo and other tools for Aid Workers">Enketo Blog</a>
-            <nav class="nav-collapse collapse">
-               <ul class="nav nav-pills">
-                  <li class="active"><a href="/">Blog</a></li>
-                  <li><a href="http://enketo.org">Home</a></li>
-                  <li class="nav-icon"><a href="http://github.com/martijnr/" title="Go to GitHub"><i class="icon-github"></i></a></li>
-                  <li class="nav-icon"><a href="http://twitter.com/enketo/" title="Follow on Twitter"><i class="icon-twitter"></i></a></li>
-                  <li class="nav-icon"><a href="http://www.linkedin.com/company/enketo-llc/" title="Follow on LinkedIn"><i class="icon-linkedin"></i></a></li>
-                  <li class="nav-icon"><a href="https://plus.google.com/111302551985955001010/" title="Follow on G+"><i class="icon-google-plus"></i></a></li>
-                  <li class="nav-icon"><a href="{{ site.url }}/feed/" title="Subscribe to RSS Feed"><i class="icon-feed"></i></a></li>
-               </ul>
-            </nav>
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
          </div>
-      </section>
-   </header>
+         <div class="navbar-collapse nav-collapse collapse">
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="/">Blog</a></li>
+               <li><a href="https://accounts.enketo.org/">Plans</a></li>
+               <!--<li><a href="https://accounts.enketo.org/account/">Account</a></li>-->
+               <li><a href="http://apidocs.enketo.org">API Documentation</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li class="nav-icon"><a href="http://github.com/martijnr/" title="Go to GitHub"><i class="icon-github"></i></a></li>
+               <li class="nav-icon"><a href="http://twitter.com/enketo/" title="Follow on Twitter"><i class="icon-twitter"></i></a></li>
+               <li class="nav-icon"><a href="http://www.linkedin.com/company/enketo-llc/" title="Follow on LinkedIn"><i class="icon-linkedin"></i></a></li>
+               <li class="nav-icon"><a href="https://plus.google.com/111302551985955001010/" title="Follow on G+"><i class="icon-google-plus"></i></a></li>
+               <li class="nav-icon"><a href="{{ site.url }}/feed/" title="Subscribe to RSS Feed"><i class="icon-feed"></i></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
    <div class="container main">
-      <article class="content">
+      <article class="content clearfix">
 
         {{ content }}
 
@@ -56,7 +62,7 @@
    </div>
      
    <footer>
-      <section class="content">
+      <section class="content clearfix">
          <a class="enketo-icon" href="http://enketo.org" title="Go to Enketo.org"><img src="/images/icon_144x144.png" alt="enketo icon"/></a>
          <div class="copyright">&copy; 2013, Enketo LLC</div>
          <div class="info">
