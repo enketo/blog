@@ -81,21 +81,20 @@ ul.posts {
 .navbar{
   -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.125);
   box-shadow: 0 2px 5px rgba(0,0,0,0.125);
-}
-.navbar .navbar-brand {
-  font-weight: bold;
-  color: #003d5f;
-  position: relative;
-  display: inline-block;
-  width: 160px;
+  .navbar-nav>li>a.highlight {
+    color: rgb(237,87,50); }
+  .navbar-brand {
+    font-weight: bold;
+    color: #003d5f;
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    .navbar-logo {
+      top: 10px;
+      left: 30px;
+      height: 30px;
+      position: absolute;} } }
 
-}
-.navbar .navbar-brand .navbar-logo {
-  top: 10px;
-  left: 30px;
-  height: 30px;
-  position: absolute;
-}
 /*header{
   background: #e6e6e6;
   .content{
