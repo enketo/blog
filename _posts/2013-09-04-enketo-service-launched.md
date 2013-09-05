@@ -11,11 +11,11 @@ tags:
 
 Enketo.org has launched! If you are using ODK Aggregate or have installed Formhub yourself, you now finally have a convenient and affordable option to start using Enketo Smart Paper for your data collection. 
 
-Enketo Smart Paper has proven to be a very popular tool for data collection within formhub.org where it has been used for exactly one year today. It has continuously improved over this period and enjoyed a nice steady growth of users all around the world. Now with this brand new service Enketo Smart Paper is available to ODK Aggregate users and organizations that use their own installation of Formhub.
+Enketo Smart Paper has proven to be a very popular tool for data collection within formhub.org where it has been used for exactly one year today. It has been used in humanitarian aid, development work, election monitoring, and research by UN agencies, governmental- and non-governmental organizations, and universities.
 
 ![enketo usage on Formhub in the first year](../files/2013/09/enketo_first_year.png)
 
-Enketo Smart Paper has been used in humanitarian aid, development work, election monitoring, and research by UN agencies, governmental- and non-governmental organizations, and universities.
+It has continuously improved over this period and enjoyed a nice steady growth of users all around the world. Now with this brand new service Enketo Smart Paper is available to ODK Aggregate users and organizations that use their own installation of Formhub.
 
 ###How to start using the service?
 
