@@ -30,8 +30,8 @@ It has continuously improved over this period and enjoyed a nice steady growth o
 
 ###Can I still use ODK Collect?
 
-Absolutely! The two tools complement each other very well. You can use enketo in conjunction with ODK Collect for the same survey or decide on a survey-to-survey basis which tool is the best for you.
+Absolutely! The two tools complement each other very well. You can use enketo in conjunction with ODK Collect for the same survey or decide on a survey-to-survey basis which tool is the best for you. The table on [this page](https://enketo.org/openrosa) may help explain the key differences.
 
 ###Thanks
 
-A lot of the credit for making Enketo Smart Paper the great tool it is goes to [Modi Labs](http://modi.mech.columbia.edu/) and all the colleagues with whom I have been working for the past 12 months. For setting up this service, I especially want to thank the people that helped out by discussing, designing, editing, installing and/or coding: Matt Berg, Roger Wong, Alex Dorey, Ukang'a Dickson, Myf Ma, Prabhas Pokharel, and Beth Martin.
+A lot of the credit for making Enketo Smart Paper the great tool it is goes to the [Sustainable Engineering Lab](http://modi.mech.columbia.edu/) at Columbia University and all the colleagues with whom I have been working for the past 12 months. For setting up this service, I especially want to thank the people that helped out by discussing, designing, editing, installing and/or coding: Matt Berg, Roger Wong, Alex Dorey, Ukang'a Dickson, Myf Ma, Prabhas Pokharel, and Beth Martin.

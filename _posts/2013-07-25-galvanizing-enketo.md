@@ -17,7 +17,7 @@ Enketo LLC's strategy consists of:
 <a href="https://enketo.org/"><img class="right" src="../files/2013/07/enketo-org.png" alt="enketo.org screenshot" /></a>
 
 * provide [enketo.org](https://enketo.org) as a paid service where any organization that uses its own installation of [ODK Aggregate](http://opendatakit.org/use/aggregate/) or [Formhub](https://github.com/modilabs/formhub) can use enketo for data collection in a manner that is __affordable__, __secure__, __robust__, easily __integratable__, and uses the organization's __own branding__. 
-* maintaining and improving capacity to conduct paid development work on enketo for __multiple clients__ (in addition to the amazing [Modi Labs](http://modi.mech.columbia.edu/)). 
+* maintaining and improving capacity to conduct paid development work on enketo for __multiple clients__ (in addition to the amazing [Sustainable Engineering Lab](http://modi.mech.columbia.edu/)). 
 * encourage significant contributions by others to the enketo source code
 
 I think that if 2 out of 3 of these are successful, the prospects for sustainability look good. 

@@ -9,7 +9,7 @@ tags:
   - enketo
 ---
 
-Enketo's user interface undergoes continuous improvements\*. Normally these are small and incremental. However, this week two major changes that are worth highlighting were deployed courtesy of Modi Labs.
+Enketo's user interface undergoes continuous improvements\*. Normally these are small and incremental. However, this week two major changes that are worth highlighting were deployed courtesy of the [Sustainable Engineering Lab](http://modi.mech.columbia.edu/) (formerly know as Modi Labs).
 
 ###Offline-enabled?
 
