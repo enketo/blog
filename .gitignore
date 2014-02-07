@@ -1,5 +1,8 @@
 _site/*
 .sass-cache/*
 ./*.sublime-workspace
-blog.sublime-project
-blog.sublime-workspace
+*.sublime-project
+*.sublime-workspace
+.dropbox
+npm-debug.log
+
