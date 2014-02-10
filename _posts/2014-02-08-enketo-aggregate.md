@@ -9,7 +9,7 @@ tags:
  - enketo
 ---
 
-I am pleased to announce that Enketo.org is now integrated with ODK Aggregate. From [Aggregate v1.4.1](https://code.google.com/p/opendatakit/wiki/AggregateReleaseNotes) onwards, there is now a much easier way for ODK Aggregate users to launch forms in Enketo for data collection. It now requires just the click of a button in Aggregate!
+I am pleased to announce that Enketo.org is now [integrated with ODK Aggregate](http://opendatakit.org/2014/02/odk-aggregate-1-4-1-with-enketo-webforms-integration-is-now-available/). From [Aggregate v1.4.1](https://code.google.com/p/opendatakit/wiki/AggregateReleaseNotes) onwards, there is now a much easier way for ODK Aggregate users to launch forms in Enketo for data collection. It now requires just the click of a button in Aggregate!
 
 
 ![Aggregate Screenshot](../files/2014/02/enketo-aggregate.png "Aggregate Screenshot")
