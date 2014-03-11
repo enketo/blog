@@ -15,4 +15,4 @@ Enketo now has a subtle progress bar fixed to the top of the screen.
 
 The bar indicates the current position in the form. This means when you reach question number 30 out of a 100 questions, it will show as 30% full. 
 
-This feature was developed for the [HRP](http://www.who.int/reproductivehealth/topics/mhealth/en/) project under a contract with [WHO](http://who.int). 
+This feature was developed by Ona and Enketo LLC for the [HRP](http://www.who.int/reproductivehealth/topics/mhealth/en/) project under a contract with [WHO](http://who.int). 
