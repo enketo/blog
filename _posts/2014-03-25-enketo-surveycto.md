@@ -1,5 +1,5 @@
 ---
-title: Enketo Integration into SurveyCTO
+title: Enketo Integration in SurveyCTO
 author: Martijn van de Rijdt
 layout: post
 permalink: /enketo-surveycto
