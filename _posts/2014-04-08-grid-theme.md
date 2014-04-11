@@ -14,19 +14,19 @@ Enketo Smart Paper now has a brand new theme option: __The Grid Theme__. Click t
 
 [![Screenshot of WHO Fatal Injury form using Grid Theme](../files/2014/04/fatal-injury.png "Screenshot of WHO Fatal Injury form using Grid Theme")](https://fatal.enketo.org/webform)
 
-This form was developed by Ona for [WHO](http://who.int). 
+This sample form was developed by Ona for [WHO](http://who.int). 
 
 ### Focus on larger screens and printing
 
-Similar to the current default theme, the new Grid Theme is fully functional on mobile devices. However, the Grid Theme is primarily meant for use on larger screens. The larger screen real estate is required to display questions next to each other. The Grid Theme has been given particular focus to creating good-looking and compact printouts. 
+Similar to the current default theme, the new Grid Theme is fully functional on mobile devices. However, the Grid Theme is primarily meant for use on larger screens. The larger screen real estate is required to display questions next to each other. The Grid Theme was also designed to create good-looking and compact printouts. 
 
 ### How to use
 
-This theme is currently exclusively available to [enketo.org](https://enketo.org) users only. To use it add the value _'theme-grid'_ on the settings tab of your XLSForm in the 'style' column. This will switch your form to the Grid Theme. If you have multiple settings for 'style' (e.g. ['pages'](/pages) and 'theme-grid') simply separate them with a space. 
+This theme is currently exclusively available to [enketo.org](https://enketo.org) users. To use it add the value _'theme-grid'_ on the settings tab of your XLSForm in the 'style' column. This will switch your form to the Grid Theme. If you have multiple settings for 'style' (e.g. ['pages'](/pages) and 'theme-grid') simply separate them with a space. 
 
 ![XLSForm Style Setting](../files/2014/04/XLSForm-style-theme-grid.png "Style setting in XLSForm")
 
-To fully leverage the power of the Grid Theme, you'll want to indicate which questions should be displayed on one row and how many cells they should occupy. We developed a very flexible and simple-to-use mechanism for this for this using _w1, w2, w3....w10_ to indicate the _relative width_ you'd like to use. It is best explained by looking at this tutorial form: [https://grid.enketo.org/webform](https://grid.enketo.org/webform). The XLSForm source is available [here](https://docs.google.com/spreadsheet/ccc?key=0Al3Mw5sknZoPdDhSVmhJX2NvOG44X1RadTA2RVRzSHc&usp=sharing#gid=0).
+To fully leverage the power of the Grid Theme, you'll want to indicate which questions should be displayed on one row and how many cells they should occupy. We developed a very flexible and simple-to-use mechanism for this for this using _w1, w2, w3....w10_ to indicate the _relative width_ of a group or cell. It is best explained by looking at this tutorial form: [https://grid.enketo.org/webform](https://grid.enketo.org/webform). The XLSForm source is available [here](https://docs.google.com/spreadsheet/ccc?key=0Al3Mw5sknZoPdDhSVmhJX2NvOG44X1RadTA2RVRzSHc&usp=sharing#gid=0).
 
 ![XLSForm Grid markup](../files/2014/04/XLSForm-w-markup.png "XLSForm Grid markup")
 
@@ -47,4 +47,4 @@ Special thanks go to [Kumail Hunaid](http://kumailht.com/), the author of the wo
 
 ### Feedback
 
-As usual, we'd love to get your feedback. Send an [email](mailto:support@enketo.org), post a message in the [Enketo](https://groups.google.com/forum/#!forum/enketo-users), [Formhub](https://groups.google.com/forum/#!forum/formhub-users), [Open Data Kit](https://groups.google.com/forum/#!forum/opendatakit) fora, or comment on this blog post. I'm sure many in the OpenRosa community would be very interested in seeing the amazing forms you create with this theme and perhaps we can even showcase them on the enketo.org front page.
+As usual, we'd love to get your feedback. Send an [email](mailto:support@enketo.org), tweet [@enketo](https://twitter.com/enketo), post a message in the [Enketo](https://groups.google.com/forum/#!forum/enketo-users), [Formhub](https://groups.google.com/forum/#!forum/formhub-users), [Open Data Kit](https://groups.google.com/forum/#!forum/opendatakit) fora, or comment on this blog post. I'm sure many in the OpenRosa community would be very interested in seeing the amazing forms you create with this theme and perhaps we can even showcase them on the enketo.org front page.
