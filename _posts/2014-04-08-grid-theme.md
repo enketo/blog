@@ -41,7 +41,7 @@ This theme makes use of a cutting edge technology (called 'flexboxes') that allo
 
 ### Acknowledgement
 
-The development of this theme was funded by the good folks at the [Santa Fe Institute](http://www.santafe.edu) as part of a [collaboration](http://www.santafe.edu/news/item/gates-slums-announce/) between the Santa Fe Institute and [Shack/Slum Dwellers International](http://www.sdinet.org/) through a grant by the [Bill & Melinda Gates Foundation](http://www.gatesfoundation.org/).
+The development of this theme was supported by the good folks at the [Santa Fe Institute](http://www.santafe.edu) as part of a [collaboration](http://www.santafe.edu/news/item/gates-slums-announce/) between the Santa Fe Institute and [Shack/Slum Dwellers International](http://www.sdinet.org/) through a grant by the [Bill & Melinda Gates Foundation](http://www.gatesfoundation.org/).
 
 Special thanks go to [Kumail Hunaid](http://kumailht.com/), the author of the wonderful ['GridForms' project](http://kumailht.com/gridforms/). Much of his amazing graphic design ideas were used in Enketo's Grid Theme (not the library itself).
 
