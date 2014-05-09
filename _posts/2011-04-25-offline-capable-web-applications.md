@@ -32,7 +32,7 @@ The second technology allows the storage of data in the browser itself. This d
 
 ## What do I need to install to use these technologies?
 
-The great thing about these technologies is that they are Web Standards (related to HTML5) and should therefore work in any browser out-of-the-box without the need for plugins. All popular browsers support both technologies now except Internet Explorer (no application cache). However, the application needs to be designed to be offline-capable. It is not something that can be added-on to an existing application by a user. So all you need to do when you find an offline-capable web application is use a [modern browser.][3]
+The great thing about these technologies is that they are Web Standards (related to HTML5) and should therefore work in any browser out-of-the-box without the need for plugins. All popular browsers support both technologies now except Internet Explorer (no application cache) [Edit: Support has been added from Internet Explorer version 10 onwards]. However, the application needs to be designed to be offline-capable. It is not something that can be added-on to an existing application by a user. So all you need to do when you find an offline-capable web application is use a [modern browser.][3]
 
  [3]: /humanitarian-aid-browsing/ "Humanitarian Aid Browsing"
 
