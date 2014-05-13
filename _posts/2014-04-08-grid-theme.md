@@ -32,7 +32,7 @@ To fully leverage the power of the Grid Theme, you'll want to indicate which que
 
 The extra _w1, w2....w10_ markup is placed in the 'appearance' column of an XLSForm. If you decide to switch back to the default 'formhub' theme just remove 'theme-grid'. The grid markup will simply be ignored in other themes.
 
-Note that the version of XLSForm currently hosted on http://opendatakit.org is an old version that does not yet support the style column. 
+Note that older versions of XLSForm do not support the style column. 
 
 ### Technology
 
