@@ -8,6 +8,7 @@ categories:
   - tips
 tags:
   - browsers
+  - humanitarian
 ---
 It seems appropriate to kick off a blog about web applications for the humanitarian aid community with a post on browsers. Your web experience, including the speed, can be greatly affected by the brand and version of browser you are using.
 

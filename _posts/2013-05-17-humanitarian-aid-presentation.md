@@ -7,6 +7,7 @@ categories:
   - Uncategorized
 tags:
  - enketo
+ - humanitarian
 ---
 
 I had the opportunity to remotely present Enketo Smart Paper during the [Humanitarian Nomad](http://humanitarian-nomad.org/) workshop in Paris yesterday. A pretty cool milestone because enketo was developed specifically for humanitarian aid workers and is now robust enough to be widely deployed in the field. See the slides below.

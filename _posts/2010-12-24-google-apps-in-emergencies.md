@@ -8,6 +8,7 @@ categories:
   - tips
 tags:
   - Google Apps
+  - humanitarian
 ---
 Google provides a free suite of applications called [Google Apps][1] (paid licenses with support and additional features are also available with discounts for [US-based non-profits][2]). The applications include GMail, Google Docs, Google Calendar, Picasa and many others by Google and by third parties through the [Google Apps Marketplace][3].[![Google Apps Logo][4]][5]
 
