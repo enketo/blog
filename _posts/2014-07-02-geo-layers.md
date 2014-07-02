@@ -21,10 +21,8 @@ If you'd like to show a particular layer as the _default layer_ when the form lo
 
 ![Screenshot of Geo Widgets XLS Form that loads a default map layer](../files/2014/07/geo-widget-layers-xlsform.png "Screenshot of Geo Widgets XLS Form that loads a default map layer")
 
-### Sponsorship
+### Sponsor
 
 This extension to the geo widgets was funded by the [Santa Fe Institute](http://www.santafe.edu) as part of a [collaboration](http://www.santafe.edu/news/item/gates-slums-announce/) between the Santa Fe Institute and [Shack/Slum Dwellers International](http://www.sdinet.org/). 
 
-### Feedback
-
-As usual, we'd love to get your feedback. Send an [email](mailto:support@enketo.org), tweet [@enketo](https://twitter.com/enketo), post a message in the [Enketo](https://groups.google.com/forum/#!forum/enketo-users), [Formhub](https://groups.google.com/forum/#!forum/formhub-users), [Open Data Kit](https://groups.google.com/forum/#!forum/opendatakit) fora, or comment on this blog post.
+{% include feedback.md %}

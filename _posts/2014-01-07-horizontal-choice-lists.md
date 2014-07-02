@@ -16,3 +16,5 @@ As mentioned in a [previous post](http://blog.enketo.org/sponsorships-2013/), th
 Though the new theme will not be finished for another few months, a tiny component of this work is now available in the current _Formhub theme_! You can now display choice lists (select multiple and select one) horizontally simply by applying the appearance 'horizontal' in your XLS Form (or XForm).
 
 Sometimes, it's the little things that matter!
+
+{% include feedback.md %}

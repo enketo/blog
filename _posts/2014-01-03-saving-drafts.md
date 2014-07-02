@@ -25,4 +25,6 @@ To keep the feature safe, robust, affordable and free of fluff, final records ca
 
 This is just one of a list of improvements sponsored by WHO in January and February. More to follow soon! 
 
-Let us know what you think and please tell us if you discover any rough edges or bugs!
+{% include feedback.md %}
+
+

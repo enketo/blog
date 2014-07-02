@@ -45,6 +45,4 @@ The development of this theme was supported by the good folks at the [Santa Fe I
 
 Special thanks go to [Kumail Hunaid](http://kumailht.com/), the author of the wonderful ['GridForms' project](http://kumailht.com/gridforms/). Much of his amazing graphic design ideas were used in Enketo's Grid Theme (not the library itself).
 
-### Feedback
-
-As usual, we'd love to get your feedback. Send an [email](mailto:support@enketo.org), tweet [@enketo](https://twitter.com/enketo), post a message in the [Enketo](https://groups.google.com/forum/#!forum/enketo-users), [Formhub](https://groups.google.com/forum/#!forum/formhub-users), [Open Data Kit](https://groups.google.com/forum/#!forum/opendatakit) fora, or comment on this blog post. I'm sure many in the OpenRosa community would be very interested in seeing the amazing forms you create with this theme and perhaps we can even showcase them on the enketo.org front page.
+{% include feedback.md %}

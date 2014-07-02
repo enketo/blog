@@ -35,9 +35,6 @@ Uploads still happen automatically (every 5 minutes). However, if a user wants t
 
 We think the new interface will go a long way in identifying any future upload issues that may occur. 
 
-
-###Send your feedback!
-
-As usual, both interface changes should work equally well on phones, tablets and lap/desktops. Please let us know if you notice issues on certain browsers or devices, or if you have ideas or questions to improve this further!
+{% include feedback.md %}
 
 \* sometimes temporary regressions too…

@@ -27,5 +27,4 @@ This is on old feature, but it was never properly introduced. Enketo has support
 ### ODK Collect
 At the moment these features degrade gracefully in ODK Collect, so you will not loose compatibility. It will just show the markdown characters.
 
-### Feedback
-The styling will probably be tweaked further in the coming weeks, to makes sure the notes look good on all forms. Let us know if they don't look quite right on your form (and send a screenshot or link).
+{% include feedback.md %}

@@ -20,4 +20,6 @@ To facilitate the easy calculation of a Likert scale (by adding up the values of
 
 This brand new feature was sponsored by [WHO](http://who.int) through Ona.  
 
-Happy Likert scaling and please let us know if you discover bugs or issues on certain devices or browsers!
+Happy Likert scaling!
+
+{% include feedback.md %}
