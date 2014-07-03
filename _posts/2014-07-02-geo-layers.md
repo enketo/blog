@@ -15,9 +15,9 @@ The [new geo widgets](/geo) have been extended to show multiple map layers. You 
 
 ### How to use
 
-The layer switcher will appear automatically on all geo widgets in Enketo. 
+The layer switcher will appear automatically in all Enketo's geo widgets. 
 
-If you'd like to show a particular layer as the _default layer_ when the form loads, simply add the name of the map layer to the appearance columnn in your XLSForm. 
+If you'd like to show a particular layer as the _default layer_ when the form loads, simply add the name of the map layer to the appearance column in your XLSForm. 
 
 ![Screenshot of Geo Widgets XLS Form that loads a default map layer](../files/2014/07/geo-widget-layers-xlsform.png "Screenshot of Geo Widgets XLS Form that loads a default map layer")
 
