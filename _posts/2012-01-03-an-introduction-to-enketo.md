@@ -1,5 +1,5 @@
 ---
-title: An Introduction to enketo
+title: An Introduction to Enketo
 author: Martijn van de Rijdt
 layout: post
 permalink: /an-introduction-to-enketo
@@ -17,7 +17,7 @@ tags:
 
  [1]: ../files/2012/01/Screen-Shot-2012-01-02-at-4.52.53-PM-300x209.png "Rapaide "
 
-At the beginning of last year, I spent a few months developing a survey application specifically meant for collaborative humanitarian needs assessments, e.g. amongst [Clusters][2]. The application is named ‘Rapaide’ – a combination of *Rapide* and *Aide* enketo. Its key advantage and the reason I decided to develop this offline-capable application is **its speed**. It allows for very quick deployment, efficient data entry, fast collation of data from different partners and realtime analysis. Users do not require fancy devices to enter data – a laptop or desktop with a modern browser will suffice (so better not Internet Explorer – you may notice that I mention that a lot…). The development work on this app will soon resume.
+At the beginning of last year, I spent a few months developing a survey application specifically meant for collaborative humanitarian needs assessments, e.g. amongst [Clusters][2]. The application is named ~~‘Rapaide’ – a combination of *Rapide* and *Aide*~~ enketo. Its key advantage and the reason I decided to develop this offline-capable application is **its speed**. It allows for very quick deployment, efficient data entry, fast collation of data from different partners and realtime analysis. Users do not require fancy devices to enter data – a laptop or desktop with a modern browser will suffice (so better not Internet Explorer – you may notice that I mention that a lot…). The development work on this app will soon resume.
 
  [2]: http://oneresponse.info/COORDINATION/CLUSTERAPPROACH/Pages/Cluster Approach.aspx
 
