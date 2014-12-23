@@ -1,3 +1,4 @@
-h1. Enketo Blog
+Enketo Blog
+=========
 
 Jekyll-based
