@@ -21,7 +21,7 @@ With the financing provided by two of my favorite organizations: [iMMAP](http://
 I should mention that the development of the Grid Theme early in 2014 was originally paid for by two other of my favorite organizations and ongoing Enketo sponsors: the [Santa Fe Institute](http://santafe.edu) and [Shack/Slum Dwellers International](http://www.sdinet.org/).  
 
 ### Bonus
-The old Enketo Smart Paper app (aka [Enketo Legacy](https://github.com/enketo/enketo-legacy)) also had a proprietary module to provide _form authentication_. This module will become open-source as well and will be added to the Enketo Legacy repository in the next week. Since Enketo Legacy will soon become obsolete, due to the development of a brand new Enketo Smart Paper app, this news is probably less exciting.
+The old Enketo Smart Paper app (aka [Enketo Legacy](https://github.com/enketo/enketo-legacy)) also had a proprietary module to provide _form authentication_. This module has now become open-source as well and and has been added to the Enketo Legacy repository in the next week. Since Enketo Legacy will soon become obsolete, due to the development of a brand new Enketo Smart Paper app, this news is probably less exciting.
 
 ### 100% open source
 With the release of these last two modules, **every line of Enketo code is now open-source**. There are no plans to develop any new proprietary additions.
