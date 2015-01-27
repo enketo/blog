@@ -13,6 +13,8 @@ Using an innovative approach, Enketo is being used as a diagnostic tool in the f
 
 [![Rafael](../files/2015/01/rafael.png "Rafael using Enketo form as diagnostic tool for tuberculosis")](https://aaaaa.enketo.org/webform)
 
+[caption?]
+
 This is where Rafael Galliez comes into the picture. He currently works at Universidade Federal do Rio de Janeiro and also partners with a global network of TB researchers (Rede TB). As part of his Ph.D. work, Rafael wanted to see whether an algorithm to predict the risk of a patient at a hospital or primary care facility having contracted TB could be incorporated into a tool like Enketo. Working under Afranio Kritski in the TB unit at the university, he developed and tested various diagnostic tools based on the algorithm.  Graduate medical students also assisted with development.  
 
 <a href="https://aaaaa.enketo.org/webform" style="float:right; max-width: 400px;"><img src="../files/2015/01/tbc-form-screenshot.png" title="Screenshot of Form used as diagnostic tool for tuberculosis" alt="TBC form"/></a>
