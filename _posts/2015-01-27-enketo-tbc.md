@@ -1,5 +1,5 @@
 ---
-title: Enketo being used to help combat tuberculosis
+title: Combatting Tuberculosis
 author: Christi Yoder
 layout: post
 permalink: /enketo-combat-tbc
