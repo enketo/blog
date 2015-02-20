@@ -1,0 +1,1920 @@
+<?xml version="1.0" encoding="utf-8"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Ficha PCTH de Fechamento</h:title>
+    <model>
+      <instance>
+        <ficha_pcth_fechamento_3_12_14 id="ficha_pcth_fechamento" version="1412031535">
+          <formhub>
+            <uuid/>
+          </formhub>
+          <identificacao>
+            <prontuario/>
+            <numero_pcth/>
+            <nome/>
+            <endereco_rua/>
+            <endereco_numero/>
+            <endereco_bairro/>
+            <endereco_municipio/>
+            <cep/>
+            <tel_casa/>
+            <tel_cel/>
+            <tel_recado/>
+            <nome_recado/>
+            <data_nascimento/>
+            <idade_calc/>
+            <mostrar_idade/>
+            <sexo/>
+            <raca/>
+            <data_internacao/>
+            <data/>
+            <inicio_acomp/>
+            <local_admissao/>
+            <isol_resp_em/>
+            <isol_resp_andar/>
+            <local_int_isol/>
+            <inicio_isol/>
+            <fim_isol/>
+            <tempo_isol/>
+            <mostrar_tempo_isol/>
+            <alta_isol/>
+            <crit_susp_isol/>
+            <enf_destino/>
+          </identificacao>
+          <ex_complementares>
+            <material_colhido_01>
+              <qual_material_colhido_01/>
+              <qual_material_colhido_citar_01/>
+              <baar_amostra_01/>
+              <cultura_amostra_01/>
+              <resultado_pesquisa_molecular01/>
+              <resultado_histopatologico01/>
+              <resultado_histopatologico_citar01/>
+              <data_amostra_escarro_espontaneo_01/>
+            </material_colhido_01>
+            <material_colhido_02>
+              <qual_material_colhido_02/>
+              <qual_material_colhido_citar_02/>
+              <baar_amostra_02/>
+              <cultura_amostra_02/>
+              <resultado_pesquisa_molecular02/>
+              <resultado_histopatologico02/>
+              <resultado_histopatologico_citar02/>
+              <data_amostra_escarro_espontaneo_02/>
+            </material_colhido_02>
+            <material_colhido_03>
+              <qual_material_colhido_03/>
+              <qual_material_colhido_citar_03/>
+              <baar_amostra_03/>
+              <cultura_amostra_03/>
+              <resultado_pesquisa_molecular03/>
+              <resultado_histopatologico03/>
+              <resultado_histopatologico_citar03/>
+              <data_amostra_escarro_espontaneo_03/>
+            </material_colhido_03>
+            <material_colhido_04>
+              <qual_material_colhido_04/>
+              <qual_material_colhido_citar_04/>
+              <baar_amostra_04/>
+              <cultura_amostra_04/>
+              <resultado_pesquisa_molecular04/>
+              <resultado_histopatologico04/>
+              <resultado_histopatologico_citar04/>
+              <data_amostra_escarro_espontaneo_04/>
+            </material_colhido_04>
+            <material_colhido_05>
+              <qual_material_colhido_05/>
+              <qual_material_colhido_citar_05/>
+              <baar_amostra_05/>
+              <cultura_amostra_05/>
+              <resultado_pesquisa_molecular05/>
+              <resultado_histopatologico05/>
+              <resultado_histopatologico_citar05/>
+              <data_amostra_escarro_espontaneo_05/>
+            </material_colhido_05>
+            <material_colhido_06>
+              <qual_material_colhido_06/>
+              <qual_material_colhido_citar_06/>
+              <baar_amostra_06/>
+              <cultura_amostra_06/>
+              <resultado_pesquisa_molecular06/>
+              <data_amostra_escarro_espontaneo_06/>
+              <resultado_histopatologico06/>
+              <resultado_histopatologico_citar06/>
+            </material_colhido_06>
+            <ada>
+              <citar_material_ada/>
+              <resultado_ada/>
+              <data_resultado_ada/>
+            </ada>
+            <cultura_identificacao>
+              <cultura_identificacao_perg/>
+            </cultura_identificacao>
+            <teste_sens>
+              <teste_sens_realizado/>
+              <sens_grupo_drogas>
+                <sens_rifampicina/>
+                <sens_isoniazida/>
+                <sens_etambutol/>
+                <sens_estreptomicina/>
+                <sens_pirazinamida/>
+                <sens_etionamida/>
+                <sens_ofloxacina/>
+                <sens_outros/>
+                <sens_outros_text/>
+              </sens_grupo_drogas>
+            </teste_sens>
+          </ex_complementares>
+          <class_atual>
+            <dx_termino_internacao/>
+            <dx_nao_tb/>
+            <classificacao_caso_tb/>
+            <esquema_falencia/>
+            <tratamento/>
+            <esquema_tto/>
+            <esquema_tto_doses/>
+            <esquema_tto_data/>
+            <data_alta_obito/>
+            <obito/>
+            <amb_pcth/>
+            <amb_pcth_data/>
+            <amb_pcth_sala/>
+            <dx_apos_cultura/>
+          </class_atual>
+          <meta>
+            <instanceID/>
+          </meta>
+        </ficha_pcth_fechamento_3_12_14>
+      </instance>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/prontuario" required="true()" type="int"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/numero_pcth" type="int"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/nome" required="true()" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/endereco_rua" required="true()" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/endereco_numero" required="true()" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/endereco_bairro" required="true()" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/endereco_municipio" required="true()" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/cep" required="true()" type="int"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/tel_casa" required="true()" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/tel_cel" required="true()" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/tel_recado" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/nome_recado" type="string"/>
+      <bind constraint=". &lt; today()" nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/data_nascimento" required="true()" type="date"/>
+      <bind calculate="int((today() -  /ficha_pcth_fechamento_3_12_14/identificacao/data_nascimento ) div 365.24)" nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/idade_calc" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/mostrar_idade" readonly="true()" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/sexo" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/raca" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/data_internacao" required="true()" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/data" required="true()" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/inicio_acomp" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/local_admissao" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/isol_resp_em" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/isol_resp_andar" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/local_int_isol" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/inicio_isol" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/fim_isol" type="date"/>
+      <bind calculate="int( /ficha_pcth_fechamento_3_12_14/identificacao/inicio_isol  -  /ficha_pcth_fechamento_3_12_14/identificacao/data_internacao )" nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/tempo_isol" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/mostrar_tempo_isol" readonly="true()" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/alta_isol" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/crit_susp_isol" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/identificacao/enf_destino" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/qual_material_colhido_01" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/qual_material_colhido_citar_01" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/baar_amostra_01" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/cultura_amostra_01" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/resultado_pesquisa_molecular01" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/resultado_histopatologico01" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/resultado_histopatologico_citar01" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/data_amostra_escarro_espontaneo_01" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/qual_material_colhido_02" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/qual_material_colhido_citar_02" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/baar_amostra_02" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/cultura_amostra_02" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/resultado_pesquisa_molecular02" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/resultado_histopatologico02" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/resultado_histopatologico_citar02" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/data_amostra_escarro_espontaneo_02" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/qual_material_colhido_03" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/qual_material_colhido_citar_03" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/baar_amostra_03" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/cultura_amostra_03" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/resultado_pesquisa_molecular03" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/resultado_histopatologico03" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/resultado_histopatologico_citar03" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/data_amostra_escarro_espontaneo_03" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/qual_material_colhido_04" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/qual_material_colhido_citar_04" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/baar_amostra_04" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/cultura_amostra_04" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/resultado_pesquisa_molecular04" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/resultado_histopatologico04" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/resultado_histopatologico_citar04" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/data_amostra_escarro_espontaneo_04" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/qual_material_colhido_05" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/qual_material_colhido_citar_05" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/baar_amostra_05" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/cultura_amostra_05" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/resultado_pesquisa_molecular05" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/resultado_histopatologico05" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/resultado_histopatologico_citar05" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/data_amostra_escarro_espontaneo_05" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/qual_material_colhido_06" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/qual_material_colhido_citar_06" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/baar_amostra_06" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/cultura_amostra_06" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/resultado_pesquisa_molecular06" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/data_amostra_escarro_espontaneo_06" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/resultado_histopatologico06" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/resultado_histopatologico_citar06" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/ada/citar_material_ada" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/ada/resultado_ada" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/ada/data_resultado_ada" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/cultura_identificacao/cultura_identificacao_perg" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/teste_sens_realizado" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_rifampicina" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_isoniazida" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_etambutol" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_estreptomicina" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_pirazinamida" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_etionamida" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_ofloxacina" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_outros" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_outros_text" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/dx_termino_internacao" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/dx_nao_tb" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/classificacao_caso_tb" required="true()" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/esquema_falencia" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/tratamento" type="select"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/esquema_tto" type="select"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/esquema_tto_doses" type="string"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/esquema_tto_data" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/data_alta_obito" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/obito" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/amb_pcth" type="select1"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/amb_pcth_data" type="date"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/amb_pcth_sala" type="int"/>
+      <bind nodeset="/ficha_pcth_fechamento_3_12_14/class_atual/dx_apos_cultura" type="select1"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/ficha_pcth_fechamento_3_12_14/meta/instanceID" readonly="true()" type="string"/>
+      <bind calculate="'9c6a602df68440c8802583784972d3a5'" nodeset="/ficha_pcth_fechamento_3_12_14/formhub/uuid" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="theme-grid">
+    <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao">
+      <label>1. Identificação</label>
+      <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/prontuario">
+        <label>Número do Prontuário</label>
+      </input>
+      <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/numero_pcth">
+        <label>Número do PCTH</label>
+      </input>
+      <input appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/nome">
+        <label>Nome</label>
+      </input>
+      <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/endereco_rua">
+        <label>Logradouro</label>
+      </input>
+      <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/endereco_numero">
+        <label>Número e complemento</label>
+      </input>
+      <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/endereco_bairro">
+        <label>Bairro</label>
+      </input>
+      <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/endereco_municipio">
+        <label>Município</label>
+      </input>
+      <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/cep">
+        <label>CEP</label>
+      </input>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/tel_casa">
+        <label>Telefone (casa)</label>
+      </input>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/tel_cel">
+        <label>Celular</label>
+      </input>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/tel_recado">
+        <label>Telefone para recado</label>
+      </input>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/nome_recado">
+        <label>Nome para recado</label>
+      </input>
+      <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/data_nascimento">
+        <label>Data de nascimento</label>
+      </input>
+      <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/mostrar_idade">
+        <label>O paciente possui <output value=" /ficha_pcth_fechamento_3_12_14/identificacao/idade_calc "/> anos.</label>
+      </input>
+      <select1 appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/sexo">
+        <label>Sexo</label>
+        <item>
+          <label>Masculino</label>
+          <value>male</value>
+        </item>
+        <item>
+          <label>Feminino</label>
+          <value>female</value>
+        </item>
+      </select1>
+      <select1 appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/raca">
+        <label>Raça</label>
+        <item>
+          <label>Branca</label>
+          <value>branca</value>
+        </item>
+        <item>
+          <label>Preta</label>
+          <value>preta</value>
+        </item>
+        <item>
+          <label>Amarela</label>
+          <value>amarela</value>
+        </item>
+        <item>
+          <label>Parda</label>
+          <value>parda</value>
+        </item>
+        <item>
+          <label>Indígena</label>
+          <value>indigena</value>
+        </item>
+        <item>
+          <label>IGN</label>
+          <value>ign</value>
+        </item>
+      </select1>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/data_internacao">
+        <label>Data de internação</label>
+      </input>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/data">
+        <label>Data Entrevista</label>
+      </input>
+      <select1 appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/inicio_acomp">
+        <label>Início de Acompanhamento (Busca Ativa)</label>
+        <item>
+          <label>&lt; 24h</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>entre 24h e 48h</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>&gt; 48h</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>IGN</label>
+          <value>ign</value>
+        </item>
+      </select1>
+      <select1 appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/local_admissao">
+        <label>Local de admissão no HUCFF</label>
+        <item>
+          <label>Emergencia</label>
+          <value>0</value>
+        </item>
+        <item>
+          <label>SAA</label>
+          <value>1</value>
+        </item>
+      </select1>
+      <select1 appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/isol_resp_em">
+        <label>Isolamento respiratório na emergência?</label>
+        <item>
+          <label>Sim</label>
+          <value>sim</value>
+        </item>
+        <item>
+          <label>Não</label>
+          <value>nao</value>
+        </item>
+        <item>
+          <label>IGN</label>
+          <value>ign</value>
+        </item>
+      </select1>
+      <select1 appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/isol_resp_andar">
+        <label>Isolamento respiratório no andar?</label>
+        <item>
+          <label>Sim</label>
+          <value>sim</value>
+        </item>
+        <item>
+          <label>Não</label>
+          <value>nao</value>
+        </item>
+        <item>
+          <label>IGN</label>
+          <value>ign</value>
+        </item>
+      </select1>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/local_int_isol">
+        <label>Local de isolamento</label>
+      </input>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/inicio_isol">
+        <label>Data do início do isolamento</label>
+      </input>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/fim_isol">
+        <label>Data do término do isolamento</label>
+      </input>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/mostrar_tempo_isol">
+        <label>Tempo entre a internação e o início do isolamento: {tempo_isol}</label>
+      </input>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/alta_isol">
+        <label>Data efetiva da alta do isolamento</label>
+      </input>
+      <select1 appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/crit_susp_isol">
+        <label>Critério de suspensão do isolamento</label>
+        <item>
+          <label>Diagnóstico não confirmado</label>
+          <value>0</value>
+        </item>
+        <item>
+          <label>BAAR de controle negativo</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Melhora clínica</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>Alta hospitalar</label>
+          <value>3</value>
+        </item>
+      </select1>
+      <input appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/identificacao/enf_destino">
+        <label>Enfermaria de destino</label>
+      </input>
+    </group>
+    <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares">
+      <label>2. Exames Complementares</label>
+      <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01">
+        <label>2.1 Material colhido 01</label>
+        <select1 appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/qual_material_colhido_01">
+          <label>Qual foi o material coletado?</label>
+          <item>
+            <label>Escarro espontâneo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Escarro Induzido</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Lavado bronco alveolar</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Aspirado traqueal</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Liquor</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Líquido pleural</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Líquido ascítico</label>
+            <value>7</value>
+          </item>
+          <item>
+            <label>Biópsia Pleural</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>Biópsia pulmonar</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Biópsia ganglionar</label>
+            <value>10</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>11</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>0</value>
+          </item>
+        </select1>
+        <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/qual_material_colhido_citar_01">
+          <label>Citar</label>
+        </input>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/baar_amostra_01">
+          <label>BAAR desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/cultura_amostra_01">
+          <label>Cultura desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Em andamento</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Contaminado</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/resultado_pesquisa_molecular01">
+          <label>Resultado da pesquisa molecular desse material</label>
+          <item>
+            <label>Positivo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>Negativo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Ignorado/Não realizado</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/resultado_histopatologico01">
+          <label>Resultado do histopatológico desse material</label>
+          <item>
+            <label>Inflamatório inespecífico</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Inflamatório crônico</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Granuloma</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Granuloma + necrose caseosa</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Necrose</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/resultado_histopatologico_citar01">
+          <label>Citar</label>
+        </input>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_01/data_amostra_escarro_espontaneo_01">
+          <label>Data da coleta desse material</label>
+        </input>
+      </group>
+      <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02">
+        <label>2.2 Material colhido 02</label>
+        <select1 appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/qual_material_colhido_02">
+          <label>Qual foi o material coletado?</label>
+          <item>
+            <label>Escarro espontâneo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Escarro Induzido</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Lavado bronco alveolar</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Aspirado traqueal</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Liquor</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Líquido pleural</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Líquido ascítico</label>
+            <value>7</value>
+          </item>
+          <item>
+            <label>Biópsia Pleural</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>Biópsia pulmonar</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Biópsia ganglionar</label>
+            <value>10</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>11</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>0</value>
+          </item>
+        </select1>
+        <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/qual_material_colhido_citar_02">
+          <label>Citar</label>
+        </input>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/baar_amostra_02">
+          <label>BAAR desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/cultura_amostra_02">
+          <label>Cultura desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Em andamento</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Contaminado</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/resultado_pesquisa_molecular02">
+          <label>Resultado da pesquisa molecular desse material</label>
+          <item>
+            <label>Positivo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>Negativo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Ignorado/Não realizado</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/resultado_histopatologico02">
+          <label>Resultado do histopatológico desse material</label>
+          <item>
+            <label>Inflamatório inespecífico</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Inflamatório crônico</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Granuloma</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Granuloma + necrose caseosa</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Necrose</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/resultado_histopatologico_citar02">
+          <label>Citar</label>
+        </input>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_02/data_amostra_escarro_espontaneo_02">
+          <label>Data da coleta desse material</label>
+        </input>
+      </group>
+      <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03">
+        <label>2.3 Material colhido 03</label>
+        <select1 appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/qual_material_colhido_03">
+          <label>Qual foi o material coletado?</label>
+          <item>
+            <label>Escarro espontâneo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Escarro Induzido</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Lavado bronco alveolar</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Aspirado traqueal</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Liquor</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Líquido pleural</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Líquido ascítico</label>
+            <value>7</value>
+          </item>
+          <item>
+            <label>Biópsia Pleural</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>Biópsia pulmonar</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Biópsia ganglionar</label>
+            <value>10</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>11</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>0</value>
+          </item>
+        </select1>
+        <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/qual_material_colhido_citar_03">
+          <label>Citar</label>
+        </input>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/baar_amostra_03">
+          <label>BAAR desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/cultura_amostra_03">
+          <label>Cultura desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Em andamento</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Contaminado</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/resultado_pesquisa_molecular03">
+          <label>Resultado da pesquisa molecular desse material</label>
+          <item>
+            <label>Positivo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>Negativo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Ignorado/Não realizado</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/resultado_histopatologico03">
+          <label>Resultado do histopatológico desse material</label>
+          <item>
+            <label>Inflamatório inespecífico</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Inflamatório crônico</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Granuloma</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Granuloma + necrose caseosa</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Necrose</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/resultado_histopatologico_citar03">
+          <label>Citar</label>
+        </input>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_03/data_amostra_escarro_espontaneo_03">
+          <label>Data da coleta desse material</label>
+        </input>
+      </group>
+      <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04">
+        <label>2.4 Material colhido 04</label>
+        <select1 appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/qual_material_colhido_04">
+          <label>Qual foi o material coletado?</label>
+          <item>
+            <label>Escarro espontâneo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Escarro Induzido</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Lavado bronco alveolar</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Aspirado traqueal</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Liquor</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Líquido pleural</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Líquido ascítico</label>
+            <value>7</value>
+          </item>
+          <item>
+            <label>Biópsia Pleural</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>Biópsia pulmonar</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Biópsia ganglionar</label>
+            <value>10</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>11</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>0</value>
+          </item>
+        </select1>
+        <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/qual_material_colhido_citar_04">
+          <label>Citar</label>
+        </input>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/baar_amostra_04">
+          <label>BAAR desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/cultura_amostra_04">
+          <label>Cultura desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Em andamento</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Contaminado</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/resultado_pesquisa_molecular04">
+          <label>Resultado da pesquisa molecular desse material</label>
+          <item>
+            <label>Positivo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>Negativo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Ignorado/Não realizado</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/resultado_histopatologico04">
+          <label>Resultado do histopatológico desse material</label>
+          <item>
+            <label>Inflamatório inespecífico</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Inflamatório crônico</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Granuloma</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Granuloma + necrose caseosa</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Necrose</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/resultado_histopatologico_citar04">
+          <label>Citar</label>
+        </input>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_04/data_amostra_escarro_espontaneo_04">
+          <label>Data da coleta desse material</label>
+        </input>
+      </group>
+      <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05">
+        <label>2.5 Material colhido 05</label>
+        <select1 appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/qual_material_colhido_05">
+          <label>Qual foi o material coletado?</label>
+          <item>
+            <label>Escarro espontâneo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Escarro Induzido</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Lavado bronco alveolar</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Aspirado traqueal</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Liquor</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Líquido pleural</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Líquido ascítico</label>
+            <value>7</value>
+          </item>
+          <item>
+            <label>Biópsia Pleural</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>Biópsia pulmonar</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Biópsia ganglionar</label>
+            <value>10</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>11</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>0</value>
+          </item>
+        </select1>
+        <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/qual_material_colhido_citar_05">
+          <label>Citar</label>
+        </input>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/baar_amostra_05">
+          <label>BAAR desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/cultura_amostra_05">
+          <label>Cultura desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Em andamento</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Contaminado</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/resultado_pesquisa_molecular05">
+          <label>Resultado da pesquisa molecular desse material</label>
+          <item>
+            <label>Positivo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>Negativo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Ignorado/Não realizado</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/resultado_histopatologico05">
+          <label>Resultado do histopatológico desse material</label>
+          <item>
+            <label>Inflamatório inespecífico</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Inflamatório crônico</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Granuloma</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Granuloma + necrose caseosa</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Necrose</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/resultado_histopatologico_citar05">
+          <label>Citar</label>
+        </input>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_05/data_amostra_escarro_espontaneo_05">
+          <label>Data da coleta desse material</label>
+        </input>
+      </group>
+      <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06">
+        <label>2.6 Material colhido 06</label>
+        <select1 appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/qual_material_colhido_06">
+          <label>Qual foi o material coletado?</label>
+          <item>
+            <label>Escarro espontâneo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Escarro Induzido</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Lavado bronco alveolar</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Aspirado traqueal</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Liquor</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Líquido pleural</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Líquido ascítico</label>
+            <value>7</value>
+          </item>
+          <item>
+            <label>Biópsia Pleural</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>Biópsia pulmonar</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Biópsia ganglionar</label>
+            <value>10</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>11</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>0</value>
+          </item>
+        </select1>
+        <input appearance="w6 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/qual_material_colhido_citar_06">
+          <label>Citar</label>
+        </input>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/baar_amostra_06">
+          <label>BAAR desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/cultura_amostra_06">
+          <label>Cultura desse material</label>
+          <item>
+            <label>Negativo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>1+</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>2+</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>3+</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Em andamento</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Contaminado</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Não realizado</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/resultado_pesquisa_molecular06">
+          <label>Resultado da pesquisa molecular desse material</label>
+          <item>
+            <label>Positivo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>Negativo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Ignorado/Não realizado</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+        </select1>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/data_amostra_escarro_espontaneo_06">
+          <label>Data da coleta desse material</label>
+        </input>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/resultado_histopatologico06">
+          <label>Resultado do histopatológico desse material</label>
+          <item>
+            <label>Inflamatório inespecífico</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Inflamatório crônico</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Granuloma</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Granuloma + necrose caseosa</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Necrose</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Outro (citar)</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/material_colhido_06/resultado_histopatologico_citar06">
+          <label>Citar</label>
+        </input>
+      </group>
+      <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/ada">
+        <label>2.8 ADA</label>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/ada/citar_material_ada">
+          <label>Citar o material em que foi realizado ADA</label>
+        </input>
+        <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/ada/resultado_ada">
+          <label>Resultado do ADA desse material</label>
+          <item>
+            <label>Positivo</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>Negativo</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Ignorado/Não realizado</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Não se aplica</label>
+            <value>8</value>
+          </item>
+        </select1>
+        <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/ada/data_resultado_ada">
+          <label>Data do resultado</label>
+        </input>
+      </group>
+      <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/cultura_identificacao">
+        <label>2.10 Identificação</label>
+        <select1 appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/cultura_identificacao/cultura_identificacao_perg">
+          <label>Qual é a identificação?</label>
+          <item>
+            <label>Mtb</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>MNT</label>
+            <value>2</value>
+          </item>
+        </select1>
+      </group>
+      <group appearance="w7 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens">
+        <label>2.11 Teste de sensibilidade</label>
+        <select1 appearance="w7 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/teste_sens_realizado">
+          <label>Foi realizado teste de sensibilidade?</label>
+          <item>
+            <label>Não realizado</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>Realizado</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>IGN</label>
+            <value>9</value>
+          </item>
+        </select1>
+        <group appearance="w7 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas">
+          <label>2.11.1 Fármacos</label>
+          <select1 appearance="w1 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_rifampicina">
+            <label>Rifampicina</label>
+            <item>
+              <label>Sensível</label>
+              <value>0</value>
+            </item>
+            <item>
+              <label>Resistente</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Não realizado</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>IGN</label>
+              <value>9</value>
+            </item>
+          </select1>
+          <select1 appearance="w1 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_isoniazida">
+            <label>Isoniazida</label>
+            <item>
+              <label>Sensível</label>
+              <value>0</value>
+            </item>
+            <item>
+              <label>Resistente</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Não realizado</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>IGN</label>
+              <value>9</value>
+            </item>
+          </select1>
+          <select1 appearance="w1 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_etambutol">
+            <label>Etambutol</label>
+            <item>
+              <label>Sensível</label>
+              <value>0</value>
+            </item>
+            <item>
+              <label>Resistente</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Não realizado</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>IGN</label>
+              <value>9</value>
+            </item>
+          </select1>
+          <select1 appearance="w1 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_estreptomicina">
+            <label>Estreptomicina</label>
+            <item>
+              <label>Sensível</label>
+              <value>0</value>
+            </item>
+            <item>
+              <label>Resistente</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Não realizado</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>IGN</label>
+              <value>9</value>
+            </item>
+          </select1>
+          <select1 appearance="w1 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_pirazinamida">
+            <label>Pirazinamida</label>
+            <item>
+              <label>Sensível</label>
+              <value>0</value>
+            </item>
+            <item>
+              <label>Resistente</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Não realizado</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>IGN</label>
+              <value>9</value>
+            </item>
+          </select1>
+          <select1 appearance="w1 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_etionamida">
+            <label>Etionamida</label>
+            <item>
+              <label>Sensível</label>
+              <value>0</value>
+            </item>
+            <item>
+              <label>Resistente</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Não realizado</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>IGN</label>
+              <value>9</value>
+            </item>
+          </select1>
+          <select1 appearance="w1 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_ofloxacina">
+            <label>Ofloxacina</label>
+            <item>
+              <label>Sensível</label>
+              <value>0</value>
+            </item>
+            <item>
+              <label>Resistente</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Não realizado</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>IGN</label>
+              <value>9</value>
+            </item>
+          </select1>
+          <select1 appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_outros">
+            <label>Outros</label>
+            <item>
+              <label>Sensível</label>
+              <value>0</value>
+            </item>
+            <item>
+              <label>Resistente</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Não realizado</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>IGN</label>
+              <value>9</value>
+            </item>
+          </select1>
+          <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/ex_complementares/teste_sens/sens_grupo_drogas/sens_outros_text">
+            <label>Quais outros?</label>
+          </input>
+        </group>
+      </group>
+    </group>
+    <group appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual">
+      <label>3. Classificação do Caso Atual</label>
+      <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/dx_termino_internacao">
+        <label>Diagnóstico ao término da internação</label>
+        <item>
+          <label>pulmonar</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>extra pulmonar</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>pumonar + extra pulmonar</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>não TB</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>MNT</label>
+          <value>5</value>
+        </item>
+        <item>
+          <label>ILTB</label>
+          <value>6</value>
+        </item>
+      </select1>
+      <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/dx_nao_tb">
+        <label>Se não TB qual o diagnóstico?</label>
+      </input>
+      <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/classificacao_caso_tb">
+        <label>Classificação do caso de TB</label>
+        <item>
+          <label>Caso novo</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Recidiva pós abandono</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>Recidiva pós cura</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>Falência</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>Não se aplica</label>
+          <value>9</value>
+        </item>
+      </select1>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/esquema_falencia">
+        <label>Se falência qual esquema?</label>
+      </input>
+      <select appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/tratamento">
+        <label>Tratamento?</label>
+        <item>
+          <label>Empírico</label>
+          <value>0</value>
+        </item>
+        <item>
+          <label>BAAR+</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Cultura+</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>BAAR+ e cultura+</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>Histológico</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>Dx molecular</label>
+          <value>5</value>
+        </item>
+      </select>
+      <select appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/esquema_tto">
+        <label>Esquema de tratamento</label>
+        <item>
+          <label>R</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>H</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>Z</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>E</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>S</label>
+          <value>5</value>
+        </item>
+        <item>
+          <label>Et</label>
+          <value>6</value>
+        </item>
+        <item>
+          <label>O</label>
+          <value>7</value>
+        </item>
+        <item>
+          <label>Outros</label>
+          <value>8</value>
+        </item>
+      </select>
+      <input appearance="w3 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/esquema_tto_doses">
+        <label>Doses</label>
+      </input>
+      <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/esquema_tto_data">
+        <label>Data de início do tratamento</label>
+      </input>
+      <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/data_alta_obito">
+        <label>Data da alta hospitalar/óbito</label>
+      </input>
+      <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/obito">
+        <label>Em caso de óbito:</label>
+        <item>
+          <label>Não relacionado à TB</label>
+          <value>0</value>
+        </item>
+        <item>
+          <label>Relacionado à TB</label>
+          <value>1</value>
+        </item>
+      </select1>
+      <select1 appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/amb_pcth">
+        <label>Ambulatório do PCTH?</label>
+        <item>
+          <label>Sim</label>
+          <value>sim</value>
+        </item>
+        <item>
+          <label>Não</label>
+          <value>nao</value>
+        </item>
+        <item>
+          <label>IGN</label>
+          <value>ign</value>
+        </item>
+      </select1>
+      <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/amb_pcth_data">
+        <label>Data da consulta</label>
+      </input>
+      <input appearance="w4 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/amb_pcth_sala">
+        <label>Sala</label>
+      </input>
+      <select1 appearance="w12 horizontal" ref="/ficha_pcth_fechamento_3_12_14/class_atual/dx_apos_cultura">
+        <label>Resultado final após culturas?</label>
+        <item>
+          <label>TB</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Não TB</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>MNT</label>
+          <value>3</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

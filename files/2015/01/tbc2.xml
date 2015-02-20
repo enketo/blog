@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Score Risco Tuberculose Ambulatorial Hiv -</h:title>
+    <model>
+      <instance>
+        <scoretb_nhiv id="scoretb_nhiv">
+          <formhub>
+            <uuid/>
+          </formhub>
+          <questionario_tb/>
+          <local/>
+          <nome_paciente/>
+          <numero_estudo/>
+          <idade/>
+          <hemopt/>
+          <falta_ar/>
+          <tosse/>
+          <expect/>
+          <febre/>
+          <sudorese_noturna/>
+          <dor_peito/>
+          <perda_peso/>
+          <score/>
+          <pontos_score/>
+          <baixo_risco/>
+          <medio_risco/>
+          <alto_risco/>
+          <start/>
+          <end/>
+          <today/>
+          <deviceid/>
+          <subscriberid/>
+          <simserial/>
+          <phonenumber/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </scoretb_nhiv>
+      </instance>
+      <bind nodeset="/scoretb_nhiv/questionario_tb" readonly="true()" type="string"/>
+      <bind nodeset="/scoretb_nhiv/local" type="string"/>
+      <bind nodeset="/scoretb_nhiv/nome_paciente" type="string"/>
+      <bind nodeset="/scoretb_nhiv/numero_estudo" type="int"/>
+      <bind nodeset="/scoretb_nhiv/idade" required="true()" type="select1"/>
+      <bind nodeset="/scoretb_nhiv/hemopt" required="true()" type="select1"/>
+      <bind nodeset="/scoretb_nhiv/falta_ar" required="true()" type="select1"/>
+      <bind nodeset="/scoretb_nhiv/tosse" required="true()" type="select1"/>
+      <bind nodeset="/scoretb_nhiv/expect" required="true()" type="select1"/>
+      <bind nodeset="/scoretb_nhiv/febre" required="true()" type="select1"/>
+      <bind nodeset="/scoretb_nhiv/sudorese_noturna" required="true()" type="select1"/>
+      <bind nodeset="/scoretb_nhiv/dor_peito" required="true()" type="select1"/>
+      <bind nodeset="/scoretb_nhiv/perda_peso" required="true()" type="select1"/>
+      <bind calculate=" /scoretb_nhiv/idade + /scoretb_nhiv/tosse + /scoretb_nhiv/expect +( /scoretb_nhiv/hemopt *6)+( /scoretb_nhiv/falta_ar *-1)+( /scoretb_nhiv/febre *2)+( /scoretb_nhiv/perda_peso *2)+( /scoretb_nhiv/dor_peito *2)+( /scoretb_nhiv/sudorese_noturna *2)" nodeset="/scoretb_nhiv/score" type="string"/>
+      <bind nodeset="/scoretb_nhiv/pontos_score" readonly="true()" type="string"/>
+      <bind nodeset="/scoretb_nhiv/baixo_risco" readonly="true()" relevant=" /scoretb_nhiv/score &lt;=7" type="string"/>
+      <bind nodeset="/scoretb_nhiv/medio_risco" readonly="true()" relevant="( /scoretb_nhiv/score &gt;7) and ( /scoretb_nhiv/score &lt;16)" type="string"/>
+      <bind nodeset="/scoretb_nhiv/alto_risco" readonly="true()" relevant=" /scoretb_nhiv/score &gt;=16" type="string"/>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/scoretb_nhiv/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/scoretb_nhiv/end" type="dateTime"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/scoretb_nhiv/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/scoretb_nhiv/deviceid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="subscriberid" nodeset="/scoretb_nhiv/subscriberid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/scoretb_nhiv/simserial" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/scoretb_nhiv/phonenumber" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/scoretb_nhiv/meta/instanceID" readonly="true()" type="string"/>
+      <bind calculate="'8532cd568bf64851ab503773379f1f7a'" nodeset="/scoretb_nhiv/formhub/uuid" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="theme-grid">
+    <input ref="/scoretb_nhiv/questionario_tb">
+      <label>Questionario de Tuberculose - Score de risco TB ambulatorial para pacientes não HIV</label>
+    </input>
+    <input ref="/scoretb_nhiv/local">
+      <label>Local de Aplicação do Formulário</label>
+    </input>
+    <input ref="/scoretb_nhiv/nome_paciente">
+      <label>Nome do Paciente</label>
+    </input>
+    <input ref="/scoretb_nhiv/numero_estudo">
+      <label>Número Identificador do Paciente</label>
+    </input>
+    <select1 appearance="horizontal-compact" ref="/scoretb_nhiv/idade">
+      <label>Idade abaixo de 59 anos?</label>
+      <item>
+        <label>Sim</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <select1 appearance="horizontal-compact" ref="/scoretb_nhiv/hemopt">
+      <label>Hemoptise?</label>
+      <item>
+        <label>Sim</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <select1 appearance="horizontal-compact" ref="/scoretb_nhiv/falta_ar">
+      <label>Falta de Ar?</label>
+      <item>
+        <label>Sim</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <select1 appearance="horizontal-compact" ref="/scoretb_nhiv/tosse">
+      <label>Esta com tosse há quanto tempo?</label>
+      <item>
+        <label>Não esta ou esta há menos de 2 semanas</label>
+        <value>0</value>
+      </item>
+      <item>
+        <label>Esta há 2 Semanas</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Esta há mais de 2 semanas</label>
+        <value>2</value>
+      </item>
+    </select1>
+    <select1 appearance="horizontal-compact" ref="/scoretb_nhiv/expect">
+      <label>Esta com expectoração há quanto tempo?</label>
+      <item>
+        <label>Não esta ou esta há menos de 2 semanas</label>
+        <value>0</value>
+      </item>
+      <item>
+        <label>Esta há 2 Semanas</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Esta há mais de 2 semanas</label>
+        <value>2</value>
+      </item>
+    </select1>
+    <select1 appearance="horizontal-compact" ref="/scoretb_nhiv/febre">
+      <label>Febre?</label>
+      <item>
+        <label>Sim</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <select1 appearance="horizontal-compact" ref="/scoretb_nhiv/sudorese_noturna">
+      <label>Sudorese noturna?</label>
+      <item>
+        <label>Sim</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <select1 appearance="horizontal-compact" ref="/scoretb_nhiv/dor_peito">
+      <label>Dor no peito ?</label>
+      <item>
+        <label>Sim</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <select1 appearance="horizontal-compact" ref="/scoretb_nhiv/perda_peso">
+      <label>Perdeu 3kg (se menor que 70kg) ou 5kg (se maior que 70kg)?</label>
+      <item>
+        <label>Sim</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <input ref="/scoretb_nhiv/pontos_score">
+      <label>A pontução no score de TB: <output value=" /scoretb_nhiv/score "/></label></input>
+    <input ref="/scoretb_nhiv/baixo_risco">
+      <label>Baixo Risco para Tuberculose Pulmonar</label>
+    </input>
+    <input ref="/scoretb_nhiv/medio_risco">
+      <label>Médio Risco para Tuberculose Pulmonar</label>
+    </input>
+    <input ref="/scoretb_nhiv/alto_risco">
+      <label>Alto Risco para Tuberculose Pulmonar</label>
+    </input>
+  </h:body>
+</h:html>
