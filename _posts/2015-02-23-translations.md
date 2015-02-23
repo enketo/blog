@@ -27,6 +27,6 @@ Currently right-to-left languages don't display correctly (as right-to-left), bu
 
 ### Sponsor
 
-The development of this feature was funded by [iMMAP](http://immap.org) because they are awesome.
+The development of this feature was funded by [iMMAP](http://immap.org), because they are awesome.
 
 {% include feedback.md %}
