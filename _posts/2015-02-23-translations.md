@@ -15,7 +15,7 @@ The [new Enketo app](/enketo-express) now boasts a multi-language user interface
 
 Currently only Dutch and English languages are included as those happen to be the languages I have some limited ability in. Additional languages can be contributed by **you**! 
 
-We use a very easy to use web interface to translate all of the text strings in Enketo Express. **Any language is welcome**, and in an ideal situation we get 2 persons per language so that one can review. The initial amount of work is a few hours and maintaining your translation should only take a few minutes per month. Your contribution will be acknowledged [here](https://github.com/kobotoolbox/enketo-express#translation) and you'll be providing **a great service to others** that use this [100% open source project](/now-fully-open-source).
+We utilize a very user-friendly web interface to translate all of the text strings in Enketo Express. **Any language is welcome**, and in an ideal situation we get 2 persons per language so that one can review. The initial amount of work is only a few hours, while maintaining your translation should only take a few minutes per month. Your contribution will be acknowledged [here](https://github.com/kobotoolbox/enketo-express#translation) and you'll be providing **a great service to others** that use this [100% open source project](/now-fully-open-source).
 
 Just send me an [email](mailto:martijn@enketo.org) and I'll sent an invite to get you going!
 

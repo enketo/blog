@@ -26,15 +26,15 @@ For a continuously updated list of differences [see the repository](https://gith
 * more advanced form embedding capabilities
 * additional authentication option
 * form-defined instanceName values are used as the default local record names
-* 20x more fun to continue to develop
+* exactly 20x more fun to continue to develop
 
 ### Offline Capability Still Experimental
 
-The offline capability was re-developed from the ground up using different storage technologies. Any offline-capable webform views should be considered experimental for the next few months. The online-only views are considered stable. **Please help by reporting bugs [here](https://github.com/kobotoolbox/enketo-express/issues)**
+The offline capability was re-developed from the ground up using different storage technologies. Any offline-capable webform views should be considered experimental for the next few months. The online-only views are considered stable. **Please help by reporting bugs [here](https://github.com/kobotoolbox/enketo-express/issues).**
 
 ### GitHub Account
 
-It might be confusing that the master repository lives in the [KoBoToolbox GitHub account](https://github.com/kobotoolbox), and a 'fork' exists in the [Enketo GitHub account](https://github.com/enketo). KoBo funded the initial (and still ongoing) development. Without their significant support the new app might have never gotten off the ground. The reason to keep a mirror in Enketo's GitHub account is simply because this the place were some people will start looking first. It is just a mirror, meant to be kept _exactly the same_, so you can use _either one_. Just make sure to 'star' both, if you think they are any good... ;)
+It might be confusing that the master repository lives in the [KoBoToolbox GitHub account](https://github.com/kobotoolbox), and a 'fork' exists in the [Enketo GitHub account](https://github.com/enketo). KoBo funded the initial (and still ongoing) development. Without their significant support the new app might have never gotten off the ground. The reason to keep a mirror in Enketo's GitHub account is simply because this is the place were some people will start looking first. It is just a mirror, meant to be kept _exactly the same_, so you can use _either one_. Just make sure to 'star' both, if you think they are any good... ;)
 
 ### Sponsors
 
