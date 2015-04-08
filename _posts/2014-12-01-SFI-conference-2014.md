@@ -7,6 +7,7 @@ categories:
   - Uncategorized
 tags:
  - enketo
+ - presentations
 ---
 
 I had the great opportunity to attend a [conference](http://www.santafe.edu/gevent/detail/science/1773/) at the Santa Fe Institute last month and wanted to share Enketo's latest slidedeck.

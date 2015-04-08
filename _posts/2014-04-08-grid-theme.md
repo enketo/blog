@@ -7,6 +7,7 @@ categories:
   - Uncategorized
 tags:
  - enketo
+ - features
 ---
 
 Enketo Smart Paper now has a brand new theme option: __The Grid Theme__. Click the screenshot below to check out a sample form right away.

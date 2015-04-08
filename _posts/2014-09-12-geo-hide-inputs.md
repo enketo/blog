@@ -7,6 +7,8 @@ categories:
   - Uncategorized
 tags:
  - enketo
+ - features
+ - geo
 ---
 
 A while back the [geo widgets](/geo) were quietly upgraded to allow hiding of input fields for GPS coordinates and to show a larger map. This is particularly useful when entering data on a desktop by drawing on the map when the input fields take up unnecessary space. You can witch between hiding and showing input fields with the handle on the left of the map border. See [this updated sample form](https://geo.enketo.org/webform).

@@ -7,6 +7,8 @@ categories:
   - Uncategorized
 tags:
  - enketo
+ - features
+ - geo
 ---
 
 The [new geo widgets](/geo) have been extended to show multiple map layers. You can now switch between streets, terrain and satellite maps. See [this sample form](https://geo.enketo.org/webform).

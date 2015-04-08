@@ -7,6 +7,7 @@ categories:
   - Uncategorized
 tags:
  - enketo
+ - features
 ---
 
 Enketo now has a subtle progress bar fixed to the top of the screen. 

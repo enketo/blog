@@ -7,6 +7,7 @@ categories:
   - Uncategorized
 tags:
  - enketo
+ - stories
 ---
 
 Using an innovative approach, Enketo is being used as a diagnostic tool in the fight against tuberculosis. In Brazil in 2013, 57 people in 100,000 had tuberculosis (TB) according to the World Health Organization. Complicating the picture, TB accounts for the majority of deaths in patients that also have HIV. Clearly, detection of TB is critical for health care providers at primary care facilities and hospitals. 

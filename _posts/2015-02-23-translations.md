@@ -7,6 +7,7 @@ categories:
   - Uncategorized
 tags:
  - enketo
+ - features
 ---
 
 The [new Enketo app](/enketo-express) now boasts a multi-language user interface. The forms themselves have always supported multiple languages but this new feature deals with the interface _around the forms_ (guidance, feedback, error messages).

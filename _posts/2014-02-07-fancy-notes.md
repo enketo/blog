@@ -7,6 +7,7 @@ categories:
   - Uncategorized
 tags:
  - enketo
+ - features
 ---
 
 Enketo now offers a better way to designing sections of text and media (aka "notes" in XLSForm or readonly inputs in XForm). [This Form](https://notes.enketo.org/webform) shows what you can now create.

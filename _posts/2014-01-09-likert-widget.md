@@ -7,7 +7,7 @@ categories:
   - Uncategorized
 tags:
  - enketo
- - widget
+ - features
 ---
 
 Enketo Smart Paper now includes a __Likert widget__ to enable the use of [Likert scales](http://en.wikipedia.org/wiki/Likert_scale) in surveys.
