@@ -4,10 +4,9 @@ author: Martijn van de Rijdt
 layout: post
 permalink: /progress-bar
 categories:
-  - Uncategorized
+  - Features
 tags:
- - enketo
- - features
+  - enketo
 ---
 
 Enketo now has a subtle progress bar fixed to the top of the screen. 

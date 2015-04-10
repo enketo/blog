@@ -4,10 +4,9 @@ author: Martijn van de Rijdt
 layout: post
 permalink: /gorgeous-grid
 categories:
-  - Uncategorized
+  - Features
 tags:
- - enketo
- - features
+  - enketo
 ---
 
 Enketo Smart Paper now has a brand new theme option: __The Grid Theme__. Click the screenshot below to check out a sample form right away.

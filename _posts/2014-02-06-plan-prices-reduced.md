@@ -7,7 +7,7 @@ permalink: /plan-prices-reduced
 categories:
   - Uncategorized
 tags:
- - enketo
+  - enketo
 ---
 
 There is now a brand new **FREE** [enketo.org](https://enketo.org) plan with **NO CREDIT CARD** required. All other plan prices have been reduced by **50%**.

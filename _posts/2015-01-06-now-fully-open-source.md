@@ -6,7 +6,7 @@ permalink: /now-fully-open-source
 categories:
   - Uncategorized
 tags:
- - enketo
+  - enketo
 ---
 
 The [Grid Theme](/gorgeous-grid) is now open source! 

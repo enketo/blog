@@ -4,9 +4,9 @@ author: Martijn van de Rijdt
 layout: post
 permalink: /user-stories
 categories:
-  - Uncategorized
+  - Stories
 tags:
- - enketo
+  - enketo
 ---
 
 Enketo LLC just doubled in size! 

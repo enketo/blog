@@ -4,10 +4,9 @@ author: Martijn van de Rijdt
 layout: post
 permalink: /horizontal-choices
 categories:
-  - Uncategorized
+  - Features
 tags:
- - enketo
- - features
+  - enketo
 ---
 
 As mentioned in a [previous post](http://blog.enketo.org/sponsorships-2013/), the [Santa Fe Institute](http://www.santafe.edu/), [Gates Foundation](http://www.gatesfoundation.org/) & [Shack/Slum Dwellers International](http://www.sdinet.org/) are sponsoring a significant effort to create a new flexible grid theme for Enketo Smart Paper. 

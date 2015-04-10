@@ -4,10 +4,9 @@ author: Martijn van de Rijdt
 layout: post
 permalink: /presentation-SFI-2014
 categories:
-  - Uncategorized
+  - Presentations
 tags:
- - enketo
- - presentations
+  - enketo
 ---
 
 I had the great opportunity to attend a [conference](http://www.santafe.edu/gevent/detail/science/1773/) at the Santa Fe Institute last month and wanted to share Enketo's latest slidedeck.

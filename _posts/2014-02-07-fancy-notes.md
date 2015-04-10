@@ -4,10 +4,9 @@ author: Martijn van de Rijdt
 layout: post
 permalink: /better-notes
 categories:
-  - Uncategorized
+  - Features
 tags:
- - enketo
- - features
+  - enketo
 ---
 
 Enketo now offers a better way to designing sections of text and media (aka "notes" in XLSForm or readonly inputs in XForm). [This Form](https://notes.enketo.org/webform) shows what you can now create.

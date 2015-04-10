@@ -6,7 +6,7 @@ permalink: /enketo-express
 categories:
   - Uncategorized
 tags:
- - enketo
+  - enketo
 ---
 
 The [new Enketo Smart Paper app](https://github.com/kobotoolbox/enketo-express) (aka _Enketo Express_) is now ready to start replacing the [old Enketo Smart Paper app](https://github.com/enketo/enketo-legacy) (aka _Enketo Legacy_).

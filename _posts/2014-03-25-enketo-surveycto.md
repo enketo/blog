@@ -6,7 +6,7 @@ permalink: /enketo-surveycto
 categories:
   - Uncategorized
 tags:
- - enketo
+  - enketo
 ---
 
 Following into the footsteps of [ODK](http://opendatakit.org/2014/02/odk-aggregate-1-4-1-with-enketo-webforms-integration-is-now-available/), another great service called [SurveyCTO](https://www.surveycto.com) has integrated with Enketo.org.

@@ -6,8 +6,8 @@ permalink: /kobo-collaboration
 categories:
   - Uncategorized
 tags:
- - enketo
- - humanitarian
+  - enketo
+  - humanitarian
 ---
 
 Enketo LLC is proud to be collaborating with the rockstar [KoBoToolbox](http://www.kobotoolbox.org/) team at [Harvard Humanitarian Iniative](http://hhi.harvard.edu/) to create a brand new Enketo app! 

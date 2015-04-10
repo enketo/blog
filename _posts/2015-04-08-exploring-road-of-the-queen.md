@@ -4,10 +4,9 @@ author: Christi Yoder
 layout: post
 permalink: /exploring-road-of-the-queen
 categories:
-  - Uncategorized
+  - Stories
 tags:
  - enketo
- - stories
 ---
 
 Using Enketo to connect with history on the Via Regina

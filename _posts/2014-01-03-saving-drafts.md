@@ -4,10 +4,9 @@ author: Martijn van de Rijdt
 layout: post
 permalink: /draft-records
 categories:
-  - Uncategorized
+  - Features
 tags:
- - enketo
- - features
+  - enketo
 ---
 
 In a [previous post](http://blog.enketo.org/sponsorships-2013/), I highlighted the investment of the [World Health Organization](http://www.who.int/) (WHO) is making in improving Enketo Smart Paper. One of the more visible results of this funding is the ability to save records as a draft to continue them at a later time. This feature is now available for use on enketo.org and formhub.org! 

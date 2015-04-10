@@ -4,7 +4,8 @@ author: Martijn van de Rijdt
 layout: post
 permalink: /ui-changes-uploads
 categories:
-  - apps
+  - Uncategorized
+  - Features
 tags:
   - enketo
 ---
