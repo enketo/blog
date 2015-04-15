@@ -11,11 +11,13 @@ tags:
 
 As alluded to [before](/now-fully-open-source), the free enketo.org plans are going to disappear. The timing will coincide with when the [new Enketo app](/enketo-express) is expected to become stable and is now set for the **1st of June 2015**. Current users on the free plan will receive several emails in the next few weeks to remind them to upgrade or to find [another option to use Enketo](https://enketo.org/#use) for their work.
 
+[Edited] To be clear this change only affects users that signed up for a free plan at [accounts.enketo.org](https://accounts.enketo.org). It does **not** affect users of popular sites that offer Enketo as part of their comprehensive service such as [kobotoolbox.org](http://kobotoolbox.org) and [ona.io](https://ona.io).
+
 [![Free Plans Going](../files/2015/04/free-gon-gon.png "Free Plans Going")](https://accounts.enketo.org/)
 
 ### Why No More Free?
 
-Free plans served their purpose but frankly have become too popular to keep supporting. They are taking up an ever increasing amount of resources and are eating into valuable development time. The only rationale to continue to provide free plans would have been to provide an option to use Enketo for the very smallest of projects that have no budget at all. However, thankfully, there are now [many good options](https://enketo.org/#tools) that offer Enketo as a service and quite a few are free.
+Free plans served their purpose but frankly have become too popular to keep supporting. They are taking up an ever increasing amount of resources and are eating into valuable development time. The only rationale to continue to provide free plans would have been to provide an option to use Enketo for the very smallest of projects that have no budget at all. However, thankfully, there are now [many good options](https://enketo.org/#tools) that offer Enketo as a service and quite a few are free. 
 
 ### Paid Plans
 
