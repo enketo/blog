@@ -17,9 +17,9 @@ This post describes how to setup a secure _production server_ running Enketo for
 
 ### 1. Considerations
 
-**Installation is the easy part**. Maintaining a reliable server with close to **0% downtime**, especially when it becomes popular, is **a whole lot harder**. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating your server. So before self-installing a production server, be ready, and interested, to spend a significant amount of time to run it afterwards.
+**Installation is the easy part**. Maintaining a reliable server with close to **0% downtime** - especially when it becomes popular - is **a whole lot harder**. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating your server. So before self-installing a production server, be prepared to spend a significant amount of time to run it afterwards.
 
-Self-installation for most people is going to be **far more expensive** than using a public supported service, even if that service is not free. The time required to install and maintain a server and the "cost" of the likely longer periods of downtime will normally outweigh any fee you would pay for a provided service. If cost is the primary argument to self-install it is probably not the right decision.
+Self-installation for most people is going to be **far more expensive** than using a public supported service, even if that service is not free. The time required to install and maintain a server and the "cost" of the likely longer periods of downtime will normally outweigh any fee you would pay for a provided service. **If cost is the primary argument to self-install, it is probably not the right decision.**
 
 ### 2. Create a public/private key pair 
 
@@ -33,7 +33,7 @@ If you've already created a public/private key pair for your computer you can sk
 
 Run PuTTYgen.exe and click "Generate" with the defaults (SSH-2 RSA, 2048 bits). Move the mouse as directed. Passphrase is optional. Save the private and public keys both (e.g. in My Documents\Keys). Make sure to use clear filenames (e.g. private_key.ppk and public_key.ppk). Copy the contents of the public key to the clipboard from the PuTTY Key Generator window with Ctrl-C.
 
-Make a note of the location of the keys as you'll need the keys soon (OS X and Linux users: the default location is `~/.ssh`).
+Make a note of the location of the keys as you'll need the keys soon.
 
 More detailed instructions can be found [here for OS X, Linux users](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) (step 1 and 2 only) and [here for Windows users](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section "Generating an SSH Key").
 
@@ -44,6 +44,8 @@ Use the following command in the terminal in **OS X or Linux**:
 ```bash
 ssh-keygen -t rsa
 ```
+
+The default location of the key is _~/.ssh_.
 
 ### 3. Create a Server
 
