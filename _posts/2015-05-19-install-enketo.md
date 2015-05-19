@@ -11,7 +11,7 @@ tags:
 
 --- 
 
-This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://www.digitalocean.com/?refcode=9e43ccb8961a). It is meant to be a _living document_ that will continuously improve. Use the [forum](https://groups.google.com/forum/#!forum/enketo-users) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
+This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://www.digitalocean.com/?refcode=9e43ccb8961a). It is meant to be a _living document_ that will continuously improve. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/XiTgHFll_nE) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
 
 ![Enketo Webform](../files/2015/05/webform.png "Enketo Webform")
 
