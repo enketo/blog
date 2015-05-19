@@ -45,7 +45,7 @@ Use the following command in the terminal in **OS X or Linux**:
 ssh-keygen -t rsa
 ```
 
-The default location of the key is _~/.ssh_.
+The location of the keys is _~/.ssh_.
 
 ### 3. Create a Server
 
@@ -339,11 +339,15 @@ Make sure to enter Country Name, State/Province, City/Locality, and Common Name.
 
 To display the content of the newly created CSR in order to copy and paste it:
 
-```
+```bash
 sudo cat /etc/nginx/ssl/enketo.csr
 ```
 
-Once you have received your SSL certificate bundle (or have created one from the various files that were sent), copy this enketo-bundle.crt to the server into /etc/nginx/ssl.
+Once you have received your SSL certificate bundle (or have created one from the various files that were sent), copy this enketo-bundle.crt to the server into /etc/nginx/ssl. Then change the permissions:
+
+```bash
+sudo chmod 600 /etc/nginx/ssl/enketo-bundle.crt
+```
 
 Create a DHE parameter: (This could easily take half an hour!)
 
