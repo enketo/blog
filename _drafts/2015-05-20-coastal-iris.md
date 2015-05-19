@@ -1,5 +1,5 @@
 ---
-title: Saving Israel's coastal iris
+title: Saving Israel's Coastal Iris
 author: Christi Yoder
 layout: post
 permalink: /coastal-iris
