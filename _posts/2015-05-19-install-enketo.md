@@ -27,16 +27,6 @@ To authenticate with the server we are going to use a public key, because this i
 
 If you've already created a public/private key pair for your computer you can skip this step.
 
-#### Windows Users
-
-[Download PuTTY.exe and PuTTYgen.exe](http://www.putty.org/). PuTTYgen is only required once, so can be run from the Downloads folder. PuTTY is a program you'd want to keep, so should be put in e.g. a newly created C:\Program Files\PuTTY folder and added to the Windows Start Menu.
-
-Run PuTTYgen.exe and click "Generate" with the defaults (SSH-2 RSA, 2048 bits). Move the mouse as directed. Passphrase is optional. Save the private and public keys both (e.g. in My Documents\Keys). Make sure to use clear filenames (e.g. private_key.ppk and public_key.ppk). Copy the contents of the public key to the clipboard from the PuTTY Key Generator window with Ctrl-C.
-
-Make a note of the location of the keys as you'll need the keys soon.
-
-More detailed instructions can be found [here for OS X, Linux users](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) (step 1 and 2 only) and [here for Windows users](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section "Generating an SSH Key").
-
 #### OS X or Linux Users
 
 Use the following command in the terminal in **OS X or Linux**:
@@ -46,6 +36,16 @@ ssh-keygen -t rsa
 ```
 
 The location of the keys is _~/.ssh_.
+
+#### Windows Users
+
+[Download PuTTY.exe and PuTTYgen.exe](http://www.putty.org/). PuTTYgen is only required once, so can be run from the Downloads folder. PuTTY is a program you'd want to keep, so should be put in e.g. a newly created C:\Program Files\PuTTY folder and added to the Windows Start Menu.
+
+Run PuTTYgen.exe and click "Generate" with the defaults (SSH-2 RSA, 2048 bits). Move the mouse as directed. Passphrase is optional. Save the private and public keys both (e.g. in My Documents\Keys). Make sure to use clear filenames (e.g. private_key.ppk and public_key.ppk). Copy the contents of the public key to the clipboard from the PuTTY Key Generator window with Ctrl-C.
+
+Make a note of the location of the keys as you'll need the keys soon.
+
+More detailed instructions can be found [here for OS X, Linux users](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) (step 1 and 2 only) and [here for Windows users](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section "Generating an SSH Key").
 
 ### 3. Create a Server
 
@@ -113,22 +113,23 @@ visudo
 
 1. You might be asked to pick an editor. Choose 'nano' or one that you're already familiar with.
 2. Find and move your cursor to the line that says `root    ALL=(ALL:ALL) ALL`
-3. Use your keyboard array keys to below that line and add a new line: `enketo  ALL=(ALL:ALL) NOPASSWD:ALL`
+3. Use your keyboard array keys to move the cursor below that line and add a new line: `enketo  ALL=(ALL:ALL) NOPASSWD:ALL`
 4. Save your changes with CTRL+X, enter 'Y' to confirm, and then hit Enter
 5. Exit the SSH connection with `exit`.
 
 **Test**: You should now be able to login as 'enketo' (instead of 'root') without being asked for a password and have sudo privileges.
 
-For OS X and Linux users:
+OS X and Linux users:
+
 ```bash
 ssh enketo@107.170.165.182
 ```
 
-For Windows users, do the same as before but enter user name 'enketo' when asked.
+Windows users, do the same as before but enter user name 'enketo' when asked.
 
 #### Install required software
 
-Login via ssh as the user you created previously. Install the first batch of software packages as follows and enter 'Y' when asked to confirm:
+Login via ssh as the user you created previously (not as "root"!). Install the first batch of software packages as follows and enter 'Y' when asked to confirm:
 
 ```bash
 sudo add-apt-repository -y ppa:rwky/redis
@@ -251,7 +252,7 @@ cd ~/enketo-express
 npm start
 ```
 
-In your browser visit the IP address of the server, and add port 8005. E.g. visit 107.170.165.182:8005. You should see a page similar to the screenshot below.
+In your browser visit the IP address of the server, and add port 8005. E.g. visit http://107.170.165.182:8005. You should see a page similar to the screenshot below.
 
 ![Enketo Express front page](../files/2015/05/front.png "Enketo Express front page")
 
@@ -264,7 +265,7 @@ sudo pm2 startup
 
 ```
 
-**Test**: OS X and Linux users can test the API response, using the linked server url and corresponding api key for a non-existing form called "test", by entering the following into a **new terminal window**:
+**Test**: OS X and Linux users can test the API response, using the linked server url and corresponding api key for a non-existing form called "test", by entering something like the following into a **new terminal window**:
 
 ```bash
 curl --user EERTIUCJSHDGKHD234325: -d "server_url=https://my-aggregate.appspot.com&form_id=test" http://107.170.165.182:8005/api/v2/survey
@@ -283,7 +284,7 @@ You should see a JSON response like this:
 
 #### DNS Settings
 
-If you have rented a domain name, e.g. "aidapplications.com", for your Enketo installation, we can configure the webserver. In this example we'll be using a subdomain: "enketo.aidapplications.com" but you can also use the main domain of course.
+If you have rented a domain name, e.g. "aidapplications.com", for your Enketo installation, we can configure the webserver. In this example we'll be using a subdomain: "enketo.aidapplications.com" but you can also use the main domain.
 
 First create a DNS entry for your domain using the tools that your DNS registrar provides. If you haven't found a DNS registrar yet, you could use [NameCheap](http://www.namecheap.com/?aff=85649). Create an _"A" record_ that points to your IP address.
 
@@ -362,7 +363,7 @@ Update your webserver configuration:
 sudo nano /etc/nginx/sites-available/enketo
 ```
 
-This configuration works well (change enketo.aidapplications.com to your domain and make sure the ssl certificate and key paths are correct):
+The following configuration works well. Make sure to change enketo.aidapplications.com to your domain and make sure the ssl certificate and key paths are correct.
 
 ```json
 server {
