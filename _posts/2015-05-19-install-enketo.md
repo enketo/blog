@@ -45,11 +45,11 @@ Run PuTTYgen.exe and click "Generate" with the defaults (SSH-2 RSA, 2048 bits). 
 
 Make a note of the location of the keys as you'll need the keys soon.
 
-More detailed instructions can be found [here for OS X, Linux users](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) (step 1 and 2 only) and [here for Windows users](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section "Generating an SSH Key").
+More detailed instructions can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) for OS X, Linux users (step 1 and 2 only) and [here](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) for Windows users (only the section "Generating an SSH Key").
 
 ### 3. Create a Server
 
-For this tutorial, we are going to use Ubuntu 14.04 on a DigitalOcean server (aka a "droplet"). DigitalOcean provides the best bang for the buck when looking at CPU speed and CPU cores, both of which are the key criteria for Enketo Express performance. The tutorial should be quite similar for other VPS providers though. If you do not have a DigitalOcean account yet, create one using [this referral link](https://www.digitalocean.com/?refcode=9e43ccb8961a) to get a $10 credit. 
+For this tutorial, we are going to use Ubuntu 14.04 on a DigitalOcean server (aka a "droplet"). DigitalOcean provides the best bang for the buck when looking at CPU speed and CPU cores, both of which are the key criteria for Enketo Express performance. Their user interface is refreshingly well designed too. The tutorial should be quite similar for other VPS providers from section 4 onwards. If you do not have a DigitalOcean account yet, create one using [this referral link](https://www.digitalocean.com/?refcode=9e43ccb8961a) to get a $10 credit. 
 
 #### Add your public key to your DigitalOcean account
 
@@ -74,7 +74,7 @@ Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new) button a
 5. Click on the SSH key(s) that may be used to access the server.
 6. Click _Create Droplet_ and wait until this is finished.
 
-**Test**: In your [list of droplets](https://cloud.digitalocean.com/droplets) you will now see an IP address that was assigned to your server (e.g. 107.170.165.182). You sshould now be able to login to this server as "root". 
+**Test**: In your [list of droplets](https://cloud.digitalocean.com/droplets) you will now see an IP address that was assigned to your server (e.g. 107.170.165.182). You should now be able to login to this server as "root". 
 
 **OS X and Linux users**, try this out in the terminal with **your assigned IP address** as follows:
 
@@ -82,7 +82,7 @@ Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new) button a
 ssh root@107.170.165.182
 ```
 
-**Windows users**, try this out by opening PuTTY, adding the IP address as Host Name, clicking on SSH and Auth in the left Category tree, and adding the private key. For detailed instructions see [this page](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/connecting-to-your-machine/connecting-to-your-machine-from-windows). Select 'Yes' when asked, and type 'root' when asked. (After verifying that this works, you can save your session next time so you won't have to do these steps again).
+**Windows users**, try this out by opening PuTTY, adding the IP address as Host Name, clicking on SSH and Auth in the left Category tree, and adding the private key. For detailed instructions see [this page](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/connecting-to-your-machine/connecting-to-your-machine-from-windows). Select 'Yes' when asked, and type 'root' when asked. After verifying that this works, you can save your session so you won't have to repeat these steps next time.
 
 ### 4. Server Installation
 
@@ -119,7 +119,7 @@ visudo
 
 **Test**: You should now be able to login as 'enketo' (instead of 'root') without being asked for a password and have sudo privileges.
 
-OS X and Linux users:
+OS X and Linux users (change the IP address):
 
 ```bash
 ssh enketo@107.170.165.182
@@ -295,11 +295,11 @@ First create a DNS entry for your domain using the tools that your DNS registrar
 Create a webserver configuration as follows:
 
 ```bash
-sudo nano /etc/nginx/sites-available/enketo.
+sudo nano /etc/nginx/sites-available/enketo
 
 ```
 
-Use the following temporary config to test whether the domain and webserver are working:
+Use the following temporary configuration to test whether the domain and webserver are working:
 
 ```json
 server {
@@ -328,7 +328,7 @@ sudo service nginx restart
 
 Nothing in this section is specific to Enketo. You can also use one of the thousands of SSL-certificate-installation-tuturials on the web.
 
-Purchase an SSL certificate for your (sub)domain somewhere. This shouldn't cost more than [$10/year](https://www.namecheap.com/security/ssl-certificates/comodo/positivessl.aspx?aff=85649). You will be asked to provide a _"CSR"_. The recommended way of generating a CSR is to log in to your Enketo server and:
+Purchase an SSL certificate for your (sub)domain somewhere. This should not cost more than [$10/year](https://www.namecheap.com/security/ssl-certificates/comodo/positivessl.aspx?aff=85649). You will be asked to provide a _"CSR"_. The recommended way of generating a CSR is to log in to your Enketo server and:
 
 ```bash
 sudo mkdir /etc/nginx/ssl
