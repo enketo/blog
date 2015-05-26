@@ -41,11 +41,11 @@ The location of the keys is _~/.ssh_.
 
 [Download PuTTY.exe and PuTTYgen.exe](http://www.putty.org/). PuTTYgen is only required once, so can be run from the Downloads folder. PuTTY is a program you'd want to keep, so should be put in e.g. a newly created C:\Program Files\PuTTY folder and added to the Windows Start Menu.
 
-Run PuTTYgen.exe and click "Generate" with the defaults (SSH-2 RSA, 2048 bits). Move the mouse as directed. Passphrase is optional. Save the private and public keys both (e.g. in My Documents\Keys). Make sure to use clear filenames (e.g. private_key.ppk and public_key.ppk). Copy the contents of the public key to the clipboard from the PuTTY Key Generator window with Ctrl-C.
+Run PuTTYgen.exe and click "Generate" with the defaults (SSH-2 RSA, 2048 bits). Move the mouse as directed. Passphrase is optional. Save the private and public keys both (e.g. in My Documents\Keys). Make sure to use clear filenames (e.g. private_key.ppk and public_key.ppk). Copy the contents of the public key from the PuTTY Key Generator window to the clipboard with Ctrl-C.
 
-Make a note of the location of the keys as you'll need the keys soon.
+Make a note of the location of the keys as you'll need the keys soon. Also, make sure you have a backup of your keys!
 
-More detailed instructions can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) for OS X, Linux users (step 1 and 2 only) and [here](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) for Windows users (only the section "Generating an SSH Key").
+More detailed instructions can be found for OS X, Linux users can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) (step 1 and 2 only) and for Windows users [here](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section "Generating an SSH Key").
 
 ### 3. Create a Server
 
@@ -129,7 +129,7 @@ Windows users, do the same as before but enter user name 'enketo' when asked.
 
 #### Install required software
 
-Login via ssh as the user you created previously (not as "root"!). Install the first batch of software packages as follows and enter 'Y' when asked to confirm:
+Login via ssh as the user you created previously (**not as "root"**). Install the first batch of software packages as follows and enter 'Y' when asked to confirm:
 
 ```bash
 sudo add-apt-repository -y ppa:rwky/redis
@@ -326,7 +326,7 @@ sudo service nginx restart
 
 ### 9. Install an SSL certificate
 
-Nothing in this section is specific to Enketo. You can also use one of the thousands of SSL-certificate-installation-tuturials on the web.
+Nothing in this section is specific to Enketo. You can also use one of the [thousands of SSL-certificate-installation-tuturials on the web](https://www.google.com/webhp?#q=How+to+install+an+ssl+certificate+for+nginx+on+Ubuntu+14.04).
 
 Purchase an SSL certificate for your (sub)domain somewhere. This should not cost more than [$10/year](https://www.namecheap.com/security/ssl-certificates/comodo/positivessl.aspx?aff=85649). You will be asked to provide a _"CSR"_. The recommended way of generating a CSR is to log in to your Enketo server and:
 
@@ -410,6 +410,9 @@ server {
 
 **Test**: Go to [SSLLabs.com](https://www.ssllabs.com/ssltest/) to test your SSL configuration. If all is done correctly you should get an A+.
 
+![SSL Labs result](../files/2015/05/ssllabs.png "SSL Labs result")
+
+
 ### 10. Ban Rogue Users
 
 Install fail2ban to reduce the disruption caused by bots continuously trying to break into your server:
@@ -441,6 +444,8 @@ Type "y" when asked to proceed with operation.
 ### 12. Monitoring
 
 A simple and very useful service to monitor uptime is [uptimerobot.com](https://uptimerobot.com). E.g. use a HTTP(s) monitor for https://enketo.aidapplications.com that checks every 5 minutes. Specify how you'd like to be alerted when the service is unresponsive.
+
+![UptimeRobot config](../files/2015/05/uptimerobot.png "Uptime Robot config")
 
 To add: [monit and mmonit](https://mmonit.com/monit/) setup for advanced monitoring.
 
