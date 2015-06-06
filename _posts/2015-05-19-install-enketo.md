@@ -221,7 +221,7 @@ cp ~/enketo-express/config/default-config.json ~/enketo-express/config/config.js
 nano ~/enketo-express/config/config.json
 ```
 
-The default configuration is almost functional. We just need to make sure it links to the correct Form/Data server and create a secret API key and encryption key. In this example we use a server at https://my-aggregate.appspot.com. So the minimum configuration items to change are:
+The default configuration is almost functional. We just need to make sure it links to the correct Form/Data server and create a secret API key and encryption key. See [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) for an explanation of these configuration items. In this example we use a server at https://my-aggregate.appspot.com. So the minimum configuration items to change are:
 
 ```json
 {
@@ -239,7 +239,7 @@ The default configuration is almost functional. We just need to make sure it lin
 
 Use Ctrl-X and enter "Y" to save the configuration.
 
-Further configuration could be done in step 11.
+Further configuration could be done in step 14.
 
 ### 7. Automatic Enketo Launch and Restart
 
