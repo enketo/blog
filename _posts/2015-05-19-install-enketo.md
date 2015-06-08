@@ -164,6 +164,7 @@ git submodule update --init --recursive
 bower install
 sudo npm cache clean
 npm install
+grunt
 ```
 
 ### 6. Configuration
@@ -238,6 +239,13 @@ The default configuration is almost functional. We just need to make sure it lin
 ```
 
 Use Ctrl-X and enter "Y" to save the configuration.
+
+Rebuild after changing the configuration:
+
+```bash
+cd ~/enketo-express
+grunt
+```
 
 Further configuration could be done in step 14.
 
@@ -455,4 +463,4 @@ Only **one file** contains critical information that should be backed up. This i
 
 ### 14. Final configuration
 
-Go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Make sure to `pm2 restart enketo` after saving your new configuration.
+Go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Make sure to rebuild with `grunt` and `pm2 restart enketo` after saving your new configuration.
