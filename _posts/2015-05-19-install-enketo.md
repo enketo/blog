@@ -416,6 +416,12 @@ server {
 }
 ```
 
+Restart the webserver and check if any errors are shown:
+
+```bash
+sudo service nginx restart
+```
+
 **Test**: Go to [SSLLabs.com](https://www.ssllabs.com/ssltest/) to test your SSL configuration. If all is done correctly you should get an A+.
 
 ![SSL Labs result](../files/2015/05/ssllabs.png "SSL Labs result")
