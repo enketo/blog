@@ -249,6 +249,14 @@ footer a:hover {
     max-width: 500px;
 }
 
+#post .credit {
+    display: block;
+    margin: -21px auto 20px auto;
+    max-width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
 /* line 203, ../scss/screen.scss */
 #post pre {
     padding: .4em .6em;
