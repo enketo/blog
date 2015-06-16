@@ -26,7 +26,7 @@ The development of this application had two objectives:
 1. measure the impact of part of this 4-month performance-boosting project, and
 2. continuously monitor the performance in the future
 
-The second objective allows us to see which features, fixes, and changes result in an increase or decrease in performance. Any spike in the automatically-updated graphs can be easily linked to specific changes in the code. This will prove to be an invaluable tool to have at our disposal.
+The second objective allows us to see which future features, fixes, and changes will result in an increase or decrease in performance. Any spike in the automatically-updated graphs can be easily linked to specific changes in the code. This will prove to be an invaluable tool to have at our disposal.
 
 ### Loading Performance
 
@@ -38,7 +38,7 @@ The loading performance was improved across the board. Two extreme cases ("bench
 
 ### Validation Performance
 
-Validation performance became another area of intensive focus when a profiling exercise showed a suspicious sluggishness, in particular for forms that contained a large number of _select one_ and _select multiple_ questions. This metric describes the time it takes from clicking the validate or submit button to either getting negative validation feedback or clearing the way to proceeding with saving and submitting.
+Validation performance became another area of intensive focus when a profiling exercise showed a suspicious sluggishness, in particular for forms that contained a large number of _select one_ and _select multiple_ questions. This metric describes the time it takes from clicking the validate or submit button to either getting negative validation feedback or clearing the way to proceed with saving and submitting.
 
 [!["Enketo-core Validation Performance"](../files/2015/06/validation-performance.png "Enketo-core Validation Performance")](https://github.com/enketo/enketo-core-performance-monitor/blob/master/README.md)
 
@@ -46,13 +46,13 @@ The graphs clearly show the incredible performance improvements that were achiev
 
 ### Responsiveness on Mobile
 
-Another opportunity for improvement that was investigated in great detail was a noticeable lag between clicking a question option and showing that option as selected. A similar lag was present between clicking a text or number input field and the appearance of a keyboard.
+Another opportunity for improvement that was investigated in great detail was a noticeable lag between clicking a question option and showing that option as selected on a mobile device. A similar lag was present between clicking a text or number input field and the appearance of a keyboard.
 
 The cause of this lag was identified and eliminated. As a result the click response became around 4 times faster on the problematic test form used for development. It was not possible to include this metric in the performance monitoring application.
 
 ### External Data Loading
 
-External data is already supported in Enketo Express, though so far can only be used by Aggregate users that are willing to make manual tweaks to their XForms (i.e. virtually nobody). It will be elaborated on in a future post when [this issue](https://github.com/XLSForm/pyxform/issues/30) is fixed and the feature becomes available to a wider audience.
+External data is already supported in Enketo Express, though so far can only be used by Aggregate users that are willing to make manual tweaks to their XForms (i.e. virtually nobody). It will be elaborated on in a future post when [this XLSForm feature](https://github.com/XLSForm/pyxform/issues/30) is implemented and the feature becomes available to a wider audience.
 
 The performance of loading external data was improved under this project. It was not feasible to include this metric in the performance monitoring application.
 
