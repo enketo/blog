@@ -19,7 +19,7 @@ This large improvement project was funded by the [Santa Fe Institute](http://www
 
 ### Monitoring Metrics
 
-A [new application](https://github.com/enketo/enketo-core-performance-monitor) was developed that is hosted on its own stable server and automatically runs a set of performance measurements every hour. It always uses the latest version of [Enketo's form engine](https://github.com/enketo/enketo-core). It runs these measures on a collection of 25 challenging XForms that provides a good cross-section of all the different performance bottlenecks that can be created with our form format (e.g. creating a form with 100 default repeats or with 2,000 questions).
+A [new application](https://github.com/enketo/enketo-core-performance-monitor) was developed that is hosted on its own stable server and automatically runs a set of performance measurements every hour. It always uses the latest version of [Enketo's form engine](https://github.com/enketo/enketo-core). It runs these measurements on a collection of 25 challenging XForms that provides a good cross-section of all the different performance bottlenecks that can be created with our form format (e.g. creating a form with 100 default repeats or with 2,000 questions).
 
 The development of this application had two objectives:
 
