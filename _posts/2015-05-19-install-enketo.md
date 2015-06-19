@@ -164,7 +164,6 @@ git submodule update --init --recursive
 bower install
 sudo npm cache clean
 npm install
-grunt
 ```
 
 ### 6. Configuration
@@ -240,7 +239,7 @@ The default configuration is almost functional. We just need to make sure it lin
 
 Use Ctrl-X and enter "Y" to save the configuration.
 
-Rebuild after changing the configuration:
+Build:
 
 ```bash
 cd ~/enketo-express
