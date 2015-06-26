@@ -287,11 +287,19 @@ You should see a JSON response like this:
 }
 ```
 
+**Test**: To verify that Enketo starts automatically when the server reboots, you could reboot the server with:
+
+```bash
+sudo shutdown -r now
+```
+
+Then wait about 15 seconds and check that Enketo is running by visiting the URL in the browser as in the beginning of this section. Then SSH back into your server.
+
 ### 8. Domain setup
 
 #### DNS Settings
 
-If you have rented a domain name, e.g. "aidapplications.com", for your Enketo installation, we can configure the webserver. In this example we'll be using a subdomain: "enketo.aidapplications.com" but you can also use the main domain.
+If you have rented a domain name for your Enketo installation, we can configure the webserver. In this example we'll be using a subdomain: "enketo.aidapplications.com" but you can also use the main domain.
 
 First create a DNS entry for your domain using the tools that your DNS registrar provides. If you haven't found a DNS registrar yet, you could use [NameCheap](http://www.namecheap.com/?aff=85649). Create an _"A" record_ that points to your IP address.
 
