@@ -23,7 +23,7 @@ Self-installation for most people is going to be **far more expensive** than usi
 
 ### 2. Create a public/private key pair 
 
-To authenticate with the server we are going to use a public key, because this is more secure than using a password. Make sure you backup your private and public key combo, so that you do not lose access to your server when your computer breaks down.
+To authenticate with the server we are going to use a public key, because this is more secure than using (just) a password. Make sure you backup your private and public key combo, so that you do not lose access to your server when your computer breaks down.
 
 If you've already created a public/private key pair for your computer you can skip this step.
 
@@ -90,10 +90,10 @@ Login to your server as _root_ via SSH if you haven't done this already. You wil
 
 #### Create a user
 
-In these examples we'll create a user named "enketo" but you can use any other name. **Note: All the terminal snippets below assume you chose "enketo" as username.**
+In these examples we'll create a user named "enketo" but you can use any other name. You will be prompted to enter a new password which you will need for configuring and updating your server (ie. for anything requiring `sudo` privileges). **Note: All the terminal snippets below assume you chose "enketo" as username.**
 
 ```bash
-adduser enketo --disabled-password
+adduser enketo
 ```
 
 To allow this user to login using your private key, we need to copy your public key (already added for root) to your new user account. 
@@ -108,14 +108,32 @@ chmod 600 /home/enketo/.ssh/authorized_keys
 To give this user sufficient privileges:
 
 ```bash
-visudo
+gpasswd -a enketo sudo
 ```
 
-1. You might be asked to pick an editor. Choose 'nano' or one that you're already familiar with.
-2. Find and move your cursor to the line that says `root    ALL=(ALL:ALL) ALL`
-3. Use your keyboard array keys to move the cursor below that line and add a new line: `enketo  ALL=(ALL:ALL) NOPASSWD:ALL`
-4. Save your changes with CTRL+X, enter 'Y' to confirm, and then hit Enter
-5. Exit the SSH connection with `exit`.
+Configure ssh by disabling root access, and forcing public key authentication:
+
+```bash
+nano /etc/ssh/sshd_config
+```
+
+Scroll down with your keyboard arrow keys to find the existing settings and change their values to `no` as mentioned below. Remove the "# "in front of the sentence if present. These are the correct settings:
+
+```bash
+PermitRootLogin no
+ChallengeResponseAuthentication no
+PasswordAuthentication no
+UsePAM no
+```
+
+Save your changes with CTRL+X, enter 'Y' to confirm, and then hit Enter
+
+Now restart the SSH service and exit:
+
+```bash
+service ssh restart
+exit
+```
 
 **Test**: You should now be able to login as 'enketo' (instead of 'root') without being asked for a password and have sudo privileges.
 
