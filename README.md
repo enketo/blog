@@ -1,4 +1,1 @@
-Enketo Blog
-=========
-
-Jekyll-based
+[blog.enketo.org](https://blog.enketo.org)
