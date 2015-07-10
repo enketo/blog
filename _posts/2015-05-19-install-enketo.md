@@ -45,7 +45,9 @@ Run PuTTYgen.exe and click "Generate" with the defaults (SSH-2 RSA, 2048 bits). 
 
 Make a note of the location of the keys as you'll need the keys soon. Also, make sure you have a backup of your keys!
 
-More detailed instructions can be found for OS X, Linux users can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) (step 1 and 2 only) and for Windows users [here](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section "Generating an SSH Key").
+#### More details:
+
+More detailed instructions for OS X, Linux users can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) (step 1 and 2 only) and for Windows users [here](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section "Generating an SSH Key").
 
 ### 3. Create a Server
 
@@ -86,7 +88,7 @@ ssh root@107.170.165.182
 
 ### 4. Server Installation
 
-Login to your server as _root_ via SSH if you haven't done this already. You will probably never need to login as _root_ again after this, because we are going to create a new user now.
+Login to your server as _root_ via SSH if you haven't done this already. You will probably never need to login as _root_ again after this, because we are going to create a new user now (and will actually block root access during this process).
 
 #### Create a user
 
@@ -135,7 +137,7 @@ service ssh restart
 exit
 ```
 
-**Test**: You should now be able to login as 'enketo' (instead of 'root') without being asked for a password and have sudo privileges.
+**Test**: You should now be able to login as 'enketo' (instead of 'root') without being asked for a password and have sudo privileges with a password.
 
 OS X and Linux users (change the IP address):
 
@@ -153,7 +155,7 @@ Login via ssh as the user you created previously (**not as "root"**). Install th
 sudo add-apt-repository -y ppa:rwky/redis
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y git nginx libxml2-dev libxslt1-dev htop build-essential redis-server checkinstall 
+sudo apt-get install -y git nginx htop build-essential redis-server checkinstall 
 ```
 
 Install NodeJS 0.10.x and global Node packages
