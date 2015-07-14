@@ -47,7 +47,7 @@ Make a note of the location of the keys as you'll need the keys soon. Also, make
 
 #### More details:
 
-More detailed instructions for OS X, Linux users can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) (step 1 and 2 only) and for Windows users [here](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section "Generating an SSH Key").
+More detailed instructions for OS X, Linux users can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2?refcode=9e43ccb8961a) (step 1 and 2 only) and for Windows users [here](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section "Generating an SSH Key").
 
 ### 3. Create a Server
 
@@ -55,9 +55,9 @@ For this tutorial, we are going to use Ubuntu 14.04 on a DigitalOcean server (ak
 
 #### Add your public key to your DigitalOcean account
 
-In the DigitalOcean interface click on _Your Settings_ and go to the [security tab](https://cloud.digitalocean.com/settings/security). Click on _Add SSH Key_ and cut-and-paste your **public key** here. Do the same for any other users that will access your server.
+In the DigitalOcean interface click on _Your Settings_ and go to the [security tab](https://cloud.digitalocean.com/settings/security?refcode=9e43ccb8961a). Click on _Add SSH Key_ and cut-and-paste your **public key** here. Do the same for any other users that will access your server.
 
-[![Add SSH Key](../files/2015/05/add-public-ssh-key.png "Add SSH Key")](https://cloud.digitalocean.com/settings/security)
+[![Add SSH Key](../files/2015/05/add-public-ssh-key.png "Add SSH Key")](https://cloud.digitalocean.com/settings/security?refcode=9e43ccb8961a)
 
 Now, whenever you create a new server in DigitalOcean you can add any of these keys with the click of a button and will have immediate secure access via SSH, without a password!
 
@@ -67,7 +67,7 @@ If multiple people/computers have (root) access to the server it is helpful to g
 
 #### Create a Droplet
 
-Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new) button at the top of the screen to create your server.
+Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new?refcode=9e43ccb8961a) button at the top of the screen to create your server.
 
 1. Give it a meaningful hostname, e.g. "enketo-production"
 2. Select a size. The $10/month option is fine to start with, but when traffic becomes meaningful you'll probably quickly want to upgrade to the $20/month a plan because it has 2 CPU cores. Thankfully, upgrading can be done with the click of a button with only about 2-3 minutes downtime. The storage size is irrelevant for Enketo. When you upgrade you will have the (default) option to only upgrade RAM and CPU, or to upgrade storage size as well. It is usually best to choose the first because then you will be able to downgrade again later. **You cannot downgrade to a droplet with less storage than you currently have.** This allows you to easily try out different server sizes with little risk and little downtime. And because DigitalOcean bills per hour, the cost of trying out a different size is minimal too.
@@ -76,7 +76,7 @@ Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new) button a
 5. Click on the SSH key(s) that may be used to access the server.
 6. Click _Create Droplet_ and wait until this is finished.
 
-**Test**: In your [list of droplets](https://cloud.digitalocean.com/droplets) you will now see an IP address that was assigned to your server (e.g. 107.170.165.182). You should now be able to login to this server as "root". 
+**Test**: In your [list of droplets](https://cloud.digitalocean.com/droplets?refcode=9e43ccb8961a) you will now see an IP address that was assigned to your server (e.g. 107.170.165.182). You should now be able to login to this server as "root". 
 
 **OS X and Linux users**, try this out in the terminal with **your assigned IP address** as follows:
 
@@ -464,7 +464,7 @@ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 sudo service fail2ban restart
 ```
 
-You can optionally [further tweak](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04) fail2ban by editing the configuration (`sudo nano /etc/fail2ban/jail.local`). Make sure to restart it after editing.
+You can optionally [further tweak](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04?refcode=9e43ccb8961a) fail2ban by editing the configuration (`sudo nano /etc/fail2ban/jail.local`). Make sure to restart it after editing.
 
 ### 11. Firewall Setup
 
