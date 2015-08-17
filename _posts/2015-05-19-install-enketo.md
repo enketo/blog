@@ -471,6 +471,7 @@ You can optionally [further tweak](https://www.digitalocean.com/community/tutori
 The following sets up a firewall:
 
 ```bash
+sudo apt-get install ufw
 sudo ufw allow ssh
 sudo ufw allow 80
 sudo ufw allow 443
