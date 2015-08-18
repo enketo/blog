@@ -16,7 +16,7 @@ The [new Enketo](/enketo-express) is now able to display languages from right-to
 It is important to clarify that there are two different language environments in both Enketo and ODK Collect:
 
 1. **Forms** have their own built-in translations of questions, hints, and options. 
-2. The **User Interface** (UI) is a separate environment and has independent multi-language support with translations [provided by volunteers](https://www.transifex.com/organization/enketo/dashboard/enketo-express).
+2. The **User Interface** (UI) is a separate environment and has independent multi-language support with translations [provided by volunteers](https://www.transifex.com/enketo/enketo-express).
 
 When required, Enketo will now display languages from right-to-left **in both the UI and the forms**.
 
