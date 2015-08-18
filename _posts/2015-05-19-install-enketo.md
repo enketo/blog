@@ -163,7 +163,7 @@ Install NodeJS 0.10.x and global Node packages
 ```bash
 curl -sL https://deb.nodesource.com/setup_0.10 | sudo bash -
 sudo apt-get install -y nodejs
-sudo npm install -g grunt-cli bower node-gyp pm2
+sudo npm install -g grunt-cli bower pm2
 ```
 
 Let Ubuntu automatically install security updates (select "Yes" when asked):
@@ -286,9 +286,10 @@ In your browser visit the IP address of the server, and add port 8005. E.g. visi
 To make sure Enketo will run automatically upon reboot and will restart itself if it fails, we configure pm2. First stop the server with CTRL-C.
 
 ```bash
-pm2 start ~/enketo-express/app.js -n enketo
+cd ~/enketo-express
+pm2 start app.js -n enketo
 pm2 save
-sudo pm2 startup
+sudo pm2 startup ubuntu -u enketo
 
 ```
 
@@ -388,7 +389,7 @@ sudo chmod 600 /etc/nginx/ssl/enketo-bundle.crt
 Create a DHE parameter: (This could easily take half an hour!)
 
 ```bash
-cd /etc/ssl
+cd /etc/nginx/ssl
 sudo openssl dhparam -out dhparam.pem 4096
 ```
 
