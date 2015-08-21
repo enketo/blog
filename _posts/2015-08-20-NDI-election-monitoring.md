@@ -9,7 +9,7 @@ tags:
   - enketo
 --- 
 
-_crossposted on NDI blog (link to follow)_
+__cross-posted on [NDI blog](https://www.nditech.org/blog/2015/08/election-monitoring-enketo)__
 
 Introduction by NDI:
 
