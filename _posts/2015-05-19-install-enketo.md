@@ -163,7 +163,7 @@ Install NodeJS 0.10.x and global Node packages
 ```bash
 curl -sL https://deb.nodesource.com/setup_0.10 | sudo bash -
 sudo apt-get install -y nodejs
-sudo npm install -g grunt-cli bower pm2
+sudo npm install -g grunt-cli pm2
 ```
 
 Let Ubuntu automatically install security updates (select "Yes" when asked):
@@ -180,8 +180,6 @@ Install Enketo Express and its dependencies.
 cd ~
 git clone https://github.com/enketo/enketo-express.git
 cd enketo-express
-git submodule update --init --recursive
-bower install
 sudo npm cache clean
 npm install
 ```
