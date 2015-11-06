@@ -341,6 +341,8 @@ server {
 
     location / {
         proxy_pass  http://127.0.0.1:8005;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
     }
 }
 ```
@@ -428,7 +430,7 @@ server {
     ssl_dhparam /etc/nginx/ssl/dhparam.pem;
  
     add_header Strict-Transport-Security max-age=63072000;
-    add_header X-Frame-Options DENY;
+    add_header X-Frame-Options DENY; 
     add_header X-Content-Type-Options nosniff;
  
     location / {
