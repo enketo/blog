@@ -158,10 +158,10 @@ sudo apt-get upgrade -y
 sudo apt-get install -y git nginx htop build-essential redis-server checkinstall 
 ```
 
-Install NodeJS 0.10.x and global Node packages
+Install NodeJS and global Node packages
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_0.10 | sudo bash -
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
 sudo apt-get install -y nodejs
 sudo npm install -g grunt-cli pm2
 ```
