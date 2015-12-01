@@ -161,7 +161,7 @@ sudo apt-get install -y git nginx htop build-essential redis-server checkinstall
 Install NodeJS and global Node packages
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -
 sudo apt-get install -y nodejs
 sudo npm install -g grunt-cli pm2
 ```
@@ -181,7 +181,7 @@ cd ~
 git clone https://github.com/enketo/enketo-express.git
 cd enketo-express
 sudo npm cache clean
-npm install
+npm install --production
 ```
 
 ### 6. Configuration
@@ -264,7 +264,7 @@ cd ~/enketo-express
 grunt
 ```
 
-Further configuration could be done in step 14.
+Further configuration could be done in step 15.
 
 ### 7. Automatic Enketo Launch and Restart
 
@@ -496,6 +496,14 @@ To add: [monit and mmonit](https://mmonit.com/monit/) setup for advanced monitor
 
 Only **one file** contains critical information that should be backed up. This is located at _/var/lib/redis/enketo-main.rdb_. Restoring can be done simply by stopping redis (`sudo service redis-server-enketo-main stop`), copying the backup file, and starting redis (`sudo service redis-server-enketo-main start`).
 
-### 14. Final configuration
+### 14. Logging
+
+You can log the unique instanceIDs of each successfully submitted record. This can be useful for troubleshooting your form/data server or Enketo.
+
+1. set `log.submission` to `true` in config/config.json
+2. create a logrotate.conf file (see sample in setup/config/logrotate.conf, you could cp this to the logs directory e.g. and then modify it as required)
+3. setup cronjob for logrotate e.g. with `30 2 * * * /usr/sbin/logrotate /home/enketo/logrotate.conf -s /home/enketo/enketo-express/logs/logrotate`
+
+### 15. Final configuration
 
 Go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Make sure to rebuild with `grunt` and `pm2 restart enketo` after saving your new configuration.
