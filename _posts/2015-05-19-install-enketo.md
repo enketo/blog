@@ -501,7 +501,7 @@ Only **one file** contains critical information that should be backed up. This i
 You can log the unique instanceIDs of each successfully submitted record. This can be useful for troubleshooting your form/data server or Enketo.
 
 1. set `log.submission` to `true` in config/config.json
-2. create a logrotate.conf file (see sample in setup/config/logrotate.conf, you could cp this to the logs directory e.g. and then modify it as required)
+2. create a logrotate.conf file (see sample in setup/config/logrotate.conf, you could cp this to the home directory e.g. and then modify it as required)
 3. setup cronjob for logrotate e.g. with `30 2 * * * /usr/sbin/logrotate /home/enketo/logrotate.conf -s /home/enketo/enketo-express/logs/logrotate`
 
 ### 15. Final configuration
