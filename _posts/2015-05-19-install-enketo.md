@@ -429,6 +429,8 @@ server {
     ssl_prefer_server_ciphers on;
     ssl_dhparam /etc/nginx/ssl/dhparam.pem;
  
+    client_max_body_size 100M;
+ 
     add_header Strict-Transport-Security max-age=63072000;
     add_header X-Frame-Options DENY; 
     add_header X-Content-Type-Options nosniff;
