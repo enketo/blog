@@ -17,7 +17,7 @@ This post describes how to setup a secure _production server_ running Enketo for
 
 ### 1. Considerations
 
-**Installation is the easy part**. Maintaining a reliable server with close to **0% downtime** - especially when it becomes popular - is **a whole lot harder**. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating your server. So before self-installing a production server, be prepared to spend a significant amount of time to run it afterwards.
+**Installation is the easy part**. Maintaining a reliable server with close to **0% downtime** - especially when it becomes popular - is **a whole lot harder**. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating a server. So before self-installing a production server, be prepared to spend a significant amount of time to run it afterwards.
 
 Self-installation for most people is going to be **far more expensive** than using a public supported service, even if that service is not free. The time required to install and maintain a server and the "cost" of the likely longer periods of downtime will normally outweigh any fee you would pay for a provided service. **If cost is the primary argument to self-install, it is probably not the right decision.**
 
@@ -41,17 +41,17 @@ The location of the keys is _~/.ssh_.
 
 [Download PuTTY.exe and PuTTYgen.exe](http://www.putty.org/). PuTTYgen is only required once, so can be run from the Downloads folder. PuTTY is a program you'd want to keep, so should be put in e.g. a newly created C:\Program Files\PuTTY folder and added to the Windows Start Menu.
 
-Run PuTTYgen.exe and click "Generate" with the defaults (SSH-2 RSA, 2048 bits). Move the mouse as directed. Passphrase is optional. Save the private and public keys both (e.g. in My Documents\Keys). Make sure to use clear filenames (e.g. private_key.ppk and public_key.ppk). Copy the contents of the public key from the PuTTY Key Generator window to the clipboard with Ctrl-C.
+Run PuTTYgen.exe and click _Generate_ with the defaults (SSH-2 RSA, 2048 bits). Move the mouse as directed. Passphrase is optional. Save the private and public keys both (e.g. in My Documents\Keys). Make sure to use clear filenames (e.g. private_key.ppk and public_key.ppk). Copy the contents of the public key from the PuTTY Key Generator window to the clipboard with Ctrl-C.
 
 Make a note of the location of the keys as you'll need the keys soon. Also, make sure you have a backup of your keys!
 
 #### More details:
 
-More detailed instructions for OS X, Linux users can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2?refcode=9e43ccb8961a) (step 1 and 2 only) and for Windows users [here](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section "Generating an SSH Key").
+More detailed instructions for OS X, Linux users can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2?refcode=9e43ccb8961a) (step 1 and 2 only) and for Windows users [here](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section: _"Generating an SSH Key"_).
 
 ### 3. Create a Server
 
-For this tutorial, we are going to use Ubuntu 14.04 on a DigitalOcean server (aka a "droplet"). DigitalOcean provides the best bang for the buck when looking at CPU speed and CPU cores, both of which are the key criteria for Enketo Express performance. Their user interface is refreshingly well designed too. The tutorial should be quite similar for other VPS providers from section 4 onwards. If you do not have a DigitalOcean account yet, create one using [this referral link](https://www.digitalocean.com/?refcode=9e43ccb8961a) to get a $10 credit. 
+For this tutorial, we are going to use Ubuntu 14.04 on a DigitalOcean server (aka a _droplet_). DigitalOcean provides the best bang for the buck when looking at CPU speed and CPU cores, both of which are the key criteria for Enketo Express performance. Their user interface is refreshingly well designed too. The tutorial should be quite similar for other VPS providers from section 4 onwards. If you do not have a DigitalOcean account yet, create one using [this referral link](https://www.digitalocean.com/?refcode=9e43ccb8961a) to get a $10 credit. 
 
 #### Add your public key to your DigitalOcean account
 
@@ -63,20 +63,20 @@ Now, whenever you create a new server in DigitalOcean you can add any of these k
 
 When you buy a new computer you could just move your public and private key pair.
 
-If multiple people/computers have (root) access to the server it is helpful to get the public key from all of them before you create your server, though you also add them to your server later using a different method.
+If multiple people/computers have (root) access to the server it is helpful to get the public key from all of them before you create your server, though you can also add them to your server later using a different method.
 
 #### Create a Droplet
 
 Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new?refcode=9e43ccb8961a) button at the top of the screen to create your server.
 
-1. Give it a meaningful hostname, e.g. "enketo-production"
+1. Give it a meaningful hostname, e.g. _enketo-production_
 2. Select a size. The $10/month option is fine to start with, but when traffic becomes meaningful you'll probably quickly want to upgrade to the $20/month a plan because it has 2 CPU cores. Thankfully, upgrading can be done with the click of a button with only about 2-3 minutes downtime. The storage size is irrelevant for Enketo. When you upgrade you will have the (default) option to only upgrade RAM and CPU, or to upgrade storage size as well. It is usually best to choose the first because then you will be able to downgrade again later. **You cannot downgrade to a droplet with less storage than you currently have.** This allows you to easily try out different server sizes with little risk and little downtime. And because DigitalOcean bills per hour, the cost of trying out a different size is minimal too.
 3. Select a region that is closest to the geographical center of where your users are located.
 4. Select the _Ubuntu 14.04 x64_ image.
 5. Click on the SSH key(s) that may be used to access the server.
 6. Click _Create Droplet_ and wait until this is finished.
 
-**Test**: In your [list of droplets](https://cloud.digitalocean.com/droplets?refcode=9e43ccb8961a) you will now see an IP address that was assigned to your server (e.g. 107.170.165.182). You should now be able to login to this server as "root". 
+**Test**: In your [list of droplets](https://cloud.digitalocean.com/droplets?refcode=9e43ccb8961a) you will now see an IP address that was assigned to your server (e.g. 107.170.165.182). You should now be able to login to this server as _root_. 
 
 **OS X and Linux users**, try this out in the terminal with **your assigned IP address** as follows:
 
@@ -84,7 +84,7 @@ Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new?refcode=9
 ssh root@107.170.165.182
 ```
 
-**Windows users**, try this out by opening PuTTY, adding the IP address as Host Name, clicking on SSH and Auth in the left Category tree, and adding the private key. For detailed instructions see [this page](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/connecting-to-your-machine/connecting-to-your-machine-from-windows). Select 'Yes' when asked, and type 'root' when asked. After verifying that this works, you can save your session so you won't have to repeat these steps next time.
+**Windows users**, try this out by opening PuTTY, adding the IP address as Host Name, clicking on SSH and Auth in the left Category tree, and adding the private key. For detailed instructions see [this page](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/connecting-to-your-machine/connecting-to-your-machine-from-windows). Select _Yes_ when asked, and type _root_ when asked. After verifying that this works, you can save your session so you won't have to repeat these steps next time.
 
 ### 4. Server Installation
 
@@ -92,7 +92,7 @@ Login to your server as _root_ via SSH if you haven't done this already. You wil
 
 #### Create a user
 
-In these examples we'll create a user named "enketo" but you can use any other name. You will be prompted to enter a new password which you will need for configuring and updating your server (ie. for anything requiring `sudo` privileges). **Note: All the terminal snippets below assume you chose "enketo" as username.**
+In these examples we'll create a user named _enketo_ but you can use any other name. You will be prompted to enter a new password which you will need for configuring and updating your server (ie. for anything requiring `sudo` privileges). **Note: All the terminal snippets below assume you chose _enketo_ as username.**
 
 ```bash
 adduser enketo
@@ -119,7 +119,7 @@ Configure ssh by disabling root access, and forcing public key authentication:
 nano /etc/ssh/sshd_config
 ```
 
-Scroll down with your keyboard arrow keys to find the existing settings and change their values to `no` as mentioned below. Remove the "# "in front of the sentence if present. These are the correct settings:
+Scroll down with your keyboard arrow keys to find the existing settings and change their values to _no_ as mentioned below. Remove the _#_ in front of the sentence if present. These are the correct settings:
 
 ```bash
 PermitRootLogin no
@@ -128,7 +128,7 @@ PasswordAuthentication no
 UsePAM no
 ```
 
-Save your changes with CTRL+X, enter 'Y' to confirm, and then hit Enter
+Save your changes with CTRL+X, enter _Y_ to confirm, and then hit Enter
 
 Now restart the SSH service and exit:
 
@@ -137,7 +137,7 @@ service ssh restart
 exit
 ```
 
-**Test**: You should now be able to login as 'enketo' (instead of 'root') without being asked for a password and have sudo privileges with a password.
+**Test**: You should now be able to login as _enketo_ (instead of _root_) without being asked for a password and have sudo privileges with a password.
 
 OS X and Linux users (change the IP address):
 
@@ -145,11 +145,11 @@ OS X and Linux users (change the IP address):
 ssh enketo@107.170.165.182
 ```
 
-Windows users, do the same as before but enter user name 'enketo' when asked.
+Windows users, do the same as before but enter user name _enketo_ when asked.
 
 #### Install required software
 
-Login via ssh as the user you created previously (**not as "root"**). Install the first batch of software packages as follows and enter 'Y' when asked to confirm:
+Login via ssh as the user you created previously (**not as _root_**). Install the first batch of software packages as follows and enter _Y_ when asked to confirm:
 
 ```bash
 sudo add-apt-repository -y ppa:rwky/redis
@@ -166,7 +166,7 @@ sudo apt-get install -y nodejs
 sudo npm install -g grunt-cli pm2
 ```
 
-Let Ubuntu automatically install security updates (select "Yes" when asked):
+Let Ubuntu automatically install security updates (select _Yes_ when asked):
 
 ```bash
 sudo dpkg-reconfigure -plow unattended-upgrades
@@ -228,7 +228,7 @@ ping
 exit
 ```
 
-The response to both tests should be "PONG".
+The response to both tests should be: "PONG".
 
 #### Enketo configuration
 
@@ -255,7 +255,7 @@ The default configuration is almost functional. We just need to make sure it lin
 }
 ```
 
-Use Ctrl-X and enter "Y" to save the configuration.
+Use Ctrl-X and enter _Y_ to save the configuration.
 
 Build:
 
@@ -291,7 +291,7 @@ sudo pm2 startup ubuntu -u enketo
 
 ```
 
-**Test**: OS X and Linux users can test the API response, using the linked server url and corresponding api key for a non-existing form called "test", by entering something like the following into a **new terminal window**:
+**Test**: OS X and Linux users can test the API response, using the linked server url and corresponding api key for a non-existing form called _test_, by entering something like the following into a **new terminal window**:
 
 ```bash
 curl --user EERTIUCJSHDGKHD234325: -d "server_url=https://my-aggregate.appspot.com&form_id=test" http://107.170.165.182:8005/api/v2/survey
@@ -318,9 +318,9 @@ Then wait about 15 seconds and check that Enketo is running by visiting the URL 
 
 #### DNS Settings
 
-If you have rented a domain name for your Enketo installation, we can configure the webserver. In this example we'll be using a subdomain: "enketo.aidapplications.com" but you can also use the main domain.
+If you have rented a domain name for your Enketo installation, we can configure the webserver. In this example we'll be using a subdomain, _enketo.aidapplications.com_, but you can also use the main domain.
 
-First create a DNS entry for your domain using the tools that your DNS registrar provides. If you haven't found a DNS registrar yet, you could use [NameCheap](http://www.namecheap.com/?aff=85649). Create an _"A" record_ that points to your IP address.
+First create a DNS entry for your domain using the tools that your DNS registrar provides. If you haven't found a DNS registrar yet, you could use [NameCheap](http://www.namecheap.com/?aff=85649). Create an _A record_ that points to your IP address.
 
 ![DNS example](../files/2015/05/dns.png "DNS example")
 
@@ -347,7 +347,7 @@ server {
 }
 ```
 
-Save the configuration with Ctrl-X and type "Y". 
+Save the configuration with Ctrl-X and type _Y_. 
 
 Activate the new configuration:
 
@@ -364,7 +364,7 @@ sudo service nginx restart
 
 Nothing in this section is specific to Enketo. You can also use one of the [thousands of SSL-certificate-installation-tuturials on the web](https://www.google.com/webhp?#q=How+to+install+an+ssl+certificate+for+nginx+on+Ubuntu+14.04).
 
-Purchase an SSL certificate for your (sub)domain somewhere. This should not cost more than [$10/year](https://www.namecheap.com/security/ssl-certificates/comodo/positivessl.aspx?aff=85649). You will be asked to provide a _"CSR"_. The recommended way of generating a CSR is to log in to your Enketo server and:
+Purchase an SSL certificate for your (sub)domain somewhere. This should not cost more than [$10/year](https://www.namecheap.com/security/ssl-certificates/comodo/positivessl.aspx?aff=85649). You will be asked to provide a _CSR_. The recommended way of generating a CSR is to log in to your Enketo server and:
 
 ```bash
 sudo mkdir /etc/nginx/ssl
@@ -372,7 +372,7 @@ sudo openssl genrsa -out /etc/nginx/ssl/enketo.key 2048
 sudo openssl req -new -key /etc/nginx/ssl/enketo.key -out /etc/nginx/ssl/enketo.csr
 ```
 
-Make sure to enter Country Name, State/Province, City/Locality, and Common Name. The Common Name is **very important**. In the example above the common name is _"enketo.aidapplications.com"_. 
+Make sure to enter Country Name, State/Province, City/Locality, and Common Name. The Common Name is **very important**. In the example above the common name is _enketo.aidapplications.com_. 
 
 To display the content of the newly created CSR in order to copy and paste it:
 
@@ -482,7 +482,7 @@ sudo ufw enable
 sudo ufw status
 ```
 
-Type "y" when asked to proceed with operation.
+Type _y_ when asked to proceed with operation.
 
 **Test**: You should now no longer be able to access enketo in your browser using the server's IP address and port.
 
@@ -496,7 +496,13 @@ To add: [monit and mmonit](https://mmonit.com/monit/) setup for advanced monitor
 
 ### 13. Backups
 
-Only **one file** contains critical information that should be backed up. This is located at _/var/lib/redis/enketo-main.rdb_. Restoring can be done simply by stopping redis (`sudo service redis-server-enketo-main stop`), copying the backup file, and starting redis (`sudo service redis-server-enketo-main start`).
+Only **two files** contain critical information that **absolutely** should be backed up: the main database and the Enketo configuration file. 
+
+The database file is located at _/var/lib/redis/enketo-main.rdb_. Restoring can be done simply by stopping redis (`sudo service redis-server-enketo-main stop`), copying the backup file, and starting redis (`sudo service redis-server-enketo-main start`).
+
+The configuration file is located at _~/enketo-express/config/config.json_. Restore this file by copying it and restarting Enketo.
+
+Other files to perhaps consider backing up: NGINX configuration, custom scripts, other app configuration files.
 
 ### 14. Logging
 
