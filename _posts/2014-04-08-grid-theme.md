@@ -2,7 +2,7 @@
 title: Grid Theme
 author: Martijn van de Rijdt
 layout: post
-permalink: /gorgeous-grid
+permalink: /gorgeous-grid/
 categories:
   - Features
 tags:

@@ -2,7 +2,7 @@
 title: How To Install Enketo On Ubuntu 14.04
 author: Martijn van de Rijdt
 layout: post
-permalink: /install-enketo-production-ubuntu
+permalink: /install-enketo-production-ubuntu/
 categories:
   - tutorial
 tags:

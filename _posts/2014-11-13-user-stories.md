@@ -2,7 +2,7 @@
 title: Collecting User Stories
 author: Martijn van de Rijdt
 layout: post
-permalink: /user-stories
+permalink: /user-stories/
 categories:
   - Stories
 tags:

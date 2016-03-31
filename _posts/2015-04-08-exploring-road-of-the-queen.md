@@ -2,7 +2,7 @@
 title: Exploring the Road of the Queen
 author: Christi Yoder
 layout: post
-permalink: /exploring-road-of-the-queen
+permalink: /exploring-road-of-the-queen/
 categories:
   - Stories
 tags:

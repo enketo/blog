@@ -2,7 +2,7 @@
 title: Building a manifest with PHP
 author: Martijn van de Rijdt
 layout: post
-permalink: /building-a-manifest-with-php
+permalink: /building-a-manifest-with-php/
 categories:
   - browsers
   - technology

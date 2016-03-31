@@ -2,7 +2,7 @@
 title: Presentation on Enketo for Humanitarian Nomad 2013
 author: Martijn van de Rijdt
 layout: post
-permalink: /nomad-presention-2013
+permalink: /nomad-presention-2013/
 categories:
   - Uncategorized
 tags:

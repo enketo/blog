@@ -2,7 +2,7 @@
 title: Likert Widget
 author: Martijn van de Rijdt
 layout: post
-permalink: /likert-widget
+permalink: /likert-widget/
 categories:
   - Features
 tags:

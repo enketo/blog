@@ -2,7 +2,7 @@
 title: 'User Interface Changes'
 author: Martijn van de Rijdt
 layout: post
-permalink: /ui-changes-uploads
+permalink: /ui-changes-uploads/
 categories:
   - Uncategorized
   - Features

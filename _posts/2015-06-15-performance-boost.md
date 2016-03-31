@@ -2,7 +2,7 @@
 title: Performance Boost
 author: Martijn van de Rijdt
 layout: post
-permalink: /performance-boost
+permalink: /performance-boost/
 categories:
   - Uncategorized
 tags:

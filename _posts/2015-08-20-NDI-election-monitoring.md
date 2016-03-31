@@ -2,7 +2,7 @@
 title: NDI Election Monitoring
 author: Christi Yoder
 layout: post
-permalink: /NDI-election-monitoring
+permalink: /NDI-election-monitoring/
 categories:
   - Stories
 tags:

@@ -2,7 +2,7 @@
 title: 'Enketo Open-Source Developer Community taking off'
 author: Martijn van de Rijdt
 layout: post
-permalink: /open-source-community
+permalink: /open-source-community/
 categories:
   - apps
 tags:

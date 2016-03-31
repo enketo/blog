@@ -2,7 +2,7 @@
 title: Enketo in KoBoToolbox
 author: Martijn van de Rijdt
 layout: post
-permalink: /kobo-collaboration
+permalink: /kobo-collaboration/
 categories:
   - Uncategorized
 tags:

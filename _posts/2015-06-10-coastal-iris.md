@@ -2,7 +2,7 @@
 title: Saving Israel's Coastal Iris
 author: Christi Yoder
 layout: post
-permalink: /coastal-iris
+permalink: /coastal-iris/
 categories:
   - Stories
 tags:

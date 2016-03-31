@@ -2,7 +2,7 @@
 title: Combatting Tuberculosis
 author: Christi Yoder
 layout: post
-permalink: /combatting-tbc
+permalink: /combatting-tbc/
 categories:
   - Stories
 tags:

@@ -2,7 +2,7 @@
 title: Horizontal Choice Lists
 author: Martijn van de Rijdt
 layout: post
-permalink: /horizontal-choices
+permalink: /horizontal-choices/
 categories:
   - Features
 tags:

@@ -2,7 +2,7 @@
 title: Plan Changes
 author: Martijn van de Rijdt
 layout: post
-permalink: /plan-changes
+permalink: /plan-changes/
 categories:
   - Uncategorized
 tags:

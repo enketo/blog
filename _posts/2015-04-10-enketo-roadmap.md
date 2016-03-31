@@ -2,7 +2,7 @@
 title: Enketo Roadmap
 author: Martijn van de Rijdt
 layout: post
-permalink: /enketo-roadmap
+permalink: /enketo-roadmap/
 categories:
   - Presentations
 tags:

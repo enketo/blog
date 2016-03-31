@@ -2,7 +2,7 @@
 title: Progress Bar
 author: Martijn van de Rijdt
 layout: post
-permalink: /progress-bar
+permalink: /progress-bar/
 categories:
   - Features
 tags:

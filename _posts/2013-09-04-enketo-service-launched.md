@@ -2,7 +2,7 @@
 title: 'Enketo.org launches!'
 author: Martijn van de Rijdt
 layout: post
-permalink: /enketo-launches
+permalink: /enketo-launches/
 categories:
   - apps
 tags:

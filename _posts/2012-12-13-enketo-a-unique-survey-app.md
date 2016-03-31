@@ -2,7 +2,7 @@
 title: 'Enketo: Why so awesome?'
 author: Martijn van de Rijdt
 layout: post
-permalink: /enketo-a-unique-survey-app
+permalink: /enketo-a-unique-survey-app/
 categories:
   - apps
 tags:

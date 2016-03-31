@@ -2,7 +2,7 @@
 title: Notes getting fancy
 author: Martijn van de Rijdt
 layout: post
-permalink: /better-notes
+permalink: /better-notes/
 categories:
   - Features
 tags:

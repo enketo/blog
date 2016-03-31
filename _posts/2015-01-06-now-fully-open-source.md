@@ -2,7 +2,7 @@
 title: Enketo Now Fully Open Source
 author: Martijn van de Rijdt
 layout: post
-permalink: /now-fully-open-source
+permalink: /now-fully-open-source/
 categories:
   - Uncategorized
 tags:

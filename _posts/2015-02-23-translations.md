@@ -2,7 +2,7 @@
 title: Multi-Language User Interface
 author: Martijn van de Rijdt
 layout: post
-permalink: /ui-translations
+permalink: /ui-translations/
 categories:
   - Features
 tags:

@@ -2,7 +2,7 @@
 title: 'Quick look at enketo&#8217;s launch area'
 author: Martijn van de Rijdt
 layout: post
-permalink: /launch-preview
+permalink: /launch-preview/
 categories:
   - apps
 tags:

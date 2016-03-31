@@ -3,7 +3,7 @@
 title: Enketo.org now has a FREE plan
 author: Martijn van de Rijdt
 layout: post
-permalink: /plan-prices-reduced
+permalink: /plan-prices-reduced/
 categories:
   - Uncategorized
 tags:

@@ -2,7 +2,7 @@
 title: Smart Paper
 author: Martijn van de Rijdt
 layout: post
-permalink: /enketo-branding
+permalink: /enketo-branding/
 categories:
   - Uncategorized
 tags:

@@ -2,7 +2,7 @@
 title: 'A new name: enketo'
 author: Martijn van de Rijdt
 layout: post
-permalink: /new-name-enketo
+permalink: /new-name-enketo/
 categories:
   - apps
 tags:

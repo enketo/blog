@@ -2,7 +2,7 @@
 title: Draft Records
 author: Martijn van de Rijdt
 layout: post
-permalink: /draft-records
+permalink: /draft-records/
 categories:
   - Features
 tags:

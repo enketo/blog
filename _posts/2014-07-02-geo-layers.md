@@ -2,7 +2,7 @@
 title: Multiple Map Layers in Geo Widgets
 author: Martijn van de Rijdt
 layout: post
-permalink: /geo-layers
+permalink: /geo-layers/
 categories:
   - Features
 tags:

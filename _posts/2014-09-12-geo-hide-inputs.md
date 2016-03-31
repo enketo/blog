@@ -2,7 +2,7 @@
 title: Hide Inputs in Geo Widgets
 author: Martijn van de Rijdt
 layout: post
-permalink: /geo-hide-inputs
+permalink: /geo-hide-inputs/
 categories:
   - Features
 tags:

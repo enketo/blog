@@ -2,7 +2,7 @@
 title: Page Validation
 author: Martijn van de Rijdt
 layout: post
-permalink: /page-validation
+permalink: /page-validation/
 categories:
   - Uncategorized
 tags:

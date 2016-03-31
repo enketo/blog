@@ -2,7 +2,7 @@
 title: Introducing Enketo Express
 author: Martijn van de Rijdt
 layout: post
-permalink: /enketo-express
+permalink: /enketo-express/
 categories:
   - Uncategorized
 tags:

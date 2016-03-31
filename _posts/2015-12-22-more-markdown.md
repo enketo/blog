@@ -2,7 +2,7 @@
 title: More Markdown
 author: Martijn van de Rijdt
 layout: post
-permalink: /more-markdown
+permalink: /more-markdown/
 categories:
   - Uncategorized
 tags:

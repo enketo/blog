@@ -2,7 +2,7 @@
 title: Full Right-to-left Language Support
 author: Martijn van de Rijdt
 layout: post
-permalink: /advanced-language
+permalink: /advanced-language/
 categories:
   - Uncategorized
 tags:

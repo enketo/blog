@@ -2,7 +2,7 @@
 title: Enketo Integration into ODK Aggregate
 author: Martijn van de Rijdt
 layout: post
-permalink: /enketo-aggregate
+permalink: /enketo-aggregate/
 categories:
   - Uncategorized
 tags:

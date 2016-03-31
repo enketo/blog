@@ -2,7 +2,7 @@
 title: Enketo Presentation at SFI Conference
 author: Martijn van de Rijdt
 layout: post
-permalink: /presentation-SFI-2014
+permalink: /presentation-SFI-2014/
 categories:
   - Presentations
 tags:
