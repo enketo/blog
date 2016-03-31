@@ -7,7 +7,6 @@ categories:
   - apps
 tags:
   - enketo
-  - javarosa
   - ODK
   - openrosa
   - survey

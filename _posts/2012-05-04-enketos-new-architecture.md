@@ -13,7 +13,7 @@ tags:
   - ODK
   - offline
 ---
-As a follow up to the[ introduction of enketo][1] and my post about the [JavaRosa form format][2], I would like to explain the new architecture of enketo. Development work is progressing steadily. Most of the hard stuff in transforming the XML forms into HTML5 forms has been completed using the power of XSLT (wow!), PHP and JavaScript. There is a still a lot of work remaining with other aspects of the application.
+As a follow up to the[ introduction of enketo][1] and my post about the [OpenRosa form format][2], I would like to explain the new architecture of enketo. Development work is progressing steadily. Most of the hard stuff in transforming the XML forms into HTML5 forms has been completed using the power of XSLT (wow!), PHP and JavaScript. There is a still a lot of work remaining with other aspects of the application.
 
  [1]: /an-introduction-to-rapaide/ "An Introduction to Rapaide"
  [2]: /survey-tools/ "Survey Tools"
@@ -33,9 +33,9 @@ Basically, enketo will provide a web-based alternative to ODK Collect or Kobo Co
  [7]: /offline-capable-web-applications/ "Offline-Capable Web Applications"
  [8]: /humanitarian-aid-browsing/ "Humanitarian Aid Browsing"
 
-The launch component validates the forms and facilitates user testing  before the forms become available to the enumerators to collect and enter data. A simplified version of this component will be made available in July/August (depending on other engagements) to a limited audience of ODK users. It will allow users to transform and play with their existing JavaRosa forms and hopefully provide me with some useful feedback (send me a message or reply to this post if you’re interested in helping with this).
+The launch component validates the forms and facilitates user testing  before the forms become available to the enumerators to collect and enter data. A simplified version of this component will be made available in July/August (depending on other engagements) to a limited audience of ODK users. It will allow users to transform and play with their existing OpenRosa XForms and hopefully provide me with some useful feedback (send me a message or reply to this post if you’re interested in helping with this).
 
-In the future, depending on the need, there could be an integrated enketo build and analysis component and maybe even a (fast PHP) version of a JavaRosa-compliant server to replace ODK Aggregate. Thankfully, this is not a priority as it is great to be able to use the facilities provided by ODK and Kobo (as well as by some other very interesting players such as [formhub][9]). I am particularly impressed with the current [ODK Form Builder][10] (tip: you don’t have to sign in to play around with this, just click cancel).
+In the future, depending on the need, there could be an integrated enketo build and analysis component and maybe even a (fast PHP) version of a OpenRosa-compliant server to replace ODK Aggregate. Thankfully, this is not a priority as it is great to be able to use the facilities provided by ODK and Kobo (as well as by some other very interesting players such as [formhub][9]). I am particularly impressed with the current [ODK Form Builder][10] (tip: you don’t have to sign in to play around with this, just click cancel).
 
  [9]: http://blog.formhub.org/2012/04/09/new-insights-from-your-formhub-map/
  [10]: http://build.opendatakit.org "ODK Form Builder"

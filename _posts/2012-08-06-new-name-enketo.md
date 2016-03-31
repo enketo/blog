@@ -22,9 +22,9 @@ Finally, I have come up with a better name for the offline-capable-and-open-sour
 
 More updates:
 
-*   JavaRosa engine is working well and supports repeats (fully), translations (all), constraints, branching, triggers, outputs, defaults, media labels (hosted on Aggregate) and appearances (partial).
-*   The focus in August will be on the data entry component (local storage of data and offline launch). Also, the source code for the fork of the excellent [javascript XPath evaluator][3] (to which I’ve just added the custom JavaRosa functions and accompanying tests) will be made available on GitHub.
-*   September will be mostly dedicated to finalizing support for the newer parts of the JavaRosa spec (e.g. [cascading selections][4]) and creating a huge quantity of additional automated tests.
+*   OpenRosa XForms engine is working well and supports repeats (fully), translations (all), constraints, branching, triggers, outputs, defaults, media labels (hosted on Aggregate) and appearances (partial).
+*   The focus in August will be on the data entry component (local storage of data and offline launch). Also, the source code for the fork of the excellent [javascript XPath evaluator][3] (to which I’ve just added the custom OpenRosa functions and accompanying tests) will be made available on GitHub.
+*   September will be mostly dedicated to finalizing support for the newer parts of the OpenRosa spec (e.g. [cascading selections][4]) and creating a huge quantity of additional automated tests.
 *   October: widgets…. and then in November the alpha launch(?)
 
  [3]: http://www.pokret.org/products/xpathjs-javascript-based-xpath-library/ "Link to developer of XPathJS"

@@ -18,7 +18,7 @@ I started enketo to provide a way to address the lack of modern and efficient IT
 
  [3]: ../files/2012/12/ss1.jpg
 
-Enketo was initially targeted at aid organizations working in emergencies to conduct collaborative needs assessments. However, during the course of the project its potential in a much wider context became clear. It evolved from a basic app using a custom JSON form format to a powerful application that is able to handle complex forms in the [open-source OpenRosa Xform format][4]. It is fully compatible with other applications in the JavaRosa ecosystem,  and like [formhub][1], [JavaRosa][5] and [ODK][6], enketo is 100% free and [open-source][7].
+Enketo was initially targeted at aid organizations working in emergencies to conduct collaborative needs assessments. However, during the course of the project its potential in a much wider context became clear. It evolved from a basic app using a custom JSON form format to a powerful application that is able to handle complex forms in the [open-source OpenRosa Xform format][4]. It is fully compatible with other applications in the OpenRosa ecosystem,  and like [formhub][1], [OpenRosa][5] and [ODK][6], enketo is 100% free and [open-source][7].
 
  [4]: http://opendatakit.github.io/odk-xform-spec/ "XForms as supported by OpenRosa"
  [5]: https://bitbucket.org/javarosa/javarosa/wiki/Home "JavaRosa wiki"
