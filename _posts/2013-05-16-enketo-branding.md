@@ -16,10 +16,10 @@ If you have visited [enketo.org](http://enketo.org) recently you will have notic
 
 As somebody who has always been very interested in graphic design and web design, I have been very impressed (and a little envious) with both the process and the end result of this design challenge. I'm hoping that witnessing this process in enketo and other projects will eventually start to rub off on me.
 
-###Why Smart Paper?
+### Why Smart Paper?
 
 Enketo forms are as familiar and easy to use as paper, but they're smart. Sections magically appear when you progress through a form based on previous answers. Data quality can be enforced by smart validation logic designed into a form. Moreover, one of the core features of enketo is to automatically generate a print-friendly version of each form for old-fashioned collection by paper and pen. So there is no need to maintain different versions of the same form!
 
-###Enketo.org
+### Enketo.org
 
 The branding and design work is one of the final phases of the forthcoming launch of enketo.org. Another was the renaming of Aid Web Solutions to Enketo LLC. There is still work to be done and decisions to be made, but we're getting close. I'll write a post about this in the next few weeks. 

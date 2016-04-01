@@ -12,7 +12,7 @@ tags:
 
 Enketo's user interface undergoes continuous improvements\*. Normally these are small and incremental. However, this week two major changes that are worth highlighting were deployed courtesy of the [Sustainable Engineering Lab](http://modi.mech.columbia.edu/) (formerly know as Modi Labs).
 
-###Offline-enabled?
+### Offline-enabled?
 
 Enketo is able to show different views of the same form. For example the formhub interface can show _previews_, _embedded forms_ and _forms to edit data_ in addition to the regular webform views. Not all of these views are offline-capable (i.e. able to _launch_ without an Internet Connection and able to save data _persistently_ inside the browser). In the old interface, the user was greeted with an 'Offline Capable!' alert the first time she/he loaded a form. The new interface has a much more elegant way of showing at all times whether a form view is offline-capable. It simply shows an icon at the top left of the form. The icon signifies that the form is succesfully 'installed' in the browser and ready for offline use. 
 
@@ -22,7 +22,7 @@ Clicking the icon will answer a much-asked question about what _offline-capable_
 
 
 
-###Uploading Records
+### Uploading Records
 
 The old interface was designed for the user to efficiently enter data, record after record, and not worry about uploading those records to the server. Uploads were handled in the background, automatically whenever a connection was available. The amount of records queued for submission were displayed as a number in a bubble right above the form. Enketo Smart Paper works offline and it was assumed that in the "normal situation", uploads would probably not succeed - due to the lack of an Internet connection - but that this would not be a problem. 
 
