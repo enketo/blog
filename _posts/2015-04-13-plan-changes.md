@@ -25,7 +25,7 @@ The paid plans will continue. A new "Basic" plan has been added and the "Basic+"
 
 ### The New Enketo App
 
-The [new Enketo app](/enketo-express) will soon jump far ahead of the old app in both features and robustness. ~~~There is no plan yet to migrate the paid enketo.org service to this new app (but it may happen).~~~ [edit: 12/14/2015] The paid service has been updated to use this app. [/edit] The new app is also [much easier to install yourself](https://github.com/enketo/enketo-express#how-to-install-anywhere), so for some paying users that will likely become **a more attractive option**.
+The [new Enketo app](/enketo-express) will soon jump far ahead of the old app in both features and robustness. ~~~There is no plan yet to migrate the paid enketo.org service to this new app (but it may happen).~~~ [edit: 12/14/2015] The paid service has been updated to use this app. [/edit] The new app is also [much easier to install yourself](https://github.com/kobotoolbox/enketo-express#how-to-install-a-production-server), so for some paying users that will likely become **a more attractive option**.
 
 ### Previews for ODK XLSForm
 

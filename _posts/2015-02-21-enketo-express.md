@@ -15,7 +15,7 @@ The [new Enketo Smart Paper app](https://github.com/kobotoolbox/enketo-express) 
 
 ### Advantages
 
-For a continuously updated list of differences [see the repository](https://github.com/kobotoolbox/enketo-express#differences-with-enketoenketo-legacy-and-enketoorg). As of today the key advantages of the new app are:
+For a continuously updated list of differences [see the repository](https://github.com/kobotoolbox/enketo-express#differences-with-enketoenketo-legacy). As of today the key advantages of the new app are:
 
 * exactly 10x easier to install
 * multi-language user interface
