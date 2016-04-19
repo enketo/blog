@@ -174,7 +174,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ### 5. Enketo Express Installation
 
-Install Enketo Express and its dependencies.
+Install Enketo Express and its dependencies. Warnings during `npm install` can be ignored. Errors should not be ignored.
 
 ```bash
 cd ~
@@ -239,14 +239,14 @@ cp ~/enketo-express/config/default-config.json ~/enketo-express/config/config.js
 nano ~/enketo-express/config/config.json
 ```
 
-The default configuration is almost functional. We just need to make sure it links to the correct Form/Data server and create a secret API key and encryption key. See [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) for an explanation of these configuration items. In this example we use a server at https://my-aggregate.appspot.com. So the minimum configuration items to change are:
+The default configuration is almost functional. We just need to create a secret API key and encryption key. See [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) for a detailed explanation of these configuration items. In this example we use a server at https://my-aggregate.appspot.com, but it is easiest to just set the `server url` to `""` for now. So the minimum configuration items to change are:
 
 ```json
 {
     ...
     "linked form and data server": {
         "name": "My Aggregate",
-        "server url": "my-aggregate.appspot.com",
+        "server url": "",
         "api key": "EERTIUCJSHDGKHD234325",
         ...
     },
@@ -264,7 +264,7 @@ cd ~/enketo-express
 grunt
 ```
 
-Further configuration could be done in step 15.
+The subsequent 'Local Npm module "..." not found' errors can be ignored as those modules are only used during development. Further configuration should be done in step 15.
 
 ### 7. Automatic Enketo Launch and Restart
 
@@ -514,4 +514,4 @@ You can log the unique instanceIDs of each successfully submitted record. This c
 
 ### 15. Final configuration
 
-Go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Make sure to rebuild with `grunt` and `pm2 restart enketo` after saving your new configuration.
+Once, you server and its integration with the form server is working, go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Start by setting the `server url` to its proper value and see if the integration still works afterwards. Make sure to rebuild with `grunt` and `pm2 restart enketo` after updating your configuration.
