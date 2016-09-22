@@ -230,6 +230,8 @@ exit
 
 The response to both tests should be: "PONG".
 
+**Note that configuring redis is pretty complex and Enketo's sample configuration is not a one-size-fits-all solution. The size of the enketo-main database plays a big role in how you want to secure persistence. If enketo-main becomes too big, you'd probably want to switch to using both rdb and aof persistence. Read more [here](http://redis.io/topics/persistence). It is also possible to use a 3rd-party redis service.**
+
 #### Enketo configuration
 
 Create a configuration file by copying the default configuration:
@@ -251,6 +253,7 @@ The default configuration is almost functional. We just need to create a secret 
         ...
     },
     "encryption key": "a34sgfj324113413y",
+    "less secure encryption key": "b542sdf32dabdery"
     ...
 }
 ```
