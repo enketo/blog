@@ -9,9 +9,9 @@ tags:
   - enketo
 ---
 
-Enketo now offers a better way to designing sections of text and media (aka "notes" in XLSForm or readonly inputs in XForm). [This Form](https://notes.enketo.org/webform) shows what you can now create.
+Enketo now offers a better way to designing sections of text and media (aka "notes" in XLSForm or readonly inputs in XForm). [This Form](https://enke.to/::notes) shows what you can now create.
 
-<a style="float: right;border: 1px solid #ddd;margin: 10px 0 10px 20px;" href="https://notes.enketo.org/webform" title="Fancy Notes"><img src="../files/2014/02/fancy-note.png" alt="Fancy Notes"/></a>
+<a style="float: right;border: 1px solid #ddd;margin: 10px 0 10px 20px;" href="https://enke.to/::notes" title="Fancy Notes"><img src="../files/2014/02/fancy-note.png" alt="Fancy Notes"/></a>
 
 ### Combine multiple notes visually
 The form format only allows one of each type of media (image, video, audio) to be added to a note. To work around this limitation, subsequent notes will now be visually merged together so that they appear as one note.

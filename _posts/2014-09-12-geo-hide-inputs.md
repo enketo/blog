@@ -10,7 +10,7 @@ tags:
   - geo
 ---
 
-A while back the [geo widgets](/geo) were quietly upgraded to allow hiding of input fields for GPS coordinates and to show a larger map. This is particularly useful when entering data on a desktop by drawing on the map when the input fields take up unnecessary space. You can witch between hiding and showing input fields with the handle on the left of the map border. See [this updated sample form](https://geo.enketo.org/webform).
+A while back the [geo widgets](/geo) were quietly upgraded to allow hiding of input fields for GPS coordinates and to show a larger map. This is particularly useful when entering data on a desktop by drawing on the map when the input fields take up unnecessary space. You can witch between hiding and showing input fields with the handle on the left of the map border. See [this updated sample form](https://enke.to/::geo1).
 
 [![Screenshot Geoshape Widget with hidden inputs](../files/2014/09/inputs-hidden.png "Screenshot of Geoshape Widget with hidden inputs")](https://enke.to/::geo1)
 
@@ -18,7 +18,7 @@ A while back the [geo widgets](/geo) were quietly upgraded to allow hiding of in
 
 The user can always switch between hiding and showing input fields. By default the input fields are shown when the form loads. To change the default widget view, you can add the appearance _"hide-input"_ to a geo question. 
 
-[![Screenshot of Geoshape Widget with shown inputs](../files/2014/09/inputs-shown.png "Screenshot of Geoshape Widget with inputs shown")](https://geo.enketo.org/webform)
+[![Screenshot of Geoshape Widget with shown inputs](../files/2014/09/inputs-shown.png "Screenshot of Geoshape Widget with inputs shown")](https://enke.to/::geo1)
 
 ### Sponsor
 
