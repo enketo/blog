@@ -11,7 +11,7 @@ tags:
 
 Enketo now offers the ability to conduct surveys that obtain just a single reponse from each user!
 
-[![Screenshot of export button](../files/2016/09/feedback.png "Screenshot of feedback survey")](https://enke.to/single/::4c7c494fbfd5cd59e56ef6c68381e77b)
+[![Screenshot of export button](/files/2016/09/feedback.png "Screenshot of feedback survey")](https://enke.to/single/::4c7c494fbfd5cd59e56ef6c68381e77b)
 
 ### Why Use This
 
@@ -44,6 +44,6 @@ Use this [API endpoint](http://apidocs.enketo.org/v2/#/post-survey-single-once) 
 
 ### Acknowledgements
 
-This feature was co-sponsored by Enketo's Official 2016 Top Sponsor: [OpenClinica](http://openclinica.org/), and by Enketo LLC.
+This feature was co-sponsored by Enketo's Official 2016 Top Sponsor: [OpenClinica](http://openclinica.com/), and by Enketo LLC.
 
 {% include feedback.md %}
