@@ -1,6 +1,7 @@
-[blog.enketo.org](https://blog.enketo.org)
+Enketo's Blog
 =======================
 
+Published at [blog.enketo.org](https://blog.enketo.org)
 
 ## Deploy
 
