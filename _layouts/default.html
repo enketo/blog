@@ -1,92 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>{{ page.title }}</title>
-   <meta name="author" content="Martijn van de Rijdt" />
+   <meta charset="utf-8"/>
+   <meta name="author" content="Martijn van de Rijdt (Enketo LLC)" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <meta name="apple-mobile-web-app-capable" content="yes" />
    <meta name="google-site-verification" content="XVwsM5aINXf-Qw6PFwQqCOqSvppakXfa24kti-vlACg" />
    <link rel="alternate" type="application/rss+xml" title="Enketo Blog" href="{{ site.url }}/feed/index.xml" />
-   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="https://enketo.org/css/minimum.css" type="text/css" media="screen" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
-
    <link rel="shortcut icon" href="/images/enketo.ico">
-   <!-- For third-generation iPad with high-resolution Retina display: -->
-   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/icon_144x144.png">
-   <!-- For iPhone with high-resolution Retina display: -->
-   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/icon_114x114.png">
-   <!-- For first- and second-generation iPad: -->
-   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icon_72x72.png">
-   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-   <link rel="apple-touch-icon-precomposed" href="/images/icon_57x57.png">
-   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <body> 
-   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-         <div class="navbar-header">
-            <a class="navbar-brand" href="https://enketo.org">
-               <img class="navbar-logo" src="/images/logo-black.png" alt="Enketo Logo" />
-            </a>
-            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-            </button>
-         </div>
-         <div class="navbar-collapse nav-collapse collapse">
-            <ul class="nav navbar-nav">
-               <li><a href="https://accounts.enketo.org/">Plans</a></li>
-               <li class="active"><a href="/">Blog</a></li>
-               <li><a href="http://apidocs.enketo.org/">API</a></li>
-               <li><a class="highlight" href="https://accounts.enketo.org/signup/">Sign Up</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-               <li class="nav-icon"><a href="http://github.com/enketo" title="Go to GitHub"><i class="icon-github"></i></a></li>
-               <li class="nav-icon"><a href="http://twitter.com/enketo/" title="Follow on Twitter"><i class="icon-twitter"></i></a></li>
-               <li class="nav-icon"><a href="http://www.linkedin.com/company/enketo-llc/" title="Follow on LinkedIn"><i class="icon-linkedin"></i></a></li>
-               <li class="nav-icon"><a href="https://plus.google.com/111302551985955001010/" title="Follow on G+"><i class="icon-google-plus"></i></a></li>
-               <li class="nav-icon"><a href="{{ site.url }}/feed/index.xml" title="Subscribe to RSS Feed"><i class="icon-feed"></i></a></li>
-            </ul>
-         </div>
+   {% include header.html %}
+   
+   <div class="main" role="main">
+      <div class="content">
+         <article>
+            {{ content }}
+         </article>
       </div>
    </div>
-   <div class="container main">
-      <article class="content clearfix">
-
-        {{ content }}
-
-      </article>
-   </div>
      
-   <footer>
-      <section class="content clearfix">
-         <a class="enketo-icon" href="http://enketo.org" title="Go to Enketo.org"><img src="/images/icon_144x144.png" alt="enketo icon"/></a>
-         <div class="copyright">&copy; {{ site.time | date: '%Y' }}, Enketo LLC</div>
-         <div class="info">
-            <a href="http://github.com/enketo" title="Go to GitHub"><i class="icon-github"></i></a>
-            <a href="http://twitter.com/enketo/" title="Follow on Twitter"><i class="icon-twitter"></i></a>
-            <a href="http://www.linkedin.com/company/enketo-llc" title="Follow on LinkedIn"><i class="icon-linkedin"></i></a>
-            <a href="https://plus.google.com/111302551985955001010/" title="Follow on G+"><i class="icon-google-plus"></i></a>
-            <a href="{{ site.url }}/feed/index.xml" title="Subscribe to RSS Feed"><i class="icon-feed"></i></a>
-         </div>
-      </section>
-   </footer>
-
-   <!-- Google Analytics -->
-   <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-     ga('create', '{{ site.analytics }}', 'enketo.org');
-     ga('send', 'pageview');
-
-   </script>
-   <!-- Google Analytics end -->
-
+   {% include footer.html %}
+   {% include analytics.html %}
    </body>
 </html>

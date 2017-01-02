@@ -1,7 +1,7 @@
 url: http://blog.enketo.org
 port: 4000
-name: Web Tools for Aid Workers
-description: by Aid Web Solutions
+name: Enketo Project Blog
+description: by Enketo LLC
 permalink: /:title/
 analytics: UA-6765789-12
 comments: true
