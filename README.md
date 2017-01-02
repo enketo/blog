@@ -4,4 +4,4 @@
 
 ## Deploy
 
-run `sh ./get-navigation.sh` to update /_data/navigation.json
+Run `sh ./build.sh` to update /_data/navigation.json and build
