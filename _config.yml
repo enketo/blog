@@ -1,8 +1,7 @@
-url: http://blog.enketo.org
-port: 4000
 name: Enketo Project Blog
-description: by Enketo LLC
-permalink: /:title/
+exclude: [ README.md, build.sh, Gemfile, Gemfile.lock, npm-debug.log, package.json ]
+port: 4000
+permalink: /:title
 analytics: UA-6765789-12
 comments: true
-markdown: kramdown
+safe: true
