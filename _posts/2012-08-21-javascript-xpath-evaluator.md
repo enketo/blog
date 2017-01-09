@@ -11,7 +11,7 @@ tags:
   - openrosa
   - XPathJS
 ---
-After finding a suitable [open-source form format][1] to use in enketo there was need to properly evaluate the very powerful processing logic it supports. For example, the format allows you to describe how one survey question depends on the answer to an earlier question. This logic is written in a language called *XPath* and I therefore needed an *XPath Evaluator*. Since enketo is offline-capable this processor would have to work without server interaction inside a browser. This meant I could not use the open-source Java libraries provided by the OpenRosa project.
+After finding a suitable [open-source form format][1] to use in Enketo there was need to properly evaluate the very powerful processing logic it supports. For example, the format allows you to describe how one survey question depends on the answer to an earlier question. This logic is written in a language called *XPath* and I therefore needed an *XPath Evaluator*. Since Enketo is offline-capable this processor would have to work without server interaction inside a browser. This meant I could not use the open-source Java libraries provided by the OpenRosa project.
 
  [1]: /enketos-new-architecture/ "Enketo’s New Architecture"
 

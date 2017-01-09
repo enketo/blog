@@ -26,4 +26,4 @@ Unfortunately, Internet Explorer 10 will only run on Windows 7 and Windows 8, so
 
 \[Edit: when testing [Enketo][5], the offline launch does not appear to work correctly yet in the current preview version of IE10\]
 
- [5]: /an-introduction-to-enketo/ "An Introduction to Rapaide"
+ [5]: /an-introduction-to-enketo/ "An Introduction to Enketo"

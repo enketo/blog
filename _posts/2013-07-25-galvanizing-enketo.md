@@ -16,9 +16,9 @@ As discussed in various [previous posts](../approaching-stability-phase/), the [
 Enketo LLC's strategy consists of:
 <a href="https://enketo.org/"><img class="right" src="../files/2013/07/enketo-org.png" alt="enketo.org screenshot" /></a>
 
-* provide [enketo.org](https://enketo.org) as a paid service where any organization that uses its own installation of [ODK Aggregate](http://opendatakit.org/use/aggregate/) or [Formhub](https://github.com/modilabs/formhub) can use enketo for data collection in a manner that is __affordable__, __secure__, __robust__, easily __integratable__, and uses the organization's __own branding__. 
-* maintaining and improving capacity to conduct paid development work on enketo for __multiple clients__ (in addition to the amazing [Sustainable Engineering Lab](http://modi.mech.columbia.edu/)). 
-* encourage significant contributions by others to the enketo source code
+* provide [enketo.org](https://enketo.org) as a paid service where any organization that uses its own installation of [ODK Aggregate](http://opendatakit.org/use/aggregate/) or [Formhub](https://github.com/modilabs/formhub) can use Enketo for data collection in a manner that is __affordable__, __secure__, __robust__, easily __integratable__, and uses the organization's __own branding__. 
+* maintaining and improving capacity to conduct paid development work on Enketo for __multiple clients__ (in addition to the amazing [Sustainable Engineering Lab](http://modi.mech.columbia.edu/)). 
+* encourage significant contributions by others to the Enketo source code
 
 I think that if 2 out of 3 of these are successful, the prospects for sustainability look good. 
 
@@ -39,6 +39,6 @@ The next milestones in the implementation of this strategy are:
 
 
 ### Becoming social
-When time allows, we need to start hitting the social networks. If you'd like to __really__ help with this you could start following enketo on [twitter](https://twitter.com/enketo), on [Google+](https://plus.google.com/111302551985955001010/) and on [LinkedIn](http://www.linkedin.com/company/enketo-llc).
+When time allows, we need to start hitting the social networks. If you'd like to __really__ help with this you could start following Enketo on [twitter](https://twitter.com/enketo), on [Google+](https://plus.google.com/111302551985955001010/) and on [LinkedIn](http://www.linkedin.com/company/enketo-llc).
 
 I will report back on the progress in meeting these milestones!

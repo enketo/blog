@@ -21,6 +21,6 @@ To read the instructions in more detail, visit [this page](https://accounts.enke
 
 Many thanks to [SDRC](http://sdrc.co.in) for developing this feature and thanks to Mitch and the rest of the [ODK](http://opendatakit.org/) team for their advice and for welcoming SDRC's code contribution. I have no doubt the new addition will be well-received by ODK users, and will open the road for deeper integration in the future. The next key integration features could for example  be to:
 
-* use enketo's [edit API](http://apidocs.enketo.org/#/post-instance) to open an __existing already-submitted record for editing__ in Enketo. This functionality is already used in formhub.org and utilizes an elegant mechanism in the OpenRosa specification that ODK, Formhub and Enketo are built around.
+* use Enketo's [edit API](http://apidocs.enketo.org/#/post-instance) to open an __existing already-submitted record for editing__ in Enketo. This functionality is already used in formhub.org and utilizes an elegant mechanism in the OpenRosa specification that ODK, Formhub and Enketo are built around.
 * build automatic __quota management__ into Aggregate by sending a [de-activation request](http://apidocs.enketo.org/#/delete-survey) to Enketo when a form has been deleted from Aggregate.
 

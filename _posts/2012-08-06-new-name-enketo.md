@@ -1,5 +1,5 @@
 ---
-title: 'A new name: enketo'
+title: 'A new name: Enketo'
 author: Martijn van de Rijdt
 layout: post
 permalink: /new-name-enketo/
@@ -9,13 +9,13 @@ tags:
   - enketo
   - survey
 ---
-Finally, I have come up with a better name for the offline-capable-and-open-source-form-format-using [survey application][1] with less scope for confusion. Rapaide has now been renamed to: **enketo**
+Finally, I have come up with a better name for the offline-capable-and-open-source-form-format-using [survey application][1] with less scope for confusion. Rapaide has now been renamed to: **Enketo**
 
  [1]: /enkets-new-architecture/ "Enketo’s New Architecture"
 
-“enketo” is Esperanto for survey and matches well with the wide user potential the application has (beyond aid workers).
+“Enketo” is Esperanto for survey and matches well with the wide user potential the application has (beyond aid workers).
 
-[![enketo screenshot][2]][3]
+[![Enketo screenshot][2]][3]
 
  [2]: ../files/2012/08/elephantdeath-300x228.png
  [3]: http://enketo.org
