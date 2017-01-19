@@ -1,4 +1,4 @@
-name: Enketo Project Blog
+name: Enketo Blog
 exclude: [ README.md, build.sh, Gemfile, Gemfile.lock, npm-debug.log, package.json ]
 port: 4000
 permalink: /:title
