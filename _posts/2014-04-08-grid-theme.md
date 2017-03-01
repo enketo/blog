@@ -22,11 +22,11 @@ Similar to the current default theme, the new Grid Theme is fully functional on 
 
 ### How to use
 
-This theme is currently exclusively available to [enketo.org](https://enketo.org) users. To use it add the value _'theme-grid'_ on the settings tab of your XLSForm in the 'style' column. This will switch your form to the Grid Theme. If you have multiple settings for 'style' (e.g. ['pages'](/pages) and 'theme-grid') simply separate them with a space. 
+This theme is ~~currently exclusively available to [enketo.org](https://enketo.org) users~~ available for everybody. To use it add the value _'theme-grid'_ on the settings tab of your XLSForm in the 'style' column. This will switch your form to the Grid Theme. If you have multiple settings for 'style' (e.g. ['pages'](/pages) and 'theme-grid') simply separate them with a space. 
 
 ![XLSForm Style Setting](../files/2014/04/XLSForm-style-theme-grid.png "Style setting in XLSForm")
 
-To fully leverage the power of the Grid Theme, you'll want to indicate which questions should be displayed on one row and how many cells they should occupy. We developed a very flexible and simple-to-use mechanism for this for this using _w1, w2, w3....w10_ to indicate the _relative width_ of a group or cell. It is best explained by looking at this tutorial form: [https://https://enke.to/::grid](https://enke.to/::grid). The XLSForm source is available [here](https://docs.google.com/spreadsheet/ccc?key=0Al3Mw5sknZoPdDhSVmhJX2NvOG44X1RadTA2RVRzSHc&usp=sharing#gid=0).
+To fully leverage the power of the Grid Theme, you'll want to indicate which questions should be displayed on one row and how many cells they should occupy. We developed a very flexible and simple-to-use mechanism for this for this using _w1, w2, w3....w10_ to indicate the _relative width_ of a group or cell. It is best explained by looking at this tutorial form: [https://enke.to/::grid](https://enke.to/::grid). The XLSForm source is available [here](https://docs.google.com/spreadsheet/ccc?key=0Al3Mw5sknZoPdDhSVmhJX2NvOG44X1RadTA2RVRzSHc&usp=sharing#gid=0).
 
 ![XLSForm Grid markup](../files/2014/04/XLSForm-w-markup.png "XLSForm Grid markup")
 
