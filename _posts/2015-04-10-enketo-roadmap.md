@@ -9,4 +9,4 @@ tags:
   - enketo
 ---
 
-[![Enketo Roadmap](https://raw.githubusercontent.com/enketo/enketo-roadmap/master/enketo-roadmap.png "Enketo Roadmap")](https://raw.githubusercontent.com/enketo/enketo-roadmap/master/enketo-roadmap.png)
+Enketo's roadmap has been moved to [https://enketo.org/about/roadmap](https://enketo.org/about/roadmap)
