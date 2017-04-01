@@ -1,0 +1,3 @@
+# CORS on atom feed
+/feed/*
+	Access-Control-Allow-Origin: *
