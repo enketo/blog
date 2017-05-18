@@ -489,7 +489,7 @@ Type _y_ when asked to proceed with operation.
 
 ### 12. Monitoring
 
-A simple and very useful service to monitor uptime is [uptimerobot.com](https://uptimerobot.com). E.g. use a HTTP(s) monitor for https://enketo.aidapplications.com that checks every 5 minutes. Specify how you'd like to be alerted when the service is unresponsive.
+A simple and very useful service to monitor uptime is [uptimerobot.com](https://uptimerobot.com). E.g. use a HTTP(s) monitor for https://enketo.aidapplications.com that checks every 5 minutes. Specify how you'd like to be alerted when your Enketo server is unresponsive.
 
 ![UptimeRobot config](../files/2015/05/uptimerobot.png "Uptime Robot config")
 
@@ -499,7 +499,7 @@ To add: [monit and mmonit](https://mmonit.com/monit/) setup for advanced monitor
 
 Only **two files** contain critical information that **absolutely** should be backed up: the main database and the Enketo configuration file. 
 
-The database file is located at _/var/lib/redis/enketo-main.rdb_. Restoring can be done simply by stopping redis (`sudo service redis-server-enketo-main stop`), copying the backup file, and starting redis (`sudo service redis-server-enketo-main start`).
+The database file is located at _/var/lib/redis/enketo-main.rdb_. Restoring can be done simply by stopping redis (`sudo systemctl stop redis@redis-enketo-main`), copying the backup file, and starting redis (`sudo systemctl start redis@redis-enketo-main`).
 
 The configuration file is located at _~/enketo-express/config/config.json_. Restore this file by copying it and restarting Enketo.
 
