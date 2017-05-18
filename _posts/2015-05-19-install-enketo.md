@@ -1,5 +1,5 @@
 ---
-title: How To Install Enketo On Ubuntu 14.04
+title: How To Install Enketo On Ubuntu 16.04
 author: Martijn van de Rijdt
 layout: post
 permalink: /install-enketo-production-ubuntu/
@@ -51,7 +51,7 @@ More detailed instructions for OS X, Linux users can be found [here](https://www
 
 ### 3. Create a Server
 
-For this tutorial, we are going to use Ubuntu 14.04 on a DigitalOcean server (aka a _droplet_). DigitalOcean provides the best bang for the buck when looking at CPU speed and CPU cores, both of which are the key criteria for Enketo Express performance. Their user interface is refreshingly well designed too. The tutorial should be quite similar for other VPS providers from section 4 onwards. If you do not have a DigitalOcean account yet, create one using [this referral link](https://www.digitalocean.com/?refcode=9e43ccb8961a) to get a $10 credit. 
+For this tutorial, we are going to use Ubuntu 16.04 on a DigitalOcean server (aka a _droplet_). DigitalOcean provides the best bang for the buck when looking at CPU speed and CPU cores, both of which are the key criteria for Enketo Express performance. Their user interface is refreshingly well designed too. The tutorial should be quite similar for other VPS providers from section 4 onwards. If you do not have a DigitalOcean account yet, create one using [this referral link](https://www.digitalocean.com/?refcode=9e43ccb8961a) to get a $10 credit. 
 
 #### Add your public key to your DigitalOcean account
 
@@ -72,9 +72,9 @@ Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new?refcode=9
 1. Give it a meaningful hostname, e.g. _enketo-production_
 2. Select a size. The $10/month option is fine to start with, but when traffic becomes meaningful you'll probably quickly want to upgrade to the $20/month a plan because it has 2 CPU cores. Thankfully, upgrading can be done with the click of a button with only about 2-3 minutes downtime. The storage size is irrelevant for Enketo. When you upgrade you will have the (default) option to only upgrade RAM and CPU, or to upgrade storage size as well. It is usually best to choose the first because then you will be able to downgrade again later. **You cannot downgrade to a droplet with less storage than you currently have.** This allows you to easily try out different server sizes with little risk and little downtime. And because DigitalOcean bills per hour, the cost of trying out a different size is minimal too.
 3. Select a region that is closest to the geographical center of where your users are located.
-4. Select the _Ubuntu 14.04 x64_ image.
+4. Select the _Ubuntu 16.04 x64_ image.
 5. Click on the SSH key(s) that may be used to access the server.
-6. Click _Create Droplet_ and wait until this is finished.
+6. Click _Create_ and wait until this is finished.
 
 **Test**: In your [list of droplets](https://cloud.digitalocean.com/droplets?refcode=9e43ccb8961a) you will now see an IP address that was assigned to your server (e.g. 107.170.165.182). You should now be able to login to this server as _root_. 
 
@@ -152,10 +152,10 @@ Windows users, do the same as before but enter user name _enketo_ when asked.
 Login via ssh as the user you created previously (**not as _root_**). Install the first batch of software packages as follows and enter _Y_ when asked to confirm:
 
 ```bash
-sudo add-apt-repository -y ppa:rwky/redis
+sudo add-apt-repository -y ppa:chris-lea/redis-server
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y git nginx htop build-essential redis-server checkinstall 
+sudo apt-get install -y git nginx htop build-essential redis-server checkinstall python
 ```
 
 Install NodeJS and global Node packages
@@ -166,7 +166,7 @@ sudo apt-get install -y nodejs
 sudo npm install -g grunt-cli pm2
 ```
 
-Let Ubuntu automatically install security updates (select _Yes_ when asked):
+Let Ubuntu automatically install security updates (keep default values and select _Yes_ when asked):
 
 ```bash
 sudo dpkg-reconfigure -plow unattended-upgrades
@@ -174,13 +174,12 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ### 5. Enketo Express Installation
 
-Install Enketo Express and its dependencies. Warnings during `npm install` can be ignored. Errors should not be ignored.
+Install Enketo Express and its dependencies. Warnings during the "npm install" step can be ignored. Errors should not be ignored.
 
 ```bash
 cd ~
 git clone https://github.com/enketo/enketo-express.git
 cd enketo-express
-sudo npm cache clean
 npm install --production
 ```
 
@@ -191,25 +190,24 @@ npm install --production
 Configure 2 redis instances that run on different ports:
 
 ```bash
-sudo service redis-server stop
-sudo rm /var/lib/redis/redis.rdb
+sudo systemctl stop redis
 
 sudo mv /etc/redis/redis.conf /etc/redis/redis-origin.conf
 sudo cp ~/enketo-express/setup/redis/conf/redis-enketo-main.conf /etc/redis/
 sudo cp ~/enketo-express/setup/redis/conf/redis-enketo-cache.conf /etc/redis/
 
-sudo mv /etc/init/redis-server.conf /etc/init/redis-server.conf.disabled
-sudo cp ~/enketo-express/setup/redis/init/redis-server-enketo-main.conf /etc/init/
-sudo cp ~/enketo-express/setup/redis/init/redis-server-enketo-cache.conf /etc/init/
+sudo cp ~/enketo-express/setup/redis/systemd/system/* /etc/systemd/system/
 ```
 
 Then, start the 2 redis instances:
 
 ```bash
-sudo initctl reload-configuration
-sudo service redis-server-enketo-main start
-sudo service redis-server-enketo-cache start
-
+sudo systemctl disable redis
+sudo systemctl daemon-reload
+sudo systemctl start redis@redis-enketo-main
+sudo systemctl enable redis@redis-enketo-main
+sudo systemctl start redis@redis-enketo-cache
+sudo systemctl enable redis@redis-enketo-cache
 ```
 
 **Test**: Cache database
@@ -365,7 +363,7 @@ sudo service nginx restart
 
 ### 9. Install an SSL certificate
 
-Nothing in this section is specific to Enketo. You can also use one of the [thousands of SSL-certificate-installation-tuturials on the web](https://www.google.com/webhp?#q=How+to+install+an+ssl+certificate+for+nginx+on+Ubuntu+14.04).
+Nothing in this section is specific to Enketo. You can also use one of the [thousands of SSL-certificate-installation-tuturials on the web](https://www.google.com/webhp?#q=How+to+install+an+ssl+certificate+for+nginx+on+Ubuntu+16.04).
 
 Purchase an SSL certificate for your (sub)domain somewhere. This should not cost more than [$10/year](https://www.namecheap.com/security/ssl-certificates/comodo/positivessl.aspx?aff=85649). You will be asked to provide a _CSR_. The recommended way of generating a CSR is to log in to your Enketo server and:
 
