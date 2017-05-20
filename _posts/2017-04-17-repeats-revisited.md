@@ -15,7 +15,7 @@ We have made some often-requested improvements to how "repeats" behave in Enketo
 
 The existing "Repeat Count" feature has now become fully dynamic. This means that if at any point the repeat count changes, the number of repeats will automatically be adjusted.
 
-To avoid accidentally removing repeats that contain data, we recommend using an advanced form-building technique that requires a confirmation. You can see this technique in action by the clicking the image below. See also the [XLSForm](https://docs.google.com/spreadsheets/d/132dvmd73Y4fBQbv9cZs1JrDcY3C0y2dt2_IkMMuFJQc/edit?usp=sharing). Using this confirmation technique is completely optional though.
+To avoid accidentally removing repeats that contain data, we recommend using an advanced form-building technique that requires a confirmation. You can see this technique in action by clicking the image below. See also the [XLSForm](https://docs.google.com/spreadsheets/d/132dvmd73Y4fBQbv9cZs1JrDcY3C0y2dt2_IkMMuFJQc/edit?usp=sharing). Using this confirmation technique is completely optional though.
 
 [!["Autocomplete Demo"](../files/2017/04/repeat-count.png "Repeat Count Confirmation Demo")](https://enke.to/::count)
 
