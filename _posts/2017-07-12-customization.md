@@ -18,7 +18,7 @@ The more popular Enketo becomes, the larger the demand for customization. Not al
 
 One of the main sponsors of the Enketo Project that has frequent customization needs is [OpenClinica](https://www.openclinica.com). This clever company is very aware of the high long-term costs of forking Enketo's form engine - Enketo Core - and has tried to avoid it by investing in Enketo tools. (Thanks OpenClinica!)
 
-Whenever a customization is required that does not belong in the common Enketo tools, an evaluation is made in how to best include it in  a way that:
+Whenever a customization is required that does not belong in the common Enketo tools, an evaluation is made on how to best include it in a way that:
 
 1. avoids _porting_ Enketo libraries, 
 2. avoids _changing common files_ in ports of Enketo Express that would increase maintenance (merging) costs
