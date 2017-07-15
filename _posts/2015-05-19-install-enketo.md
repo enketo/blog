@@ -11,7 +11,7 @@ tags:
 
 --- 
 
-This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://www.digitalocean.com/?refcode=9e43ccb8961a). It is meant to be a _living document_ that will continuously improve. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/XiTgHFll_nE) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
+This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://m.do.co/c/9e43ccb8961a). It is meant to be a _living document_ that will continuously improve. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/XiTgHFll_nE) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
 
 ![Enketo Webform](../files/2015/05/webform.png "Enketo Webform")
 
@@ -51,7 +51,7 @@ More detailed instructions for OS X, Linux users can be found [here](https://www
 
 ### 3. Create a Server
 
-For this tutorial, we are going to use Ubuntu 16.04 on a DigitalOcean server (aka a _droplet_). DigitalOcean provides the best bang for the buck when looking at CPU speed and CPU cores, both of which are the key criteria for Enketo Express performance. Their user interface is refreshingly well designed too. The tutorial should be quite similar for other VPS providers from section 4 onwards. If you do not have a DigitalOcean account yet, create one using [this referral link](https://www.digitalocean.com/?refcode=9e43ccb8961a) to get a $10 credit. 
+For this tutorial, we are going to use Ubuntu 16.04 on a DigitalOcean server (aka a _droplet_). DigitalOcean provides the best bang for the buck when looking at CPU speed and CPU cores, both of which are the key criteria for Enketo Express performance. Their user interface is refreshingly well designed too. The tutorial should be quite similar for other VPS providers from section 4 onwards. If you do not have a DigitalOcean account yet, create one using [this referral link](https://m.do.co/c/9e43ccb8961a) to get a $10 credit. 
 
 #### Add your public key to your DigitalOcean account
 
