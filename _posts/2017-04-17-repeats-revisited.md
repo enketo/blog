@@ -21,7 +21,7 @@ To avoid accidentally removing repeats that contain data, we recommend using an 
 
 ### First Repeat in Series
 
-Enketo is now starting to support the removal of the first repeat in a series as well. At this moment, a repeat count of 0 (or none) will remove all repeats. We are currently [discussing](https://github.com/enketo/enketo-core/issues/402) enabling the manual removal of the first repeat when no repeat count is used. 
+Enketo is now supporting the removal of the first repeat in a series as well. At this moment, a repeat count of 0 (or none) will remove all repeats. ~~We are currently [discussing](https://github.com/enketo/enketo-core/issues/402) enabling the manual removal of the first repeat when no repeat count is used.~~ Update: since October 16th, 2017, the first repeat can also be manually removed if repeat count is not used (again thanks to Esri funding).
 
 ### Acknowledgements
 
