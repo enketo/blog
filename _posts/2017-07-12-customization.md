@@ -20,7 +20,7 @@ One of the main sponsors of the Enketo Project that has frequent customization n
 
 Whenever a customization is required that does not belong in the common Enketo tools, an evaluation is made on how to best include it in a way that:
 
-1. avoids _porting_ Enketo libraries and
+1. avoids _forking_ Enketo libraries and
 2. avoids _changing common files_ in ports of Enketo Express that would increase maintenance (merging) costs.
 
 Both of these design criteria usually result in reorganizing the code in the common tools to make them more extensible. 
@@ -34,14 +34,14 @@ In some cases, it has made sense to add alternative form engine behavior and exp
 
 * [validate related constraints continuously](https://github.com/enketo/enketo-core#validatecontinuously) instead of only upon submission
 * [turn off page-flip validation](https://github.com/enketo/enketo-core#validatepage)
-* [not clear the values of an irrelevant question immediately](https://github.com/enketo/enketo-core#behaviour-of-skip-logic)
+* [do not clear the values of an irrelevant question immediately](https://github.com/enketo/enketo-core#behaviour-of-skip-logic)
 * [piwik analytics](https://github.com/kobotoolbox/enketo-express/blob/master/config/README.md#piwik) in Enketo Express
 * [disable save-as-draft](https://github.com/kobotoolbox/enketo-express/blob/master/config/README.md#disable-save-as-draft) in Enketo Express
 
 
 ### Widgets
 
-Widgets have been modular for a while now. A widget lives in its own folder and is easy to enable or disable in a particular application. It is also straightforward to add your own custom widget in your own application and still use the common Enketo Core library. Sometimes these widgets make it in the official Enketo Core library but without being activated by default such as the [ArcGIS geo widget](https://github.com/enketo/enketo-core/tree/master/src/widget/geo-esri) contributed by [Esri](https://survey123.arcgis.com/).
+Widgets have been modular for a while now. A widget lives in its own folder and is easy to enable or disable in a particular application. It is also straightforward to add your own custom widget in your own application and still use the common Enketo Core library. Sometimes these widgets make it in the official Enketo Core library without being activated by default such as the [ArcGIS geo widget](https://github.com/enketo/enketo-core/tree/master/src/widget/geo-esri) contributed by [Esri](https://survey123.arcgis.com/).
 
 
 ### Evaluation Cascade
