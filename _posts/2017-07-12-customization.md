@@ -41,7 +41,7 @@ In some cases, it has made sense to add alternative form engine behavior and exp
 
 ### Widgets
 
-Widgets have been modular for a while now. A widget lives in its own folder and is easy to enable or disable in a particular application. It is also straightforward to add your own custom widget in your own application and still use the common Enketo Core library. Sometimes these widgets make it in the official Enketo Core library without being activated by default such as the [ArcGIS geo widget](https://github.com/enketo/enketo-core/tree/master/src/widget/geo-esri) contributed by [Esri](https://survey123.arcgis.com/).
+Widgets have been modular for a while now. A widget lives in its own folder and is easy to enable or disable in a particular application. It is also straightforward to add your own custom widget in your own application and still use the common Enketo Core library. Sometimes these widgets make it in the official Enketo Core library without being activated by default such as the [ArcGIS geo widget](https://github.com/enketo/enketo-core/tree/master/src/widget/geo-esri) contributed by the [Survey123 team at Esri](https://survey123.arcgis.com/).
 
 
 ### Evaluation Cascade

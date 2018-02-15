@@ -25,6 +25,6 @@ Enketo is now supporting the removal of the first repeat in a series as well. At
 
 ### Acknowledgements
 
-This feature was made possible by funding from the amazing people at [Esri](http://www.esri.com/).
+This feature was made possible by funding from the amazing people of the [Survey123 team at Esri](https://survey123.arcgis.com/).
 
 {% include feedback.md %}

@@ -25,6 +25,6 @@ Note that appearance "search" is an alias and is exactly the same.
 
 ### Acknowledgements
 
-This feature was made possible by funding from [Esri](http://www.esri.com/). Many thanks to them for supporting the Enketo project and pushing it forward.
+This feature was made possible by funding from the [Survey123 team at Esri](https://survey123.arcgis.com/). Many thanks to them for supporting the Enketo project and pushing it forward.
 
 {% include feedback.md %}

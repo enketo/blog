@@ -400,7 +400,7 @@ Update your webserver configuration:
 sudo nano /etc/nginx/sites-available/enketo
 ```
 
-The following configuration works well. Make sure to change enketo.aidapplications.com to your domain and make sure the ssl certificate and key paths are correct. If you are going to iframe enketo webforms into other web pages, you need to take out the line with `X-Frame-Options DENY` or change it.
+The following configuration works well. Make sure to change enketo.aidapplications.com to your domain and make sure the ssl certificate and key paths are correct. If you are going to iframe Enketo webforms into other web pages, you need to take out the line with `X-Frame-Options DENY` or change it.
 
 ```json
 server {
