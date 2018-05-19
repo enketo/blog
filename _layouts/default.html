@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <title>{{ page.title }}</title>
-   <meta charset="utf-8"/>
-   <meta name="author" content="Martijn van de Rijdt (Enketo LLC)" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta name="apple-mobile-web-app-capable" content="yes" />
-   <meta name="google-site-verification" content="XVwsM5aINXf-Qw6PFwQqCOqSvppakXfa24kti-vlACg" />
-   <link rel="alternate" type="application/rss+xml" title="Enketo Blog" href="{{ site.url }}/feed/index.xml" />
-   <link rel="stylesheet" href="{{ site.data.navigation.sites['enketo-main'] }}/css/minimum.css" type="text/css" media="screen" />
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
-   <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
-   <link rel="shortcut icon" href="/images/enketo.ico">
-<body> 
-   {% include header.html %}
-   
-   <div class="main" role="main">
-      <div class="content">
-         <article>
-            {{ content }}
-         </article>
-      </div>
-   </div>
-     
-   {% include footer.html %}
-   {% include analytics.html %}
-   </body>
+    {% include analytics.html %}
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Martijn van de Rijdt (Enketo LLC)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="google-site-verification" content="XVwsM5aINXf-Qw6PFwQqCOqSvppakXfa24kti-vlACg" />
+    <meta name="Description" content="project: Enketo Open-Source Project, ecosystem: ODK OpenDataKit Open Data Kit, page: {{page.title}}">
+    <link rel="alternate" type="application/rss+xml" title="Enketo Blog" href="{{ site.url }}/feed/index.xml" />
+    <link rel="stylesheet" href="{{ site.data.navigation.sites['enketo-main'] }}/css/minimum.css" type="text/css" media="screen"
+    />
+    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="/images/enketo.ico">
+
+    <body>
+        {% include header.html %}
+
+        <div class="main" role="main">
+            <div class="content">
+                <article>
+                    {{ content }}
+                </article>
+            </div>
+        </div>
+
+        {% include footer.html %}
+    </body>
+
 </html>
