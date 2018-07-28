@@ -1,5 +1,5 @@
 ---
-title: How To Install Enketo On Ubuntu 16.04
+title: How To Install Enketo On Ubuntu 18.04
 author: Martijn van de Rijdt
 layout: post
 permalink: /install-enketo-production-ubuntu/
@@ -19,7 +19,7 @@ This post describes how to setup a secure _production server_ running Enketo for
 
 **Installation is the easy part**. Maintaining a reliable server with close to **0% downtime** - especially when it becomes popular - is **a whole lot harder**. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating a server. So before self-installing a production server, be prepared to spend a significant amount of time to run it afterwards.
 
-Self-installation for most people is going to be **far more expensive** than using a public supported service, even if that service is not free. The time required to install and maintain a server and the "cost" of the likely longer periods of downtime will normally outweigh any fee you would pay for a provided service. **If cost is the primary argument to self-install, it is probably not the right decision.**
+Self-installation for most people is going to be **far more expensive** than using a public supported service, even if that service is not free. The time required to install and maintain a server and the "cost" of the likely longer periods of downtime will normally outweigh any fee you would pay for a provided service. **If cost is the primary argument to self-install, it is probably not the right decision.** There are of course lots of good reasons to want to run your own server too.
 
 ### 2. Create a public/private key pair 
 
@@ -27,23 +27,21 @@ To authenticate with the server we are going to use a public key, because this i
 
 If you've already created a public/private key pair for your computer you can skip this step.
 
-#### OS X or Linux Users
+#### Windows Users
 
-Use the following command in the terminal in **OS X or Linux**:
+Install [Window Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and then follow the instructions in this tutorial.
+
+**This is not verified. Please confirm that this tutorial works when using Windows Subsystem for linux and let us know.**
+
+#### All Users
+
+Use the following command in the terminal:
 
 ```bash
 ssh-keygen -t rsa
 ```
 
 The location of the keys is _~/.ssh_.
-
-#### Windows Users
-
-[Download PuTTY.exe and PuTTYgen.exe](http://www.putty.org/). PuTTYgen is only required once, so can be run from the Downloads folder. PuTTY is a program you'd want to keep, so should be put in e.g. a newly created C:\Program Files\PuTTY folder and added to the Windows Start Menu.
-
-Run PuTTYgen.exe and click _Generate_ with the defaults (SSH-2 RSA, 2048 bits). Move the mouse as directed. Passphrase is optional. Save the private and public keys both (e.g. in My Documents\Keys). Make sure to use clear filenames (e.g. private_key.ppk and public_key.ppk). Copy the contents of the public key from the PuTTY Key Generator window to the clipboard with Ctrl-C.
-
-Make a note of the location of the keys as you'll need the keys soon. Also, make sure you have a backup of your keys!
 
 #### More details:
 
@@ -78,13 +76,11 @@ Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new?refcode=9
 
 **Test**: In your [list of droplets](https://cloud.digitalocean.com/droplets?refcode=9e43ccb8961a) you will now see an IP address that was assigned to your server (e.g. 107.170.165.182). You should now be able to login to this server as _root_. 
 
-**OS X and Linux users**, try this out in the terminal with **your assigned IP address** as follows:
+Try this out in the terminal with **your assigned IP address** as follows:
 
 ```bash
 ssh root@107.170.165.182
 ```
-
-**Windows users**, try this out by opening PuTTY, adding the IP address as Host Name, clicking on SSH and Auth in the left Category tree, and adding the private key. For detailed instructions see [this page](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/connecting-to-your-machine/connecting-to-your-machine-from-windows). Select _Yes_ when asked, and type _root_ when asked. After verifying that this works, you can save your session so you won't have to repeat these steps next time.
 
 ### 4. Server Installation
 
@@ -100,7 +96,7 @@ adduser enketo
 
 To allow this user to login using your private key, we need to copy your public key (already added for root) to your new user account. 
 
-```terminal
+```bash
 mkdir /home/enketo/.ssh
 cp ~/.ssh/authorized_keys /home/enketo/.ssh
 chown enketo:enketo /home/enketo/.ssh/authorized_keys
@@ -137,33 +133,29 @@ service ssh restart
 exit
 ```
 
-**Test**: You should now be able to login as _enketo_ (instead of _root_) without being asked for a password and have sudo privileges with a password.
-
-OS X and Linux users (change the IP address):
+**Test**: You should now be able to login as _enketo_ (instead of _root_) without being asked for a password and have sudo privileges with a password. (You can no longer log in as root.)
 
 ```bash
 ssh enketo@107.170.165.182
 ```
-
-Windows users, do the same as before but enter user name _enketo_ when asked.
 
 #### Install required software
 
 Login via ssh as the user you created previously (**not as _root_**). Install the first batch of software packages as follows and enter _Y_ when asked to confirm:
 
 ```bash
-sudo add-apt-repository -y ppa:chris-lea/redis-server
 sudo apt-get update
 sudo apt-get upgrade -y
+sudo apt-get autoremove -y
 sudo apt-get install -y git nginx htop build-essential redis-server checkinstall python
 ```
 
 Install NodeJS and global Node packages
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
 sudo apt-get install -y nodejs
-sudo npm install -g grunt-cli pm2
+sudo npm install -g pm2
 ```
 
 Let Ubuntu automatically install security updates (keep default values and select _Yes_ when asked):
@@ -187,27 +179,41 @@ npm install --production
 
 #### Database configuration
 
-Configure 2 redis instances that run on different ports:
+First we stop and remove the default redis service:
 
 ```bash
 sudo systemctl stop redis
+sudo systemctl disable redis
+sudo systemctl daemon-reload
+```
 
+Then we override a few directives in the default systemd template unit file `/lib/systemd/system/redis-server@.service` so we can use it:
+
+```bash
+sudo systemctl edit redis-server@.service
+```
+
+This opens an empty file, to which you can add the following lines:
+```bash
+[Service]
+Group=enketo
+```
+
+Then, we configure 2 new redis instances for Enketo that run on different ports:
+
+```
 sudo mv /etc/redis/redis.conf /etc/redis/redis-origin.conf
 sudo cp ~/enketo-express/setup/redis/conf/redis-enketo-main.conf /etc/redis/
 sudo cp ~/enketo-express/setup/redis/conf/redis-enketo-cache.conf /etc/redis/
-
-sudo cp ~/enketo-express/setup/redis/systemd/system/* /etc/systemd/system/
+sudo systemctl enable redis-server@enketo-main.service
+sudo systemctl enable redis-server@enketo-cache.service
 ```
 
-Then, start the 2 redis instances:
+Now, start the 2 Enketo redis instances:
 
 ```bash
-sudo systemctl disable redis
-sudo systemctl daemon-reload
-sudo systemctl start redis@redis-enketo-main
-sudo systemctl enable redis@redis-enketo-main
-sudo systemctl start redis@redis-enketo-cache
-sudo systemctl enable redis@redis-enketo-cache
+sudo systemctl start redis-server@enketo-main.service
+sudo systemctl start redis-server@enketo-cache.service
 ```
 
 **Test**: Cache database
@@ -228,7 +234,7 @@ exit
 
 The response to both tests should be: "PONG".
 
-**Note that configuring redis is pretty complex and Enketo's sample configuration is not a one-size-fits-all solution. The size of the enketo-main database plays a big role in how you want to secure persistence. If enketo-main becomes too big, you'd probably want to switch to using both rdb and aof persistence. Read more [here](http://redis.io/topics/persistence). It is also possible to use a 3rd-party redis service.**
+**Note that configuring redis is pretty complex and Enketo's sample configuration is not a one-size-fits-all solution. The size of the enketo-main database plays a big role in how you want to arrange persistence. If enketo-main becomes too big, you'd probably want to switch to using both rdb and aof persistence. Read more [here](http://redis.io/topics/persistence). It is also possible to use a 3rd-party redis service.**
 
 #### Enketo configuration
 
@@ -262,7 +268,7 @@ Build:
 
 ```bash
 cd ~/enketo-express
-grunt
+npm install --production
 ```
 
 The subsequent 'Local Npm module "..." not found' errors can be ignored as those modules are only used during development. Further configuration should be done in step 15.
@@ -274,7 +280,6 @@ Enketo Express should now be functional.
 **Test**: Launch Enketo
 
 ```bash
-cd ~/enketo-express
 npm start
 ```
 
@@ -334,17 +339,26 @@ sudo nano /etc/nginx/sites-available/enketo
 
 ```
 
-Use the following temporary configuration to test whether the domain and webserver are working:
+Use the following initial configuration to test whether the domain and webserver are working:
 
 ```json
 server {
     listen 80;
-
+    server_name enketo.aidapplications.com;
     location / {
         proxy_pass  http://127.0.0.1:8005;
+        proxy_redirect off;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for ;
+        proxy_set_header X-Forwarded-Proto https ;
     }
+
+    client_max_body_size 100M;
+ 
+    add_header Strict-Transport-Security max-age=63072000;
+    add_header X-Frame-Options DENY; 
+    add_header X-Content-Type-Options nosniff;
 }
 ```
 
@@ -365,87 +379,25 @@ sudo service nginx restart
 
 Nothing in this section is specific to Enketo. You can also use one of the [thousands of SSL-certificate-installation-tuturials on the web](https://www.google.com/webhp?#q=How+to+install+an+ssl+certificate+for+nginx+on+Ubuntu+16.04).
 
-Purchase an SSL certificate for your (sub)domain somewhere. This should not cost more than [$10/year](https://www.namecheap.com/security/ssl-certificates/comodo/positivessl.aspx?aff=85649). You will be asked to provide a _CSR_. The recommended way of generating a CSR is to log in to your Enketo server and:
 
+This tutorial will use free Let's Encrypt certificates using [CertBot](https://certbot.eff.org/). This is a very convenient solutions as it can configured to automatically renew the certificate.
+
+First install CertBot. For NGINX on Ubuntu we follow [these instructions](https://certbot.eff.org/):
 ```bash
-sudo mkdir /etc/nginx/ssl
-sudo openssl genrsa -out /etc/nginx/ssl/enketo.key 2048
-sudo openssl req -new -key /etc/nginx/ssl/enketo.key -out /etc/nginx/ssl/enketo.csr
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install python-certbot-nginx 
+
+sudo certbot --nginx
 ```
 
-Make sure to enter Country Name, State/Province, City/Locality, and Common Name. The Common Name is **very important**. In the example above the common name is _enketo.aidapplications.com_. 
+**Choose to redirect traffic to HTTPS, and thereby remove HTTP access.**
 
-To display the content of the newly created CSR in order to copy and paste it:
+CertBot will automatically update your NGINX configuration and you may want to tweak it further.
 
-```bash
-sudo cat /etc/nginx/ssl/enketo.csr
-```
-
-Once you have received your SSL certificate bundle (or have created one from the various files that were sent), copy this enketo-bundle.crt to the server into /etc/nginx/ssl. Then change the permissions:
-
-```bash
-sudo chmod 600 /etc/nginx/ssl/enketo-bundle.crt
-```
-
-Create a DHE parameter: (This could easily take half an hour!)
-
-```bash
-cd /etc/nginx/ssl
-sudo openssl dhparam -out dhparam.pem 4096
-```
-
-Update your webserver configuration:
-
-```bash
-sudo nano /etc/nginx/sites-available/enketo
-```
-
-The following configuration works well. Make sure to change enketo.aidapplications.com to your domain and make sure the ssl certificate and key paths are correct. If you are going to iframe Enketo webforms into other web pages, you need to take out the line with `X-Frame-Options DENY` or change it.
-
-```json
-server {
-    listen       80;
-    server_name  enketo.aidapplications.com;
-    return 307 https://$server_name$request_uri;
-}
- 
-server {
-    listen 443;
- 
-    ssl on;
-    ssl_certificate /etc/nginx/ssl/enketo-bundle.crt;
-    ssl_certificate_key /etc/nginx/ssl/enketo.key;
-    server_name enketo.aidapplications.com;
- 
-    ssl_ciphers "ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4";
- 
-    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-    ssl_session_cache shared:SSL:10m;
- 
-    ssl_stapling on;
-    ssl_stapling_verify on;
-    resolver 8.8.4.4 8.8.8.8 valid=300s;
-    resolver_timeout 10s;
- 
-    ssl_prefer_server_ciphers on;
-    ssl_dhparam /etc/nginx/ssl/dhparam.pem;
- 
-    client_max_body_size 100M;
- 
-    add_header Strict-Transport-Security max-age=63072000;
-    add_header X-Frame-Options DENY; 
-    add_header X-Content-Type-Options nosniff;
- 
-    location / {
-        proxy_pass  http://127.0.0.1:8005;
-        proxy_redirect off;
-        proxy_set_header Host $host ;
-        proxy_set_header X-Real-IP $remote_addr ;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for ;
-        proxy_set_header X-Forwarded-Proto https ;
-    }
-}
-```
+If you are going to iframe Enketo webforms into other web pages, you need to take out the line with `X-Frame-Options DENY` or change it.
 
 Restart the webserver and check if any errors are shown:
 
@@ -468,7 +420,7 @@ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 sudo service fail2ban restart
 ```
 
-You can optionally [further tweak](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04?refcode=9e43ccb8961a) fail2ban by editing the configuration (`sudo nano /etc/fail2ban/jail.local`). Make sure to restart it after editing.
+You can optionally [further tweak](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04?refcode=9e43ccb8961a) fail2ban by editing the configuration (`sudo nano /etc/fail2ban/jail.local`). Make sure to restart the fail2ban service after editing.
 
 ### 11. Firewall Setup
 
@@ -493,19 +445,13 @@ A simple and very useful service to monitor uptime is [uptimerobot.com](https://
 
 ![UptimeRobot config](../files/2015/05/uptimerobot.png "Uptime Robot config")
 
-To add: [monit and mmonit](https://mmonit.com/monit/) setup for advanced monitoring.
+Digital Ocean provides a useful additional monitoring tool, visible in the Digital Ocean droplet interface ("Graphs" tab), which can be installed with:
 
-### 13. Backups
+```bash
+curl -sSL https://agent.digitalocean.com/install.sh | sh
+```
 
-Only **two files** contain critical information that **absolutely** should be backed up: the main database and the Enketo configuration file. 
-
-The database file is located at _/var/lib/redis/enketo-main.rdb_. Restoring can be done simply by stopping redis (`sudo systemctl stop redis@redis-enketo-main`), copying the backup file, and starting redis (`sudo systemctl start redis@redis-enketo-main`).
-
-The configuration file is located at _~/enketo-express/config/config.json_. Restore this file by copying it and restarting Enketo.
-
-Other files to perhaps consider backing up: NGINX configuration, custom scripts, other app configuration files.
-
-### 14. Logging
+### 13. Logging
 
 You can log the unique instanceIDs of each successfully submitted record. This can be useful for troubleshooting your form/data server or Enketo.
 
@@ -513,6 +459,24 @@ You can log the unique instanceIDs of each successfully submitted record. This c
 2. create a logrotate.conf file (see sample in setup/config/logrotate.conf, you could cp this to the home directory e.g. and then modify it as required)
 3. setup cronjob for logrotate e.g. with `30 2 * * * /usr/sbin/logrotate /home/enketo/logrotate.conf -s /home/enketo/enketo-express/logs/logrotate`
 
-### 15. Final configuration
+### 14. Final configuration
 
 Once, you server and its integration with the form server is working, go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Start by setting the `server url` to its proper value and see if the integration still works afterwards. Make sure to rebuild with `grunt` and `pm2 restart enketo` after updating your configuration.
+
+### 15. Backups (and restore or nove database from another server)
+
+Only **two files** contain critical information that **absolutely** should be backed up: the main database and the Enketo configuration file. 
+
+The database file is located at _/var/lib/redis/enketo-main.rdb_. Restoring can be done simply by stopping redis (`sudo systemctl stop redis@enketo-main.service`), copying the backup file, and starting redis (`sudo systemctl start redis@enketo-main.service`). (Tip: use `scp` to copy a file from your computer to the new server).
+
+The configuration file is located at _~/enketo-express/config/config.json_. Restore this file by copying it and restarting Enketo.
+
+In addition, it is recommended to backup the `/etc/letsencrypt` folder as well.
+
+Other files to perhaps consider backing up: NGINX configuration, custom scripts, other app configuration files.
+
+
+
+
+TODO:
+* should database files ownership be set to group `enketo` (in override redis-server@.service file with UMask 0002)?
