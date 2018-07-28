@@ -43,13 +43,11 @@ ssh-keygen -t rsa
 
 The location of the keys is _~/.ssh_.
 
-#### More details:
-
-More detailed instructions for OS X, Linux users can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2?refcode=9e43ccb8961a) (step 1 and 2 only) and for Windows users [here](https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows) (only the section: _"Generating an SSH Key"_).
+More detailed instructions can be found [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2?refcode=9e43ccb8961a) (step 1 and 2 only)
 
 ### 3. Create a Server
 
-For this tutorial, we are going to use Ubuntu 16.04 on a DigitalOcean server (aka a _droplet_). DigitalOcean provides the best bang for the buck when looking at CPU speed and CPU cores, both of which are the key criteria for Enketo Express performance. Their user interface is refreshingly well designed too. The tutorial should be quite similar for other VPS providers from section 4 onwards. If you do not have a DigitalOcean account yet, create one using [this referral link](https://m.do.co/c/9e43ccb8961a) to get a $10 credit. 
+For this tutorial, we are going to use Ubuntu 18.04 on a DigitalOcean server (aka a _droplet_). DigitalOcean provides the best bang for the buck when looking at CPU speed and CPU cores, both of which are the key criteria for Enketo Express performance. Their user interface is refreshingly well designed too. The tutorial should be quite similar for other VPS providers from section 4 onwards. If you do not have a DigitalOcean account yet, create one using [this referral link](https://m.do.co/c/9e43ccb8961a) to get a $10 credit. 
 
 #### Add your public key to your DigitalOcean account
 
@@ -70,7 +68,7 @@ Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new?refcode=9
 1. Give it a meaningful hostname, e.g. _enketo-production_
 2. Select a size. The $10/month option is fine to start with, but when traffic becomes meaningful you'll probably quickly want to upgrade to the $20/month a plan because it has 2 CPU cores. Thankfully, upgrading can be done with the click of a button with only about 2-3 minutes downtime. The storage size is irrelevant for Enketo. When you upgrade you will have the (default) option to only upgrade RAM and CPU, or to upgrade storage size as well. It is usually best to choose the first because then you will be able to downgrade again later. **You cannot downgrade to a droplet with less storage than you currently have.** This allows you to easily try out different server sizes with little risk and little downtime. And because DigitalOcean bills per hour, the cost of trying out a different size is minimal too.
 3. Select a region that is closest to the geographical center of where your users are located.
-4. Select the _Ubuntu 16.04 x64_ image.
+4. Select the _Ubuntu 18.04 x64_ image.
 5. Click on the SSH key(s) that may be used to access the server.
 6. Click _Create_ and wait until this is finished.
 
@@ -245,7 +243,7 @@ cp ~/enketo-express/config/default-config.json ~/enketo-express/config/config.js
 nano ~/enketo-express/config/config.json
 ```
 
-The default configuration is almost functional. We just need to create a secret API key and encryption key. See [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) for a detailed explanation of these configuration items. In this example we use a server at https://my-aggregate.appspot.com, but it is easiest to just set the `server url` to `""` for now. So the minimum configuration items to change are:
+The default configuration is almost functional. We just need to create a secret API key and encryption keys. See [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) for a detailed explanation of these configuration items. In this example we use a server at https://my-aggregate.appspot.com, but it is easiest to just set the `server url` to `""` for now. So the minimum configuration items to change are:
 
 ```json
 {
@@ -297,7 +295,7 @@ sudo pm2 startup ubuntu -u enketo
 
 ```
 
-**Test**: OS X and Linux users can test the API response, using the linked server url and corresponding api key for a non-existing form called _test_, by entering something like the following into a **new terminal window**:
+**Test**: Test the API response, using the linked server url and corresponding api key for a non-existing form called _test_, by entering something like the following into a **new terminal window**:
 
 ```bash
 curl --user EERTIUCJSHDGKHD234325: -d "server_url=https://my-aggregate.appspot.com&form_id=test" http://107.170.165.182:8005/api/v2/survey
@@ -463,7 +461,7 @@ You can log the unique instanceIDs of each successfully submitted record. This c
 
 Once, you server and its integration with the form server is working, go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Start by setting the `server url` to its proper value and see if the integration still works afterwards. Make sure to rebuild with `grunt` and `pm2 restart enketo` after updating your configuration.
 
-### 15. Backups (and restore or nove database from another server)
+### 15. Backups (and restore or move database from another server)
 
 Only **two files** contain critical information that **absolutely** should be backed up: the main database and the Enketo configuration file. 
 
@@ -471,11 +469,9 @@ The database file is located at _/var/lib/redis/enketo-main.rdb_. Restoring can 
 
 The configuration file is located at _~/enketo-express/config/config.json_. Restore this file by copying it and restarting Enketo.
 
-In addition, it is recommended to backup the `/etc/letsencrypt` folder as well.
+In addition, it is recommended to backup the `/etc/letsencrypt` folder.
 
 Other files to perhaps consider backing up: NGINX configuration, custom scripts, other app configuration files.
-
-
 
 
 TODO:
