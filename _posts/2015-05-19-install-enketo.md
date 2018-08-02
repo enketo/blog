@@ -19,7 +19,7 @@ This post describes how to setup a secure _production server_ running Enketo for
 
 **Installation is the easy part**. Maintaining a reliable server with close to **0% downtime** - especially when it becomes popular - is **a whole lot harder**. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating a server. So before self-installing a production server, be prepared to spend a significant amount of time to run it afterwards.
 
-Self-installation for most people is going to be **far more expensive** than using a public supported service, even if that service is not free. The time required to install and maintain a server and the "cost" of the likely longer periods of downtime will normally outweigh any fee you would pay for a provided service. **If cost is the primary argument to self-install, it is probably not the right decision.** There are of course lots of good reasons to want to run your own server too.
+Self-installation for most people is going to be **far more expensive** than using a public supported service, even if that service is not free. The time required to install and maintain a server and the "cost" of the likely longer periods of downtime will normally outweigh any fee you would pay for a provided service. **If cost is the primary argument to self-install, it is probably not the right decision.** There are of course lots of good other reasons to want to run your own server!
 
 ### 2. Create a public/private key pair 
 
@@ -66,7 +66,7 @@ If multiple people/computers have (root) access to the server it is helpful to g
 Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new?refcode=9e43ccb8961a) button at the top of the screen to create your server.
 
 1. Give it a meaningful hostname, e.g. _enketo-production_
-2. Select a size. The $10/month option is fine to start with, but when traffic becomes meaningful you'll probably quickly want to upgrade to the $20/month a plan because it has 2 CPU cores. Thankfully, upgrading can be done with the click of a button with only about 2-3 minutes downtime. The storage size is irrelevant for Enketo. When you upgrade you will have the (default) option to only upgrade RAM and CPU, or to upgrade storage size as well. It is usually best to choose the first because then you will be able to downgrade again later. **You cannot downgrade to a droplet with less storage than you currently have.** This allows you to easily try out different server sizes with little risk and little downtime. And because DigitalOcean bills per hour, the cost of trying out a different size is minimal too.
+2. Select a size. The $10/month option is fine to start with, but when traffic becomes meaningful you'll probably quickly want to upgrade to the $15/month a plan because it has 2 CPU cores and 2 Gb of RAM. Thankfully, upgrading can be done with the click of a button with only about 2-3 minutes downtime. The storage size is irrelevant for Enketo. When you upgrade you will have the (default) option to only upgrade RAM and CPU, or to upgrade storage size as well. It is usually best to choose the first because then you will be able to downgrade again later. **You cannot downgrade to a droplet with less storage than you currently have.** This allows you to easily try out different server sizes with little risk and little downtime. And because DigitalOcean bills per hour, the cost of trying out a different size is minimal too.
 3. Select a region that is closest to the geographical center of where your users are located.
 4. Select the _Ubuntu 18.04 x64_ image.
 5. Click on the SSH key(s) that may be used to access the server.
@@ -153,7 +153,7 @@ Install NodeJS and global Node packages
 ```bash
 curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
 sudo apt-get install -y nodejs
-sudo npm install -g pm2
+sudo npm install -g pm2 npm
 ```
 
 Let Ubuntu automatically install security updates (keep default values and select _Yes_ when asked):
@@ -164,7 +164,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ### 5. Enketo Express Installation
 
-Install Enketo Express and its dependencies. Warnings during the "npm install" step can be ignored. Errors should not be ignored.
+Install Enketo Express and its dependencies. Warnings during the `npm install --production` step can be ignored. Errors should not be ignored.
 
 ```bash
 cd ~
@@ -183,18 +183,6 @@ First we stop and remove the default redis service:
 sudo systemctl stop redis
 sudo systemctl disable redis
 sudo systemctl daemon-reload
-```
-
-Then we override a few directives in the default systemd template unit file `/lib/systemd/system/redis-server@.service` so we can use it:
-
-```bash
-sudo systemctl edit redis-server@.service
-```
-
-This opens an empty file, to which you can add the following lines:
-```bash
-[Service]
-Group=enketo
 ```
 
 Then, we configure 2 new redis instances for Enketo that run on different ports:
@@ -262,14 +250,12 @@ The default configuration is almost functional. We just need to create a secret 
 
 Use Ctrl-X and enter _Y_ to save the configuration.
 
-Build:
+Rebuild with the updated configuration:
 
 ```bash
 cd ~/enketo-express
 npm install --production
 ```
-
-The subsequent 'Local Npm module "..." not found' errors can be ignored as those modules are only used during development. Further configuration should be done in step 15.
 
 ### 7. Automatic Enketo Launch and Restart
 
@@ -370,7 +356,7 @@ sudo ln -s /etc/nginx/sites-available/enketo /etc/nginx/sites-enabled/enketo
 sudo service nginx restart
 ```
 
-**Test**: Go to your (sub)domain in the browser (e.g. http://enketo.aidapplications.com). You should be seeing the front page.
+**Test**: Go to your (sub)domain in the browser (e.g. http://enketo.aidapplications.com). You should be seeing the front page (if the DNS record has propagated already).
 
 
 ### 9. Install an SSL certificate
@@ -467,12 +453,14 @@ Only **two files** contain critical information that **absolutely** should be ba
 
 The database file is located at _/var/lib/redis/enketo-main.rdb_. Restoring can be done simply by stopping redis (`sudo systemctl stop redis@enketo-main.service`), copying the backup file, and starting redis (`sudo systemctl start redis@enketo-main.service`). (Tip: use `scp` to copy a file from your computer to the new server).
 
+To get access to the redis files, it is helpful to add the _enketo_ user to the _redis_ group:
+
+```bash
+sudo usermod -a -G redis enketo
+```
+
 The configuration file is located at _~/enketo-express/config/config.json_. Restore this file by copying it and restarting Enketo.
 
 In addition, it is recommended to backup the `/etc/letsencrypt` folder.
 
 Other files to perhaps consider backing up: NGINX configuration, custom scripts, other app configuration files.
-
-
-TODO:
-* should database files ownership be set to group `enketo` (in override redis-server@.service file with UMask 0002)?
