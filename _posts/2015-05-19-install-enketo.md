@@ -451,7 +451,7 @@ Once, you server and its integration with the form server is working, go through
 
 Only **two files** contain critical information that **absolutely** should be backed up: the main database and the Enketo configuration file. 
 
-The database file is located at _/var/lib/redis/enketo-main.rdb_. Restoring can be done simply by stopping redis (`sudo systemctl stop redis@enketo-main.service`), copying the backup file, and starting redis (`sudo systemctl start redis@enketo-main.service`). (Tip: use `scp` to copy a file from your computer to the new server).
+The database file is located at _/var/lib/redis/enketo-main.rdb_. Restoring can be done simply by stopping redis (`sudo systemctl stop redis-server@enketo-main.service`), copying the backup file, and starting redis (`sudo systemctl start redis-server@enketo-main.service`). (Tip: use `scp` to copy a file from your computer to the new server).
 
 To get access to the redis files, it is helpful to add the _enketo_ user to the _redis_ group:
 
