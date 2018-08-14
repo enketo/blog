@@ -15,9 +15,9 @@ I am pleased to announce that Enketo.org is now [integrated with ODK Aggregate](
 ![Aggregate Screenshot](../files/2014/02/enketo-aggregate.png "Aggregate Screenshot")
 
 
-If you are hosting an installation of Aggregate 1.4.1 and want to enable this feature all you need is an [Enketo.org account](https://accounts.enketo.org). A [free plan option has just become available](/plan-prices-reduced/). When you have an account, you'll just have configure 2 settings in ODK Aggregate to **link** it with Enketo. The Enketo buttons in Aggregate will magically appear once you have linked it.
+If you are hosting an installation of Aggregate 1.4.1 and want to enable this feature all you need is an [Enketo.org account](https://accounts.enke.to). A [free plan option has just become available](/plan-prices-reduced/). When you have an account, you'll just have configure 2 settings in ODK Aggregate to **link** it with Enketo. The Enketo buttons in Aggregate will magically appear once you have linked it.
 
-To read the instructions in more detail, visit [this page](https://accounts.enketo.org/support/aggregate/).
+To read the instructions in more detail, visit [this page](https://accounts.enke.to/support/aggregate/).
 
 Many thanks to [SDRC](http://sdrc.co.in) for developing this feature and thanks to Mitch and the rest of the [ODK](http://opendatakit.org/) team for their advice and for welcoming SDRC's code contribution. I have no doubt the new addition will be well-received by ODK users, and will open the road for deeper integration in the future. The next key integration features could for example  be to:
 

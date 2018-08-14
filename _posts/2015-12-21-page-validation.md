@@ -13,7 +13,7 @@ Enketo's [pages mode](/pages) now requires the current page to be valid before t
 
 ![Screenshot of page validation](../files/2015/12/page-validation.png "Screenshot of page validation")
 
-Now that Enketo's [paid service](https://accounts.enketo.org) and [Ona](https://ona.io/) have switched to the new Enketo application, and others will soon follow, we'll stop referring to the _old_ and _new_ Enketo. From now onwards, every bit of news is always about the new Enketo.
+Now that Enketo's [paid service](https://accounts.enke.to) and [Ona](https://ona.io/) have switched to the new Enketo application, and others will soon follow, we'll stop referring to the _old_ and _new_ Enketo. From now onwards, every bit of news is always about the new Enketo.
 
 ### Acknowledgements
 

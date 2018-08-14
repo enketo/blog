@@ -37,4 +37,4 @@ The following changes were made:
 ### Future
 We hope that by offering lower prices, providing a free option and continuing to build our product, we will eventually end up with a larger amount of users who decide the service is worth paying for. A stable source of revenue from the service at enketo.org presents the best way forward for us. It will allow us to organically scale up our infrastructure, development work and support as Enketo gains popularity and the user base expands.  
 
-Please [spread the word](https://twitter.com/enketo/statuses/431514630230257664) and of course [sign up](https://accounts.enketo.org)!
+Please [spread the word](https://twitter.com/enketo/statuses/431514630230257664) and of course [sign up](https://accounts.enke.to)!

@@ -21,7 +21,7 @@ It has continuously improved over this period and enjoyed a nice steady growth o
 
 1. If you're not already familiar with [Aggregate](http://opendatakit.org/use/aggregate/), or [Formhub](https://formhub.org/resources/) start learning about these platforms first. This [overview](https://enketo.org/openrosa) may be helpful.
 2. Make sure you have an installation of ODK Aggregate or Formhub at your disposal.
-3. Sign up for an enketo.org [account](https://accounts.enketo.org) (your first 30 days will be FREE).
+3. Sign up for an enketo.org [account](https://accounts.enke.to) (your first 30 days will be FREE).
 4. Login to your Enketo account and pick a plan. 
 5. Enter your ODK Aggregate or Formhub server address in your Enketo account.
 6. Either use [enketo.org/forms](https://enketo.org/forms), your installation of Formhub or integrate Enketo with your installation of ODK Aggregate using the awesome [Enketo API](http://apidocs.enketo.org) and the API token you'll find in your account.
