@@ -31,7 +31,7 @@ For encryption-enabled forms, Enketo will automatically de-activate 2 features t
 
 ### How to use
 
-To use this feature the XLSForm needs to include a _public_key_`_ in the settings sheet (and keep the matching private key secret). See the [XLSForm specification](http://xlsform.org/en/#encrypted-forms) and [ODK documentation](https://docs.opendatakit.org/encrypted-forms/) for more details. Note that some older tutorials mention an additional need for a _submission_url_. This can be ignored, as that is actually an independent feature that does not relate to encryption.
+To use this feature the XLSForm needs to include a _public_key_ in the settings sheet (and keep the matching private key secret). See the [XLSForm specification](http://xlsform.org/en/#encrypted-forms) and [ODK documentation](https://docs.opendatakit.org/encrypted-forms/) for more details. Note that some older tutorials mention an additional need for a _submission_url_. This can be ignored, as that is actually an independent feature that does not relate to encryption.
 
 XML wizards may be interested in looking at the [XForms Specification](https://opendatakit.github.io/xforms-spec/#encryption).
 
