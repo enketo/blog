@@ -11,15 +11,15 @@ tags:
 
 --- 
 
-This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://m.do.co/c/9e43ccb8961a). It is meant to be a _living document_ that will continuously improve. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/XiTgHFll_nE) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
+This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://m.do.co/c/9e43ccb8961a). It will be updated continuously to use the latest tools and recommended practices. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/XiTgHFll_nE) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
 
 ![Enketo Webform](../files/2015/05/webform.png "Enketo Webform")
 
 ### 1. Considerations
 
-**Installation is the easy part**. Maintaining a reliable server with close to **0% downtime** - especially when it becomes popular - is **a whole lot harder**. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating a server. So before self-installing a production server, be prepared to spend a significant amount of time to run it afterwards.
+**Installation is the easy part**. Maintaining a reliable server with close to **0% downtime** - especially when it becomes popular - is a whole lot harder. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating a server. So before self-installing a production server, be prepared to spend a significant amount of time to run it afterwards.
 
-Self-installation for most people is going to be **far more expensive** than using a public supported service, even if that service is not free. The time required to install and maintain a server and the "cost" of the likely longer periods of downtime will normally outweigh any fee you would pay for a provided service. **If cost is the primary argument to self-install, it is probably not the right decision.** There are of course lots of good other reasons to want to run your own server!
+Self-installation for most people is going to be **far more expensive** than using a public supported service, even if that service is not free. The time required to install and maintain a server and the "cost" of the likely longer periods of downtime will normally outweigh any fee you would pay for a provided service. **If cost is the primary argument to self-install, it is probably not the right decision.** There are of course lots of good other reasons to run your own server!
 
 ### 2. Create a public/private key pair 
 
@@ -96,6 +96,7 @@ To allow this user to login using your private key, we need to copy your public 
 
 ```bash
 mkdir /home/enketo/.ssh
+sudo chown enketo:enketo /home/enketo/.ssh
 cp ~/.ssh/authorized_keys /home/enketo/.ssh
 chown enketo:enketo /home/enketo/.ssh/authorized_keys
 chmod 600 /home/enketo/.ssh/authorized_keys
@@ -361,10 +362,10 @@ sudo service nginx restart
 
 ### 9. Install an SSL certificate
 
-Nothing in this section is specific to Enketo. You can also use one of the [thousands of SSL-certificate-installation-tuturials on the web](https://www.google.com/webhp?#q=How+to+install+an+ssl+certificate+for+nginx+on+Ubuntu+16.04).
+Nothing in this section is specific to Enketo. You can also use one of the [thousands of SSL-certificate-installation-tutorials on the web](https://www.google.com/webhp?#q=How+to+install+an+ssl+certificate+for+nginx+on+Ubuntu+16.04).
 
 
-This tutorial will use free Let's Encrypt certificates using [CertBot](https://certbot.eff.org/). This is a very convenient solutions as it can configured to automatically renew the certificate.
+This tutorial will use free Let's Encrypt certificates using [CertBot](https://certbot.eff.org/). This is a very convenient solution as it can be configured to automatically renew the certificate.
 
 First install CertBot. For NGINX on Ubuntu we follow [these instructions](https://certbot.eff.org/):
 ```bash
@@ -445,7 +446,7 @@ You can log the unique instanceIDs of each successfully submitted record. This c
 
 ### 14. Final configuration
 
-Once, you server and its integration with the form server is working, go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Start by setting the `server url` to its proper value and see if the integration still works afterwards. Make sure to rebuild with `grunt` and `pm2 restart enketo` after updating your configuration.
+Once, your Enketo server and its integration with the form server is working, go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Start by setting the `server url` to its proper value and see if the integration still works afterwards. Make sure to rebuild with `grunt` and `pm2 restart enketo` after updating your configuration.
 
 ### 15. Backups (and restore or move database from another server)
 
@@ -461,6 +462,4 @@ sudo usermod -a -G redis enketo
 
 The configuration file is located at _~/enketo-express/config/config.json_. Restore this file by copying it and restarting Enketo.
 
-In addition, it is recommended to backup the `/etc/letsencrypt` folder.
-
-Other files to perhaps consider backing up: NGINX configuration, custom scripts, other app configuration files.
+Other files to perhaps consider backing up: NGINX configuration, custom scripts, other app configuration files, and the letsencrypt configuration.
