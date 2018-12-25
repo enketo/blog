@@ -471,3 +471,14 @@ sudo usermod -a -G redis enketo
 The configuration file is located at _~/enketo-express/config/config.json_. Restore this file by copying it and restarting Enketo.
 
 Other files to perhaps consider backing up: NGINX configuration, custom scripts, other app configuration files, and the letsencrypt configuration.
+
+### 17. Update Enketo to the latest version
+
+The following commands can be used to update Enketo to the latest version:
+
+```bash
+cd enketo-express
+git pull && npm install --production && pm2 restart enketo
+```
+
+You may have to remove the file _package-lock.json_ first.
