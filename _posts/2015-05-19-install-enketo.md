@@ -66,7 +66,7 @@ If multiple people/computers have (root) access to the server it is helpful to g
 Click the [Create Droplet](https://cloud.digitalocean.com/droplets/new?refcode=9e43ccb8961a) button at the top of the screen to create your server.
 
 1. Give it a meaningful hostname, e.g. _enketo-production_
-2. Select a size. The $5/month option is recommended to start with, and when traffic becomes meaningful you'll probably quickly want to upgrade to the $15/month a plan because it has 2 CPU cores and 2 Gb of RAM. Thankfully, upgrading can be done with the click of a button with only about 2-3 minutes downtime. The storage size is **irrelevant** for Enketo. When you upgrade you will have the (default) option to only upgrade RAM and CPU, or to upgrade storage size as well. It is usually best to choose the first because then you will be able to downgrade again later. **You cannot downgrade to a droplet with less storage than you currently have.** That's also why starting with the cheapest droplet with the least amount of storage provides the maximum flexibility as you'll be able try out different server sizes with little risk and little downtime. And because DigitalOcean bills by the hour, the cost of trying out a different size is minimal too.
+2. Select a size. The cheapest 2 GB option is recommended to start with, and when traffic becomes meaningful you'll probably quickly want to upgrade to a 2 vCPU plan because it has 2 CPU cores. Thankfully, upgrading can be done with the click of a button with only about 2-3 minutes downtime. The storage size is **irrelevant** for Enketo. When you upgrade you will have the (default) option to only upgrade RAM and CPU, or to upgrade storage size as well. It is usually best to choose the first because then you will be able to downgrade again later. **You cannot downgrade to a droplet with less storage than you currently have.** That's also why starting with the cheapest droplet with the least amount of storage provides the maximum flexibility as you'll be able try out different server sizes with little risk and little downtime. And because DigitalOcean bills by the hour, the cost of trying out a different size is minimal too.
 3. Select a region that is closest to the geographical center of where your users are located.
 4. Select the _Ubuntu 18.04 x64_ image.
 5. Click on the SSH key(s) that may be used to access the server.
@@ -165,7 +165,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ### 5. Enketo Express Installation
 
-Install Enketo Express and its dependencies. Warnings during the `npm install --production` step can be ignored. Errors should not be ignored.
+Install Enketo Express and its dependencies. Warnings during the `npm install --production` step can normally be ignored. Errors should not be ignored.
 
 ```bash
 cd ~
@@ -309,7 +309,7 @@ Then wait about 15 seconds and check that Enketo is running by visiting the URL 
 
 #### DNS Settings
 
-If you have rented a domain name for your Enketo installation, we can configure the webserver. In this example we'll be using a subdomain, _enketo.aidapplications.com_, but you can also use the main domain.
+If you have rented a domain name for your Enketo installation, we can configure the webserver. In this example we'll be using a subdomain, _enketo.aidapplications.com_, but you can also use the main domain, e.g. _aidapplications.com_.
 
 First create a DNS entry for your domain using the tools that your DNS registrar provides. If you haven't found a DNS registrar yet, you could use [NameCheap](http://www.namecheap.com/?aff=85649). Create an _A record_ that points to your IP address.
 
@@ -324,7 +324,8 @@ sudo nano /etc/nginx/sites-available/enketo
 
 ```
 
-Use the following initial configuration to test whether the domain and webserver are working:
+Use the following initial configuration to test whether the domain and webserver are working. **Make sure that server_name matches an "A"
+record you created in DNS and not a CNAME (alias).**
 
 ```json
 server {
@@ -448,7 +449,14 @@ You can log the unique instanceIDs of each successfully submitted record. This c
 
 Once, your Enketo server and its integration with the form server is working, go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Start by setting the `server url` to its proper value and see if the integration still works afterwards. Make sure to rebuild with `grunt` and `pm2 restart enketo` after updating your configuration.
 
-### 15. Backups (and restore or move database from another server)
+### 15. Link Enketo server with the Form & Data Server
+
+Please see the instructions for the Form & Data server you are using. The 2 key values needed to link Enketo are:
+
+1. The API key you set in step 6 of this tutorial in Enketo's config.json. Do not keep the default value!
+2. The API URL. This is the domain your Enketo is available on + /api/v2 or /api/v1, e.g. https://enketo.aidapplications.com/api/v2. Due to the limited integration in ODK Aggregate those users may prefer to use /api/v1 if offline-capable webforms are desired. Ona and KoBoToolbox have very comprehensive Enketo integration (including previews, offline, online-only, single-submission etc) and should therefore use the full-featured /api/v2. ODK Central integration [is forthcoming](https://forum.opendatakit.org/t/integration-of-enketo-into-odk-central/13992) and will use /api/v2.
+
+### 16. Backups (and restore or move database from another server)
 
 Only **two files** contain critical information that **absolutely** should be backed up: the main database and the Enketo configuration file. 
 
