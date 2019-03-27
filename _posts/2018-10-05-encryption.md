@@ -41,8 +41,6 @@ The only known limitation is that encrypting photos, videos, audio and other upl
 
 Internet Explorer does not support encryption and will just show a helpful warning during load. To work around that lack of support, the best approach is to simply make sure to never use that awful browser for any reason.
 
-During the course of development, [a possible bug was discovered in KoBoToolbox](https://github.com/kobotoolbox/kobocat/issues/483) that seems to affect some encrypted submissions with multiple uploads per record. Make sure to track this bug and test your form if it sounds like this may apply to your encryption-enabled survey.
-
 ### Future
 
 Depending on whether there is a demand, interest, and funding for this, some clever developer could now create a fancy command-line or desktop tool for decryption as an alternative to ODK Briefcase. This would seem like a really fun project for a JavaScript/Electron developer to take on, and I think the ODK community will welcome it! If interested, let us know and we will quickly split off Enketo's internal encryption module as a separate npm module so it can be used by multiple projects and be centrally maintained.
