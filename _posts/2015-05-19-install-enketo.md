@@ -147,6 +147,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get autoremove -y
 sudo apt-get install -y git nginx htop build-essential redis-server checkinstall python
+sudo sudo apt-get install -y gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 ```
 
 Install NodeJS and global Node packages
@@ -470,7 +471,7 @@ sudo usermod -a -G redis enketo
 
 The configuration file is located at _~/enketo-express/config/config.json_. Restore this file by copying it and restarting Enketo.
 
-Other files to perhaps consider backing up: NGINX configuration, custom scripts, other app configuration files, and the letsencrypt configuration.
+Other files to perhaps consider backing up: logs (if enabled), NGINX configuration, custom scripts, other app configuration files, and the letsencrypt configuration.
 
 ### 17. Update Enketo to the latest version
 
