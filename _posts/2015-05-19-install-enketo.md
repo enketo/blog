@@ -11,7 +11,7 @@ tags:
 
 --- 
 
-This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://m.do.co/c/9e43ccb8961a). It will be updated continuously to use the latest tools and recommended practices. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/XiTgHFll_nE) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
+This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://m.do.co/c/9e43ccb8961a). It will be updated continuously to use the latest tools and recommended practices. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/-cEdlAAUuOs) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
 
 ![Enketo Webform](../files/2015/05/webform.png "Enketo Webform")
 
@@ -233,7 +233,7 @@ cp ~/enketo-express/config/default-config.json ~/enketo-express/config/config.js
 nano ~/enketo-express/config/config.json
 ```
 
-The default configuration is almost functional. We just need to create a secret API key and encryption keys. See [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) for a detailed explanation of these configuration items. In this example we use a server at https://my-aggregate.appspot.com, but it is easiest to just set the `server url` to `""` for now. So the minimum configuration items to change are:
+The default configuration is almost functional. We just need to create a secret API key and encryption keys. See [this document](https://enketo.github.io/enketo-express/tutorial-10-configure.html) for a detailed explanation of these configuration items. In this example we use a server at https://my-aggregate.appspot.com, but it is easiest to just set the `server url` to `""` for now. So the minimum configuration items to change are:
 
 ```json
 {
