@@ -448,7 +448,7 @@ You can log the unique instanceIDs of each successfully submitted record. This c
 
 ### 14. Final configuration
 
-Once, your Enketo server and its integration with the form server is working, go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Start by setting the `server url` to its proper value and see if the integration still works afterwards. Make sure to rebuild with `grunt` and `pm2 restart enketo` after updating your configuration.
+Once, your Enketo server and its integration with the form server is working, go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/default-config.json) OR through the tutorial [available here](https://enketo.github.io/enketo-express/tutorial-10-configure.html) to further configure your Enketo installation. Start by setting the `server url` to its proper value and see if the integration still works afterwards. Make sure to rebuild with `grunt` and `pm2 restart enketo` after updating your configuration.
 
 ### 15. Link Enketo server with the Form & Data Server
 
