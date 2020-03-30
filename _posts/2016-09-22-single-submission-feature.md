@@ -11,7 +11,7 @@ tags:
 
 Enketo now offers the ability to conduct surveys that obtain just a single reponse from each user!
 
-[![Screenshot of export button](/files/2016/09/feedback.png "Screenshot of feedback survey")](https://enke.to/single/::4c7c494fbfd5cd59e56ef6c68381e77b)
+[![Screenshot of export button](/files/2016/09/feedback.png "Screenshot of feedback survey")](https://enke.to/single/4c7c494fbfd5cd59e56ef6c68381e77b)
 
 ### Why Use This
 
@@ -23,7 +23,7 @@ When the user submits a response to your survey ze will be automatically redirec
 
 ### Demo
 
-See [this demo](https://enke.to/single/::4c7c494fbfd5cd59e56ef6c68381e77b) and submit your response.
+See [this demo](https://enke.to/single/4c7c494fbfd5cd59e56ef6c68381e77b) and submit your response.
 
 ### How to Use
 

@@ -20,7 +20,7 @@ It is important to clarify that there are two different language environments in
 
 When required, Enketo will now display languages from right-to-left **in both the UI and the forms**.
 
-[![Arabic English Sample Form](../files/2015/08/arabic-english.png "Enketo Roadmap")](https://odk.enke.to/::YYYV)
+[![Arabic English Sample Form](../files/2015/08/arabic-english.png "Enketo Roadmap")](https://odk.enke.to/YYYV)
 
 
 ### Tip: Prepare for the Future

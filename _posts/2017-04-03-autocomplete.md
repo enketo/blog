@@ -13,7 +13,7 @@ Enketo added support for autocomplete widgets at the beginning of March 2017.
 
 This widget turns a regular "select one" question into a search box. It's very useful for long lists. Click the form below for a demo.
 
-[!["Autocomplete Demo"](../files/2017/04/autocomplete.png "Autocomplete Demo")](https://enke.to/::search)
+[!["Autocomplete Demo"](../files/2017/04/autocomplete.png "Autocomplete Demo")](https://enke.to/search)
 
 ### How to Use
 

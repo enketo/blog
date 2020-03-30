@@ -11,7 +11,7 @@ tags:
 
 Text formatting was [previously](/better-notes) only supported in notes but has now been extended across labels and hints for **all question types**. We've also added support for changing text colors with HTML <span\> elements and css, as well as support for headings. 
 
-[![Screenshot of markdown demo form](../files/2015/12/markdown.png "Screenshot of markdown demo form")](https://enke.to/::markdown)
+[![Screenshot of markdown demo form](../files/2015/12/markdown.png "Screenshot of markdown demo form")](https://enke.to/markdown)
 
 ### How to Use
 
@@ -20,9 +20,9 @@ To format text in Enketo (and I believe soon in ODK Collect too), use the Markdo
 
 ---
 
-[links](https://enke.to/::markdown)
+[links](https://enke.to/markdown)
 
-`[links](https://enke.to/::markdown)`
+`[links](https://enke.to/markdown)`
 
 ---
 

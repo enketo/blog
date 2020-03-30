@@ -12,7 +12,7 @@ tags:
 Enketo Smart Paper now has a brand new theme option: __The Grid Theme__. Click the screenshot below to check out a sample form right away.
 
 
-[![Screenshot of WHO Fatal Injury form using Grid Theme](../files/2014/04/fatal-injury.png "Screenshot of WHO Fatal Injury form using Grid Theme")](https://enke.to/::fatal)
+[![Screenshot of WHO Fatal Injury form using Grid Theme](../files/2014/04/fatal-injury.png "Screenshot of WHO Fatal Injury form using Grid Theme")](https://enke.to/fatal)
 
 This sample form was developed by Ona for [WHO](http://who.int). 
 
@@ -26,7 +26,7 @@ This theme is ~~currently exclusively available to [enketo.org](https://enketo.o
 
 ![XLSForm Style Setting](../files/2014/04/XLSForm-style-theme-grid.png "Style setting in XLSForm")
 
-To fully leverage the power of the Grid Theme, you'll want to indicate which questions should be displayed on one row and how many cells they should occupy. We developed a very flexible and simple-to-use mechanism for this for this using _w1, w2, w3....w10_ to indicate the _relative width_ of a group or cell. It is best explained by looking at this tutorial form: [https://enke.to/::grid](https://enke.to/::grid). The XLSForm source is available [here](https://docs.google.com/spreadsheet/ccc?key=0Al3Mw5sknZoPdDhSVmhJX2NvOG44X1RadTA2RVRzSHc&usp=sharing#gid=0).
+To fully leverage the power of the Grid Theme, you'll want to indicate which questions should be displayed on one row and how many cells they should occupy. We developed a very flexible and simple-to-use mechanism for this for this using _w1, w2, w3....w10_ to indicate the _relative width_ of a group or cell. It is best explained by looking at this tutorial form: [https://enke.to/grid](https://enke.to/grid). The XLSForm source is available [here](https://docs.google.com/spreadsheet/ccc?key=0Al3Mw5sknZoPdDhSVmhJX2NvOG44X1RadTA2RVRzSHc&usp=sharing#gid=0).
 
 ![XLSForm Grid markup](../files/2014/04/XLSForm-w-markup.png "XLSForm Grid markup")
 

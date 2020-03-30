@@ -11,7 +11,7 @@ tags:
 
 --- 
 
-This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://m.do.co/c/9e43ccb8961a). It will be updated continuously to use the latest tools and recommended practices. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/-cEdlAAUuOs) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
+This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://m.do.co/c/9e43ccb8961a). It will be updated continuously to use the latest tools and recommended practices. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/XiTgHFll_nE) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
 
 ![Enketo Webform](../files/2015/05/webform.png "Enketo Webform")
 
@@ -150,10 +150,10 @@ sudo apt-get install -y git nginx htop build-essential redis-server checkinstall
 sudo apt-get install -y gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 ```
 
-Install NodeJS and global Node packages
+Install Node.js and global Node packages
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
+curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
 sudo apt-get install -y nodejs
 sudo npm install -g pm2 npm
 ```
@@ -233,7 +233,7 @@ cp ~/enketo-express/config/default-config.json ~/enketo-express/config/config.js
 nano ~/enketo-express/config/config.json
 ```
 
-The default configuration is almost functional. We just need to create a secret API key and encryption keys. See [this document](https://enketo.github.io/enketo-express/tutorial-10-configure.html) for a detailed explanation of these configuration items. In this example we use a server at https://my-aggregate.appspot.com, but it is easiest to just set the `server url` to `""` for now. So the minimum configuration items to change are:
+The default configuration is almost functional. We just need to create a secret API key and encryption keys. See [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) for a detailed explanation of these configuration items. In this example we use a server at https://my-aggregate.appspot.com, but it is easiest to just set the `server url` to `""` for now. So the minimum configuration items to change are:
 
 ```json
 {
@@ -293,7 +293,7 @@ You should see a JSON response like this:
 
 ```json
 {
-    "url": "http://104.236.212.120:8005/::YYYp",
+    "url": "http://104.236.212.120:8005/YYYp",
     "code": 201
 }
 ```
@@ -448,7 +448,7 @@ You can log the unique instanceIDs of each successfully submitted record. This c
 
 ### 14. Final configuration
 
-Once, your Enketo server and its integration with the form server is working, go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/default-config.json) OR through the tutorial [available here](https://enketo.github.io/enketo-express/tutorial-10-configure.html) to further configure your Enketo installation. Start by setting the `server url` to its proper value and see if the integration still works afterwards. Make sure to rebuild with `grunt` and `pm2 restart enketo` after updating your configuration.
+Once, your Enketo server and its integration with the form server is working, go through each item in [this document](https://github.com/enketo/enketo-express/blob/master/config/README.md) to further configure your Enketo installation. Start by setting the `server url` to its proper value and see if the integration still works afterwards. Make sure to rebuild with `grunt` and `pm2 restart enketo` after updating your configuration.
 
 ### 15. Link Enketo server with the Form & Data Server
 

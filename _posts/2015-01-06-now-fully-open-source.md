@@ -11,7 +11,7 @@ tags:
 
 The [Grid Theme](/gorgeous-grid) is now open source! 
 
-[![Grid Theme Screenshot](../files/2015/01/sdi-screenshot.png "Grid Theme Screenshot")](https://enke.to/::settl)
+[![Grid Theme Screenshot](../files/2015/01/sdi-screenshot.png "Grid Theme Screenshot")](https://enke.to/settl)
 
 ### Why?
 The Grid Theme had been kept proprietary to give the [paid service](https://accounts.enke.to) a better chance at generating revenue, but this did not sufficiently materialize. Therefore, Enketo is shifting its focus to __development__ without directly providing services\*. To scale the product further (but not the company), we will actively promote the integration of Enketo into existing tools and services - which is already proving to be [quite successful](https://enketo.org/#tools). One way of doing this is by fully embracing open-source. 

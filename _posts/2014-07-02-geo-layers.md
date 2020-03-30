@@ -10,9 +10,9 @@ tags:
   - geo
 ---
 
-The [new geo widgets](/geo) have been extended to show multiple map layers. You can now switch between streets, terrain and satellite maps. See [this sample form](https://enke.to/::geo1).
+The [new geo widgets](/geo) have been extended to show multiple map layers. You can now switch between streets, terrain and satellite maps. See [this sample form](https://enke.to/geo1).
 
-[![Screenshot of Geo Widgets Sample Form](../files/2014/07/geo-widget-layers.png "Screenshot of Geo Widgets layercontrol")](https://enke.to/::geo1)
+[![Screenshot of Geo Widgets Sample Form](../files/2014/07/geo-widget-layers.png "Screenshot of Geo Widgets layercontrol")](https://enke.to/geo1)
 
 ### How to use
 
