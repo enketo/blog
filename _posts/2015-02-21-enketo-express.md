@@ -9,13 +9,13 @@ tags:
   - enketo
 ---
 
-The [new Enketo Smart Paper app](https://github.com/kobotoolbox/enketo-express) (aka _Enketo Express_) is now ready to start replacing the [old Enketo Smart Paper app](https://github.com/enketo/enketo-legacy) (aka _Enketo Legacy_).
+The [new Enketo Smart Paper app](https://github.com/enketo/enketo-express) (aka _Enketo Express_) is now ready to start replacing the [old Enketo Smart Paper app](https://github.com/enketo/enketo-legacy) (aka _Enketo Legacy_).
 
 <img class="right" style="margin-top: -20px; margin-bottom: -20px;" src="../files/2015/02/enketo-express.png" alt="Enketo Express screenshot"/>
 
 ### Advantages
 
-For a continuously updated list of differences [see the repository](https://github.com/kobotoolbox/enketo-express#differences-with-enketoenketo-legacy). As of today the key advantages of the new app are:
+As of today the key advantages of the new app are:
 
 * exactly 10x easier to install
 * multi-language user interface
@@ -30,7 +30,7 @@ For a continuously updated list of differences [see the repository](https://gith
 
 ### Offline Capability Still Experimental
 
-The offline capability was re-developed from the ground up using different storage technologies. Any offline-capable webform views should be considered experimental for the next few months. The online-only views are considered stable. **Please help by reporting bugs [here](https://github.com/kobotoolbox/enketo-express/issues).**
+The offline capability was re-developed from the ground up using different storage technologies. Any offline-capable webform views should be considered experimental for the next few months. The online-only views are considered stable. **Please help by reporting bugs [here](https://github.com/enketo/enketo-express/issues).**
 
 ### GitHub Account
 
@@ -38,6 +38,6 @@ It might be confusing that the master repository lives in the [KoBoToolbox GitHu
 
 ### Sponsors
 
-The development of the new Enketo Smart Paper app so far has been funded by [KoBo Toolbox](http://kobotoolbox.org), the [Santa Fe Institute](http://www.santafe.edu), [iMMAP](http://immap.org) and [OpenClinica](http://openclinica.com). For a continuously updated list of sponsors see [the repository](https://github.com/kobotoolbox/enketo-express#funding).
+The development of the new Enketo Smart Paper app so far has been funded by [KoBo Toolbox](http://kobotoolbox.org), the [Santa Fe Institute](http://www.santafe.edu), [iMMAP](http://immap.org) and [OpenClinica](http://openclinica.com). For a continuously updated list of sponsors see [the repository](https://github.com/enketo/enketo-express#funding).
 
 {% include feedback.md %}

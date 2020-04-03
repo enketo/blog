@@ -35,8 +35,8 @@ In some cases, it has made sense to add alternative form engine behavior and exp
 * [validate related constraints continuously](https://github.com/enketo/enketo-core#validatecontinuously) instead of only upon submission
 * [turn off page-flip validation](https://github.com/enketo/enketo-core#validatepage)
 * [do not clear the values of an irrelevant question immediately](https://github.com/enketo/enketo-core#behaviour-of-skip-logic)
-* [piwik analytics](https://github.com/kobotoolbox/enketo-express/blob/master/config/README.md#piwik) in Enketo Express
-* [disable save-as-draft](https://github.com/kobotoolbox/enketo-express/blob/master/config/README.md#disable-save-as-draft) in Enketo Express
+* [piwik analytics](https://github.com/enketo/enketo-express/blob/master/config/README.md#piwik) in Enketo Express
+* [disable save-as-draft](https://github.com/enketo/enketo-express/blob/master/config/README.md#disable-save-as-draft) in Enketo Express
 
 
 ### Widgets
