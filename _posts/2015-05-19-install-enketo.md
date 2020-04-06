@@ -15,6 +15,8 @@ This post describes how to setup a secure _production server_ running Enketo for
 
 ![Enketo Webform](../files/2015/05/webform.png "Enketo Webform")
 
+See this [FAQ](https://enketo.org/faq/#troubleshooting-enketo-express) for some common troubleshooting tips.
+
 ### 1. Considerations
 
 **Installation is the easy part**. Maintaining a reliable server with close to **0% downtime** - especially when it becomes popular - is a whole lot harder. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating a server. So before self-installing a production server, be prepared to spend a significant amount of time to run it afterwards.
