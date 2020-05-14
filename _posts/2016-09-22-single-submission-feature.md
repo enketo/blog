@@ -35,7 +35,7 @@ You could actively request any [Enketo-powered service](https://enketo.org/#tool
 
 #### B. Use your own Enketo Express installation
 
-Make sure to populate the [new config.json item](https://github.com/enketo/enketo-express/blob/master/config/README.md#less-secure-encryption-key) and use this [API endpoint](http://apidocs.enketo.org/v2/#/post-survey-single-once) to request a webform URL.
+Make sure to populate the [new config.json item](https://enketo.github.io/enketo-express/tutorial-10-configure.html#less-secure-encryption-key) and use this [API endpoint](http://apidocs.enketo.org/v2/#/post-survey-single-once) to request a webform URL.
 
 #### C. Use the paid Enketo service.
 
