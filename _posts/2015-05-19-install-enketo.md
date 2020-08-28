@@ -19,7 +19,7 @@ See this [FAQ](https://enketo.org/faq/#troubleshooting-enketo-express) for some 
 
 ### 1. Considerations
 
-**Installation is the easy part**. Maintaining a reliable server with close to **0% downtime** - especially when it becomes popular - is a whole lot harder. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating a server. So before self-installing a production server, be prepared to spend a significant amount of time to run it afterwards.
+**Installation is the easy part**. Maintaining a secure and reliable server with close to **0% downtime** - especially when it becomes popular - is a whole lot harder. This document just provides a good starting point to launch a service, but does not help with running, troubleshooting and continuously updating a server and keeping it secure. So before self-installing a production server, be prepared to spend a significant amount of time to run it afterwards.
 
 Self-installation for most people is going to be **far more expensive** than using a public supported service, even if that service is not free. The time required to install and maintain a server and the "cost" of the likely longer periods of downtime will normally outweigh any fee you would pay for a provided service. **If cost is the primary argument to self-install, it is probably not the right decision.** There are of course lots of good other reasons to run your own server!
 
