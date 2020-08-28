@@ -5,5 +5,4 @@ _site/*
 *.sublime-workspace
 .dropbox
 npm-debug.log
-Gemfile.lock
 _data/navigation.json
