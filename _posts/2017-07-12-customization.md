@@ -51,7 +51,7 @@ It has recently become possible to augment the most elementary part of Enketo's 
 
 ### XPath evaluator
 
-Due to a requirement by [Medic Mobile](https://medicmobile.org/) for their application, and thanks to their contribution, Enketo Core provides an easy way to swap [its XPath evaluator](https://github.com/enketo/enketo-xpathjs) with [another one](https://github.com/medic/openrosa-xpath-evaluator) of your choosing.
+Due to a requirement by [Medic](https://medic.org/) for their application, and thanks to their contribution, Enketo Core provides an easy way to swap [its XPath evaluator](https://github.com/enketo/enketo-xpathjs) with [another one](https://github.com/medic/openrosa-xpath-evaluator) of your choosing.
 
 
 ### Everything else

@@ -13,11 +13,11 @@ tags:
 
 We have just completed the most exciting, and largest, Enketo improvement project in years - [a new XPath evaluator](https://github.com/enketo/openrosa-xpath-evaluator)! If you are not familiar with XPath, it is the _logic language_ of forms in the ODK ecosystem which is used in _calculation_, _constraint_, _relevant_, _required_, _choice\_filter_, and _default_ formulas.
 
-Back when Medic Mobile [adopted Enketo](https://medicmobile.org/blog/we-built-the-mobile-app-health-workers-deserve) in their mobile data collection tools for Community Health Workers, they created a new XPath evaluator to replace the one Enketo was using. This new evaluator turned out to be much faster as it more fully leveraged the native XPath evaluator that is built into modern browsers. 
+Back when Medic [adopted Enketo](https://medic.org/stories/we-built-the-mobile-app-that-health-workers-deserve/) in their mobile data collection tools for Community Health Workers, they created a new XPath evaluator to replace the one Enketo was using. This new evaluator turned out to be much faster as it more fully leveraged the native XPath evaluator that is built into modern browsers. 
 
 At the time it was created, it did not yet have all the capabilities that the Enketo Project needed to replace its own XPath evaluator. Moreover, the need to support legacy browsers (without a native evaluator) were still holding us back. However, we started planning a long time ago to make Medic's evaluator fully [ODK XForms](https://getodk.github.io/xforms-spec/) spec-compliant and have since [dropped support for legacy browsers](./Enketo-Express-mar-2020-update/#farewell-internet-explorer).
 
-With funding from [DIAL](https://www.osc.dial.community/), [OpenClinica](https://www.openclinica.com/), and [Medic Mobile](https://medicmobile.org/) this XPath library is now fully ready to take over logic evaluation across all Enketo tools!
+With funding from [DIAL](https://www.osc.dial.community/), [OpenClinica](https://www.openclinica.com/), and [Medic](https://medic.org/) this XPath library is now fully ready to take over logic evaluation across all Enketo tools!
 
 **Enketo Express version 2.6.0** and Enketo Core version 5.17.0 onwards include the new evaluator.
 
@@ -37,6 +37,6 @@ A form with about 1,000 questions with an enormous quantity of complex constrain
 
 ### Thanks
 
-Thanks so much to [Medic Mobile](https://medicmobile.org/), [DIAL](https://www.osc.dial.community/), [OpenClinica](https://www.openclinica.com/) for making this epic improvement project possible!
+Thanks so much to [Medic](https://medic.org/), [DIAL](https://www.osc.dial.community/), [OpenClinica](https://www.openclinica.com/) for making this epic improvement project possible!
 
 {% include feedback.md %}
