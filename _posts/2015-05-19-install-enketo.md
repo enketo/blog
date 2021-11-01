@@ -371,14 +371,12 @@ Nothing in this section is specific to Enketo. You can also use one of the [thou
 
 This tutorial will use free Let's Encrypt certificates using [CertBot](https://certbot.eff.org/). This is a very convenient solution as it can be configured to automatically renew the certificate.
 
-First install CertBot. For NGINX on Ubuntu we follow [these instructions](https://certbot.eff.org/):
+First install CertBot. For NGINX on Ubuntu 18 we follow [these instructions](https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx):
 ```bash
-sudo apt-get update
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:certbot/certbot
-sudo apt-get update
-sudo apt-get install python-certbot-nginx 
-
+sudo snap install core; sudo snap refresh core
+sudo apt-get remove certbot
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo certbot --nginx
 ```
 
