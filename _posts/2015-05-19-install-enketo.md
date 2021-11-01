@@ -155,7 +155,7 @@ sudo apt-get install -y gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 
 Install Node.js and global Node packages
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install -g pm2 npm
 ```
