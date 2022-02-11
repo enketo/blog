@@ -15,7 +15,7 @@ We have just completed the most exciting, and largest, Enketo improvement projec
 
 Back when Medic [adopted Enketo](https://medic.org/stories/we-built-the-mobile-app-that-health-workers-deserve/) in their mobile data collection tools for Community Health Workers, they created a new XPath evaluator to replace the one Enketo was using. This new evaluator turned out to be much faster as it more fully leveraged the native XPath evaluator that is built into modern browsers. 
 
-At the time it was created, it did not yet have all the capabilities that the Enketo Project needed to replace its own XPath evaluator. Moreover, the need to support legacy browsers (without a native evaluator) were still holding us back. However, we started planning a long time ago to make Medic's evaluator fully [ODK XForms](https://getodk.github.io/xforms-spec/) spec-compliant and have since [dropped support for legacy browsers](./Enketo-Express-mar-2020-update/#farewell-internet-explorer).
+At the time it was created, it did not yet have all the capabilities that the Enketo Project needed to replace its own XPath evaluator. Moreover, the need to support legacy browsers (without a native evaluator) was still holding us back. However, we started planning a long time ago to make Medic's evaluator fully [ODK XForms](https://getodk.github.io/xforms-spec/) spec-compliant and have since [dropped support for legacy browsers](./Enketo-Express-mar-2020-update/#farewell-internet-explorer).
 
 With funding from [DIAL](https://www.osc.dial.community/), [OpenClinica](https://www.openclinica.com/), and [Medic](https://medic.org/) this XPath library is now fully ready to take over logic evaluation across all Enketo tools!
 
