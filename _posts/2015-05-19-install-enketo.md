@@ -157,7 +157,7 @@ Install Node.js and global Node packages
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
-sudo npm install -g pm2 npm
+sudo npm install -g pm2 npm@6
 ```
 
 Let Ubuntu automatically install security updates (keep default values and select _Yes_ when asked):
