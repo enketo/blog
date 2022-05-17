@@ -168,13 +168,14 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ### 5. Enketo Express Installation
 
-Install Enketo Express and its dependencies. Warnings during the `npm install --production` step can normally be ignored. Errors should not be ignored.
+Install Enketo Express and its dependencies. Warnings during the `npm install` step can normally be ignored. Errors should not be ignored.
 
 ```bash
 cd ~
 git clone https://github.com/enketo/enketo-express.git
 cd enketo-express
-npm install --production
+npm install
+npm prune --production
 ```
 
 ### 6. Configuration
@@ -258,7 +259,8 @@ Rebuild with the updated configuration:
 
 ```bash
 cd ~/enketo-express
-npm install --production
+npm install 
+npm prune --production
 ```
 
 ### 7. Automatic Enketo Launch and Restart
@@ -479,7 +481,7 @@ The following commands can be used to update Enketo to the latest version:
 
 ```bash
 cd enketo-express
-git pull && npm install --production && pm2 restart enketo
+git pull && npm install && npm prune --production && pm2 restart enketo
 ```
 
 You may have to remove the file _package-lock.json_ first.
