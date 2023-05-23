@@ -46,6 +46,15 @@ ul.posts span {
     display: block;
 }
 
+.header__banner {
+    width: 100%;
+    background: #fffde7;
+    text-align: center;
+    min-height: 30px;
+    padding: 7px;
+    font-weight: bold;
+}
+
 /*****************************************************************************/
 /*
 /* Posts
