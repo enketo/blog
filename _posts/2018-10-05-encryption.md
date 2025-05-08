@@ -13,7 +13,7 @@ Enketo now has full support for encryption-enabled forms! This long-requested fe
 
 ### Why use this
 
-Enketo has always facilitated encryption of data **during transport** from the browser to the data server (e.g. to Aggregate, Ona, KoBoToolbox) just like any website that uses an "https" web address (note that both Enketo and the data server need to be using https). However, some projects also require sensitive data to be securely encrypted **while it is still stored on the device and while it is stored on the data server**. This new feature responds to that requirement.
+Enketo has always facilitated encryption of data **during transport** from the browser to the data server (e.g. to Aggregate, Ona, KoboToolbox) just like any website that uses an "https" web address (note that both Enketo and the data server need to be using https). However, some projects also require sensitive data to be securely encrypted **while it is still stored on the device and while it is stored on the data server**. This new feature responds to that requirement.
 
 ### How it works
 

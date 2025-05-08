@@ -35,6 +35,6 @@ The language codes (called _subtags_) for all languages can be found [here](http
 
 ### Sponsor
 
-This right-to-left language support was fully funded by [KoBoToolbox](http://kobotoolbox.org), an incredible system to manage information in humanitarian crises by the [Harvard Humanitarian Initiative](http://hhi.harvard.edu/) and UN OCHA.
+This right-to-left language support was fully funded by [KoboToolbox](http://kobotoolbox.org), an incredible system to manage information in humanitarian crises by the [Harvard Humanitarian Initiative](http://hhi.harvard.edu/) and UN OCHA.
 
 {% include feedback.md %}
