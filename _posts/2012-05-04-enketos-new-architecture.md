@@ -18,7 +18,7 @@ As a follow up to the[ introduction of Enketo][1] and my post about the [OpenRo
  [1]: /an-introduction-to-rapaide/ "An Introduction to Rapaide"
  [2]: /survey-tools/ "Survey Tools"
 
-For those familiair with the [Open Data Kit][3], [formhub][4] or [Kobo Toolbox][5], the following (slightly simplified) diagram should clarify how Enketo will fit into these systems.
+For those familiair with the [Open Data Kit][3], [formhub][4] or [KoboToolbox][5], the following (slightly simplified) diagram should clarify how Enketo will fit into these systems.
 
  [3]: http://opendatakit.org
  [4]: http://formhub.org "Formhub website"

@@ -34,10 +34,10 @@ The offline capability was re-developed from the ground up using different stora
 
 ### GitHub Account
 
-It might be confusing that the master repository lives in the [KoBoToolbox GitHub account](https://github.com/kobotoolbox), and a 'fork' exists in the [Enketo GitHub account](https://github.com/enketo). KoBo funded the initial (and still ongoing) development. Without their significant support the new app might have never gotten off the ground. The reason to keep a fork in Enketo's GitHub account is simply because this is the place were some people will start looking first. It is just a _mirror_, meant to be kept _exactly the same_, so you can use _either one_. Just make sure to 'star' both, if you think they are any good... ;)
+It might be confusing that the master repository lives in the [KoboToolbox GitHub account](https://github.com/kobotoolbox), and a 'fork' exists in the [Enketo GitHub account](https://github.com/enketo). Kobo funded the initial (and still ongoing) development. Without their significant support the new app might have never gotten off the ground. The reason to keep a fork in Enketo's GitHub account is simply because this is the place were some people will start looking first. It is just a _mirror_, meant to be kept _exactly the same_, so you can use _either one_. Just make sure to 'star' both, if you think they are any good... ;)
 
 ### Sponsors
 
-The development of the new Enketo Smart Paper app so far has been funded by [KoBo Toolbox](http://kobotoolbox.org), the [Santa Fe Institute](http://www.santafe.edu), [iMMAP](http://immap.org) and [OpenClinica](http://openclinica.com). For a continuously updated list of sponsors see [the repository](https://github.com/enketo/enketo-express#funding).
+The development of the new Enketo Smart Paper app so far has been funded by [KoboToolbox](http://kobotoolbox.org), the [Santa Fe Institute](http://www.santafe.edu), [iMMAP](http://immap.org) and [OpenClinica](http://openclinica.com). For a continuously updated list of sponsors see [the repository](https://github.com/enketo/enketo-express#funding).
 
 {% include feedback.md %}

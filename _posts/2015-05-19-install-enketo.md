@@ -11,7 +11,7 @@ tags:
 
 --- 
 
-This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoBoCAT on [DigitalOcean](https://m.do.co/c/9e43ccb8961a). It will be updated continuously to use the latest tools and recommended practices. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/XiTgHFll_nE) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
+This post describes how to setup a secure _production server_ running Enketo for use with e.g. ODK Aggregate or KoboCAT on [DigitalOcean](https://m.do.co/c/9e43ccb8961a). It will be updated continuously to use the latest tools and recommended practices. Use the [forum](https://groups.google.com/forum/#!topic/enketo-users/XiTgHFll_nE) to discuss any issues or suggestions for improvement, or if you'd like to expand it with instructions for other hosting providers.
 
 ![Enketo Webform](../files/2015/05/webform.png "Enketo Webform")
 
@@ -457,7 +457,7 @@ Once, your Enketo server and its integration with the form server is working, go
 Please see the instructions for the Form & Data server you are using. The 2 key values needed to link Enketo are:
 
 1. The API key you set in step 6 of this tutorial in Enketo's config.json. Do not keep the default value!
-2. The API URL. This is the domain your Enketo is available on + /api/v2 or /api/v1, e.g. https://enketo.aidapplications.com/api/v2. Due to the limited integration in ODK Aggregate those users may prefer to use /api/v1 if offline-capable webforms are desired. Ona and KoBoToolbox have very comprehensive Enketo integration (including previews, offline, online-only, single-submission etc) and should therefore use the full-featured /api/v2. ODK Central integration [is forthcoming](https://forum.opendatakit.org/t/integration-of-enketo-into-odk-central/13992) and will use /api/v2.
+2. The API URL. This is the domain your Enketo is available on + /api/v2 or /api/v1, e.g. https://enketo.aidapplications.com/api/v2. Due to the limited integration in ODK Aggregate those users may prefer to use /api/v1 if offline-capable webforms are desired. Ona and KoboToolbox have very comprehensive Enketo integration (including previews, offline, online-only, single-submission etc) and should therefore use the full-featured /api/v2. ODK Central integration [is forthcoming](https://forum.opendatakit.org/t/integration-of-enketo-into-odk-central/13992) and will use /api/v2.
 
 ### 16. Backups (and restore or move database from another server)
 

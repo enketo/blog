@@ -17,7 +17,7 @@ Now that Enketo's [paid service](https://accounts.enke.to) and [Ona](https://ona
 
 ### Acknowledgements
 
-This feature was largely contributed by [Medic](http://medic.org/), the first major external code contributor to Enketo Core! Additional support from [KoBoToolbox](http://kobotoolbox.org) made it possible to expose this feature in the Enketo web application.
+This feature was largely contributed by [Medic](http://medic.org/), the first major external code contributor to Enketo Core! Additional support from [KoboToolbox](http://kobotoolbox.org) made it possible to expose this feature in the Enketo web application.
 
 {% include feedback.md %}
 We still have some [ideas](https://github.com/enketo/enketo-core/issues/326) about how to further change the UI in pages mode. Don't hesitate to add yours.

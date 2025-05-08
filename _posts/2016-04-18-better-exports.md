@@ -27,6 +27,6 @@ If you need to import these exported records, because data was lost, it is best 
 
 ### Acknowledgements
 
-This feature was sponsored by one of Enketo's top sponsors: [KoBoToolbox](http://kobotoolbox.org/), the leading solution for information management in humanitarian aid.
+This feature was sponsored by one of Enketo's top sponsors: [KoboToolbox](http://kobotoolbox.org/), the leading solution for information management in humanitarian aid.
 
 {% include feedback.md %}
