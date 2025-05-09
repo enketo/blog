@@ -4,7 +4,7 @@
 {% assign blog='#{enketo-blog}' %}
 {% assign api='#{enketo-api}' %}
 <header class="header">
-   <div class="header__banner">Enketo has joined ODK! <a href="https://blog.enketo.org/enketo-has-joined-odk">Learn more</a>.</div>
+   <div class="header__banner">Enketo has joined KoboToolbox! <a href="https://blog.enketo.org/kobotoolbox-enketo">Learn more</a>.</div>
    <div class="content-ui">
       <a class="header__branding" href="{{ sites['enketo-main'] }}/">
          <img src="{{ sites['enketo-main']}}/media/images/logos/enketo_bare_white_150x56.png" alt="Enketo Logo"/>
@@ -20,7 +20,7 @@
                {% capture href %}{% if p[1]._self %}{{ p[1]._self }}{% else %}{{ p[1] }}{% endif %}{% endcapture %}
 
                <a href="{{ href | replace:main,sites['enketo-main'] | replace:blog,'/'}}">{{ p[0] }}</a>
-            </li> 
+            </li>
          {% endfor %}
          </ul>
       </nav>
