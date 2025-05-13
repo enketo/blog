@@ -4,7 +4,7 @@ layout: default
 
 <article id="post">
 	<h2>{{ page.title }}</h2>
-	<div class="date">{{page.author}}, {{ page.date | date_to_string}}{% include twitter-follow-button.html %}</div>
+	<div class="date">{{page.author}}, {{ page.date | date_to_string}}</div>
 	{{ content }}
 	{% if site.comments %}
 		{% include comments.html %}
